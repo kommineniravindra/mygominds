@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,700&display=swap');
+
+.aboutus-page {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background-color: #FDF9F7;
+}
+
+/* Common Components */
+.orange-label {
+  color: #ea580c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.label-line {
+  height: 2px;
+  width: 30px;
+  background-color: #ea580c;
+}
+
+/* 1. Hero Section */
+.about-hero {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px 20px 0px;
+}
+
+.about-hero-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero-left .main-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.orange-heading {
+  color: #ea580c;
+}
+
+.hero-left .hero-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #64748b;
+  max-width: 450px;
+}
+
+.our-journey-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #011228;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background-color 0.2s;
+}
+
+.our-journey-btn:hover {
+  background-color: #0f172a;
+}
+
+.our-journey-btn .play-icon {
+  color: #ea580c;
+  font-size: 20px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* 2. Stats Bar */
+.stats-bar {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  gap: 20px;
+  border: 1px solid #f8fafc;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  border-right: 1px solid #f1f5f9;
+}
+
+.stat-card:last-child {
+  border-right: none;
+}
+
+.stat-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff7ed;
+  color: #ea580c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.stat-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.stat-info p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* 3. Who We Are */
+.who-we-are {
+  max-width: 1400px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.who-left h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.italic-orange {
+  font-style: italic;
+  color: #ea580c;
+}
+
+.who-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.explore-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid #ea580c;
+  background: transparent;
+  color: #ea580c;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.explore-btn-outline:hover {
+  background: #ea580c;
+  color: #ffffff;
+}
+
+.who-right {
+  position: relative;
+}
+
+.office-img-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-shape-outline {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 200px;
+  height: 180px;
+  border: 1px solid #ea580c;
+  border-radius: 30px;
+  z-index: 0;
+}
+
+.bg-shape-light-orange {
+  position: absolute;
+  top: 30%;
+  left: -40px;
+  width: 80px;
+  height: 180px;
+  background: #ffedd5;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.bg-shape-solid-orange {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 140px;
+  height: 140px;
+  background: #ea580c;
+  border-radius: 30px;
+  z-index: 2;
+}
+
+.bg-dots {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  width: 120px;
+  height: 80px;
+  background-image: radial-gradient(#ea580c 2px, transparent 2px);
+  background-size: 16px 16px;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.office-img {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* 4. Our Values */
+.our-values {
+  max-width: 1400px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.values-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.heading-underline {
+  height: 3px;
+  width: 60px;
+  background: #ea580c;
+  border-radius: 2px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.value-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: #fff7ed;
+  color: #ea580c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.value-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card-underline {
+  height: 2px;
+  width: 20px;
+  background: #ea580c;
+  border-radius: 2px;
+  margin: 0 auto 12px;
+}
+
+.value-card p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* 5. Bottom CTA Banner */
+.cta-banner-section {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.cta-banner {
+  border-radius: 24px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  background: #fff3eeee;
+}
+
+/* Dark navy left side with curved right edge */
+.cta-text-section {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 42%;
+  background: #0f1e3c;
+  padding: 40px 60px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px 0 0 24px;
+  clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);
+}
+
+.cta-label {
+  color: #ea580c;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.cta-text-section h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.cta-text-section p {
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+/* Middle: dots + circle icon overlapping the boundary */
+.cta-middle {
+  position: absolute;
+  left: 38%;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.cta-dots-grid {
+  position: absolute;
+  top: 10%;
+  left: -10px;
+  width: 90px;
+  height: 90px;
+  background-image: radial-gradient(#ea580c 2px, transparent 2px);
+  background-size: 13px 13px;
+  opacity: 0.6;
+}
+
+.cta-circle-icon {
+  width: 68px;
+  height: 68px;
+  background: #ea580c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);
+  position: relative;
+  z-index: 4;
+}
+
+/* Right peach section */
+.cta-right-section {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: visible;
+  padding-left: 60px;
+}
+
+.cta-instructor-img {
+  height: 110%;
+  max-height: 260px;
+  width: auto;
+  object-fit: contain;
+  object-position: bottom;
+  display: block;
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+}
+
+/* Buttons on far right */
+.cta-button-section {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+  padding: 40px 50px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.solid-orange-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.solid-orange-btn:hover {
+  background: #c2410c;
+}
+
+.outline-orange-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #ea580c;
+  border: 1px solid #ea580c;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.outline-orange-btn:hover {
+  background: #fff7ed;
+}
+
+/* ============================================================
+   RESPONSIVE STYLES
+   ============================================================ */
+
+/* --- Tablet (max 1024px) --- */
+@media (max-width: 1024px) {
+
+  /* Hero Section */
+  .about-hero {
+    padding: 20px 24px 0;
+  }
+
+  .about-hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-left .main-heading {
+    font-size: 48px;
+  }
+
+  .hero-left .hero-desc {
+    margin: 0 auto 28px;
+    max-width: 500px;
+  }
+
+  .orange-label {
+    justify-content: center;
+  }
+
+  .hero-right {
+    justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    max-width: 100%;
+  }
+
+  .our-journey-btn {
+    margin: 0 auto;
+  }
+
+  /* Stats Bar */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .stat-card {
+    border-right: none;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 16px;
+  }
+
+  .stat-card:nth-child(2n) {
+    border-bottom: none;
+  }
+
+  /* Who We Are */
+  .who-we-are {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .who-left h2 {
+    font-size: 32px;
+  }
+
+  .who-left p {
+    margin: 0 auto 30px;
+    max-width: 500px;
+  }
+
+  .explore-btn-outline {
+    margin: 0 auto;
+  }
+
+  .office-img-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Our Values */
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    min-height: unset;
+  }
+
+  .cta-text-section {
+    flex: unset;
+    width: 100%;
+    clip-path: none;
+    border-radius: 20px 20px 0 0;
+    padding: 40px 32px 48px;
+    align-items: center;
+  }
+
+  .cta-text-section p {
+    max-width: 100%;
+  }
+
+  .cta-middle {
+    position: relative;
+    left: unset;
+    top: unset;
+    bottom: unset;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    justify-content: center;
+    margin-top: -24px;
+  }
+
+  .cta-dots-grid {
+    display: none;
+  }
+
+  .cta-right-section {
+    width: 100%;
+    min-height: 220px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .cta-instructor-img {
+    max-height: 220px;
+    height: auto;
+    width: auto;
+  }
+
+  .cta-button-section {
+    flex: unset;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px 32px 40px;
+    gap: 16px;
+    border-radius: 0 0 20px 20px;
+    background: #FFF3EE;
+  }
+}
+
+/* --- Small Tablet (max 768px) --- */
+@media (max-width: 768px) {
+
+  /* Hero */
+  .hero-left .main-heading {
+    font-size: 40px;
+  }
+
+  .orange-heading {
+    font-size: 40px;
+  }
+
+  /* Stats */
+  .stats-bar {
+    padding: 0 16px;
+    margin-bottom: 50px;
+  }
+
+  .stats-grid {
+    padding: 20px 16px;
+    gap: 8px;
+  }
+
+  /* Values */
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Who We Are */
+  .bg-shape-outline,
+  .bg-shape-solid-orange {
+    display: none;
+  }
+
+  .who-we-are {
+    padding: 0 16px;
+  }
+
+  /* CTA */
+  .cta-button-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .solid-orange-btn,
+  .outline-orange-btn {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+}
+
+/* --- Mobile (max 640px) --- */
+@media (max-width: 640px) {
+
+  /* Hero */
+  .about-hero {
+    padding: 16px 16px 0;
+  }
+
+  .hero-left .main-heading {
+    font-size: 32px;
+  }
+
+  .orange-heading {
+    font-size: 32px;
+  }
+
+  .hero-left .hero-desc {
+    font-size: 14px;
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-card {
+    padding: 12px 8px;
+    gap: 10px;
+  }
+
+  .stat-icon-wrapper {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .stat-info h3 {
+    font-size: 18px;
+  }
+
+  /* Who We Are */
+  .who-left h2 {
+    font-size: 26px;
+  }
+
+  .who-we-are {
+    margin-bottom: 40px;
+  }
+
+  /* Values */
+  .our-values {
+    margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .value-card {
+    padding: 20px 12px;
+  }
+
+  .values-header h2 {
+    font-size: 24px;
+  }
+
+  /* CTA */
+  .cta-banner-section {
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+
+  .cta-text-section h2 {
+    font-size: 20px;
+  }
+}
+
+/* --- Small Mobile (max 480px) --- */
+@media (max-width: 480px) {
+
+  .hero-left .main-heading,
+  .orange-heading {
+    font-size: 28px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .stat-card:last-child {
+    border-bottom: none;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .cta-button-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .solid-orange-btn,
+  .outline-orange-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

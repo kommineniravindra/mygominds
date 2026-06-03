@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* Hide global scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow-x: clip; /* Prevents horizontal scroll without breaking position: sticky! */
+  width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

@@ -1,0 +1,1162 @@
+{
+  "angular-topics": [
+    {
+      "title": "Test-1",
+      "desc": "Core Basics + TypeScript + Folder Structure",
+      "link": "https://online-test.classplusapp.com/?testId=69f041fa4328141823fc3cdb&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/angularjs.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "Components + Data Binding",
+      "link": "https://online-test.classplusapp.com/?testId=69f061db5c00d30bee9e9076&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Test-3",
+      "desc": "Directives + Templates + Pipes",
+      "link": "https://online-test.classplusapp.com/?testId=69f062975ab608f7f6a3bef1&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Test-4",
+      "desc": "Component Communication + Services + Routing",
+      "link": "https://online-test.classplusapp.com/?testId=69f0632af381281c6acf31f2&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/api.png"
+    },
+    {
+      "title": "Test-5",
+      "desc": "Forms + HTTP + Lifecycle Hooks",
+      "link": "https://online-test.classplusapp.com/?testId=69f064c63b4bdeb6e5b771cd&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/form.png"
+    },
+    {
+      "title": "Test-6",
+      "desc": "Advanced + State Management + RxJS",
+      "link": "https://online-test.classplusapp.com/?testId=69f065699669f93682b31834&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/cloud.png"
+    }
+  ],
+  "html-topics": [
+    {
+      "title": "Test-1",
+      "desc": "Introduction to Web",
+      "link": "https://online-test.classplusapp.com/?testId=69f09efca2be3846d8b00674&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/internet.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "Introduction + Basic Tags",
+      "link": "https://online-test.classplusapp.com/?testId=69f096756770420e55263431&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/code.png"
+    },
+    {
+      "title": "Test-3",
+      "desc": "Text Formatting + Lists",
+      "link": "https://online-test.classplusapp.com/?testId=69f096a3ce92fc7b4fe9b513&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/edit.png"
+    },
+    {
+      "title": "Test-4",
+      "desc": "Links + Images",
+      "link": "https://online-test.classplusapp.com/?testId=69f096cd5f16d71abcc57beb&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/link.png"
+    },
+    {
+      "title": "Test-5",
+      "desc": "Tables + Layout (div, span, block vs inline)",
+      "link": "https://online-test.classplusapp.com/?testId=69f096f1c140abd6505ecca1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/table.png"
+    },
+    {
+      "title": "Test-6",
+      "desc": "Forms (inputs, radio, checkbox, dropdown)",
+      "link": "https://online-test.classplusapp.com/?testId=69f09719eb93f956e98d5b1b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/form.png"
+    },
+    {
+      "title": "Test-7",
+      "desc": "Semantic Tags + Media (audio, video)",
+      "link": "https://online-test.classplusapp.com/?testId=69f0974c2561de0ac129d0ac&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/video.png"
+    }
+  ],
+  "js-topics": [
+    {
+      "title": "Test-1",
+      "desc": "What is JS, Working, Uses",
+      "link": "https://online-test.classplusapp.com/?testId=69ec52765f9bcfe07e21c069&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/javascript.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "JS Folder Structure",
+      "link": "https://online-test.classplusapp.com/?testId=69ec53342f4e2b25ba320271&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/folder-invoices.png"
+    },
+    {
+      "title": "Test-3",
+      "desc": "Variables (var, let, const)",
+      "link": "https://online-test.classplusapp.com/?testId=69ec53cb8af583d819748b43&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/variable.png"
+    },
+    {
+      "title": "Test-4",
+      "desc": "Data Types",
+      "link": "https://online-test.classplusapp.com/?testId=69ec543dd96e859519c7c15f&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/data-configuration.png"
+    },
+    {
+      "title": "Test-5",
+      "desc": "Conditional Statements",
+      "link": "https://online-test.classplusapp.com/?testId=69ec54c29b034a171e2b22aa&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/decision.png"
+    },
+    {
+      "title": "Test-6",
+      "desc": "Loops",
+      "link": "https://online-test.classplusapp.com/?testId=69ec551d3f151d0c44aaa607&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/repeat.png"
+    },
+    {
+      "title": "Test-7",
+      "desc": "Break, Continue, Operators",
+      "link": "https://online-test.classplusapp.com/?testId=69ec5583eedfda37580186cf&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/calculator.png"
+    },
+    {
+      "title": "Test-8",
+      "desc": "Arrays & JSON",
+      "link": "https://online-test.classplusapp.com/?testId=69ec55d6d9b4d45d452c7278&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/list.png"
+    },
+    {
+      "title": "Test-9",
+      "desc": "JS Validations",
+      "link": "https://online-test.classplusapp.com/?testId=69ec563813494e0f4f359fb1&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/checked--v1.png"
+    },
+    {
+      "title": "Test-10",
+      "desc": "Functions (Declaration & Expression)",
+      "link": "https://online-test.classplusapp.com/?testId=69ec56a3d2f6689c4bfc8697&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/function.png"
+    },
+    {
+      "title": "Test-11",
+      "desc": "Types of Functions",
+      "link": "https://online-test.classplusapp.com/?testId=69ec57809b034a276b2b27b0&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/code.png"
+    },
+    {
+      "title": "Test-12",
+      "desc": "DOM & BOM",
+      "link": "https://online-test.classplusapp.com/?testId=69ec586d7556ad0e28fd6a85&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/web.png"
+    },
+    {
+      "title": "Test-13",
+      "desc": "DOM Traversal & Manipulation",
+      "link": "https://online-test.classplusapp.com/?testId=69ec58c65cc16003c67815c6&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/dom.png"
+    }
+  ],
+  "webapi": [
+    {
+      "title": "Test-1",
+      "desc": "Web API Fundamentals + HTTP Basics",
+      "link": "https://online-test.classplusapp.com/?testId=69e9dc4cfbe72442a75b7af0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/api-settings.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "Web API Core + Controllers",
+      "link": "https://online-test.classplusapp.com/?testId=69e9dc70a7b0938e4dd720b3&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/controller.png"
+    },
+    {
+      "title": "Test-3",
+      "desc": "Routing&Model Binding",
+      "link": "https://online-test.classplusapp.com/?testId=69e9dc9ba505895138e6b5e2&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/data-configuration.png"
+    },
+    {
+      "title": "Test-4",
+      "desc": "DI +EF Core",
+      "link": "https://online-test.classplusapp.com/?testId=69e9dcbd7c233271e551c5a5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    },
+    {
+      "title": "Test-5",
+      "desc": "LINQ+API Testing Tools + Swagger",
+      "link": "https://online-test.classplusapp.com/?testId=69e9dcde5875a39dc6293142&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/test-passed.png"
+    },
+    {
+      "title": "Test-6",
+      "desc": "JWT+Authorization+Exceptionhandling+Middleware",
+      "link": "https://online-test.classplusapp.com/?testId=69e9dd0e861b200c1ee54476&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/lock.png"
+    }
+  ],
+  "microservices": [
+    {
+      "title": "Test-1",
+      "desc": "Introduction to Microservices,Monolithic vs Microservices",
+      "link": "https://online-test.classplusapp.com/?testId=69f46b0c94d0f53c901f761a&defaultLanguage=en",
+      "image": "https://cdn-icons-png.flaticon.com/512/4149/4149648.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "Microservices Architecture",
+      "link": "https://online-test.classplusapp.com/?testId=69ec6c4341c98e70813182ee&defaultLanguage=en-US",
+      "image": "https://cdn-icons-png.flaticon.com/512/4149/4149648.png"
+    },
+    {
+      "title": "Test-3",
+      "desc": "Service Design Principles, Database per Service, Bounded Context",
+      "link": "https://online-test.classplusapp.com/?testId=69ec6f568b959025ee81e2ae&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/design.png"
+    },
+    {
+      "title": "Test-4",
+      "desc": "API Controllers, MVC vs API, DI, Folder Structure, API Testing",
+      "link": "https://online-test.classplusapp.com/?testId=69ec707e07e100582cb97674&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/api.png"
+    },
+    {
+      "title": "Test-4",
+      "desc": "API Gateway, Routing, Aggregation, Ocelot, Service Discovery",
+      "link": "https://online-test.classplusapp.com/?testId=69ec70dec2b1c8f19fe1d313&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/network.png"
+    },
+    {
+      "title": "Test-5",
+      "desc": "Saga Pattern, Data Consistency, JWT, OAuth, CORS, API Security",
+      "link": "https://online-test.classplusapp.com/?testId=69ec714a3f151dae26aab3e3&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/security-checked.png"
+    },
+    {
+      "title": "Test-6",
+      "desc": "Configuration, Resilience (Polly), Logging, Docker, Kubernetes, CI/CD",
+      "link": "https://online-test.classplusapp.com/?testId=69ec718d861b20f5d7e8e138&defaultLanguage=en-US",
+      "image": "https://img.icons8.com/color/96/cloud.png"
+    }
+  ],
+  "entity-framework": [
+    {
+      "title": "Test-1",
+      "desc": "Introduction, DbContext & DbSet",
+      "link": "https://online-test.classplusapp.com/?testId=69e7647cde9f7e28408a11ad&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/api-settings.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "Code First, Migrations, CRUD",
+      "link": "https://online-test.classplusapp.com/?testId=69e764cb9fb2385269285fb8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    }
+  ],
+  "entity-framework-core": [
+    {
+      "title": "Test-1",
+      "desc": "EF Core Basics",
+      "link": "https://online-test.classplusapp.com/?testId=69e71595636ed75be0bb2158&defaultLanguage=en",
+      "image": "https://cdn-icons-png.flaticon.com/512/4149/4149648.png"
+    },
+    {
+      "title": "Test-2",
+      "desc": "EF vs EF Core Differences",
+      "link": "https://online-test.classplusapp.com/?testId=69e715c1bad887291c77a48b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/design.png"
+    }
+  ],
+  "awsexamone": [
+    {
+      "title": "Linux Commands",
+      "description": "Test your knowledge of basic and advanced Linux commands used in AWS environments.",
+      "link": "https://your-classplus-link.com/aws-exam1",
+      "image": "https://img.icons8.com/color/96/console.png"
+    },
+    {
+      "title": "File System & Permissions",
+      "description": "Evaluate your understanding of file systems, ownership, and permission management.",
+      "link": "https://your-classplus-link.com/aws-exam2",
+      "image": "https://img.icons8.com/color/96/folder-invoices.png"
+    },
+    {
+      "title": "Shell Scripting",
+      "description": "Practice writing shell scripts, variables, loops, and automation tasks.",
+      "link": "https://your-classplus-link.com/aws-exam3",
+      "image": "https://img.icons8.com/color/96/script.png"
+    },
+    {
+      "title": "Networking Basics",
+      "description": "Test your knowledge of IP addressing, DNS, ports, and networking concepts in AWS.",
+      "link": "https://your-classplus-link.com/aws-exam4",
+      "image": "https://img.icons8.com/color/96/network.png"
+    }
+  ],
+  "dnexamone": [
+    {
+      "title": "Variables and Methods 1",
+      "description": "Basics of C# variables, data types, and simple methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd46fe25d8b16e06eacd5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Variables and Methods 2",
+      "description": "Intermediate concepts of variables and methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Variables and Methods 3",
+      "description": "Advanced practice on variables and method logic.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4e08ce6aa4b778d3b9a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Class & Object",
+      "description": "Understand classes, objects, and their real-world usage.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd6a44b20a12a7365e57a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "Variables Test 2",
+      "description": "Practice problems focused on variable handling.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd502bfa9762d80038e74&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/variable.png"
+    },
+    {
+      "title": "Methods Test 1",
+      "description": "Test your understanding of defining and calling methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd3db68ecbc3845cf8a4e&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 2",
+      "description": "Advanced method-related problem solving.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd40405aff430893dd4fe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 3",
+      "description": "Complex method execution and logic flow.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd429e25d8b8b066eacc5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 4",
+      "description": "Expert-level method handling scenarios.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd43ebfa9761261038e49&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Constructors",
+      "description": "Learn about constructors and object initialization.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/settings.png"
+    },
+    {
+      "title": "Abstraction Test 1",
+      "description": "Understand abstraction and abstract classes.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7531312397b1913e6b0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Abstraction Test 2",
+      "description": "Advanced abstraction and interface concepts.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd789d9b62922b29668f8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Encapsulation Test 1",
+      "description": "Learn about data hiding and encapsulation.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7b105aff48eaa3dd5bb&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Encapsulation Test 2",
+      "description": "Advanced encapsulation techniques.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7d14fcc15773e877bfe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Inheritance Test 1",
+      "description": "Understand inheritance and class hierarchy.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7f67a7445964af8585b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "Inheritance Test 2",
+      "description": "Advanced Inheritance topics",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd816b94ed1545866d1ec&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "Polymorphism Test 1",
+      "description": "Learn method overriding and overloading.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd8484c553077464ae870&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    },
+    {
+      "title": "Polymorphism Test 2",
+      "description": "Advanced polymorphism concepts.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd86805aff46aac3dd694&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    }
+  ],
+  "javaexamone": [
+    {
+      "title": "Variables and Methods 1",
+      "description": "Basics of C# variables, data types, and simple methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd46fe25d8b16e06eacd5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Variables and Methods 2",
+      "description": "Intermediate concepts of variables and methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Variables and Methods 3",
+      "description": "Advanced practice on variables and method logic.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4e08ce6aa4b778d3b9a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Class & Object",
+      "description": "Understand classes, objects, and their real-world usage.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd6a44b20a12a7365e57a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "Variables Test 2",
+      "description": "Practice problems focused on variable handling.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd502bfa9762d80038e74&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/variable.png"
+    },
+    {
+      "title": "Methods Test 1",
+      "description": "Test your understanding of defining and calling methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd3db68ecbc3845cf8a4e&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 2",
+      "description": "Advanced method-related problem solving.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd40405aff430893dd4fe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 3",
+      "description": "Complex method execution and logic flow.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd429e25d8b8b066eacc5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 4",
+      "description": "Expert-level method handling scenarios.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd43ebfa9761261038e49&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Constructors",
+      "description": "Learn about constructors and object initialization.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/settings.png"
+    },
+    {
+      "title": "Abstraction Test 1",
+      "description": "Understand abstraction and abstract classes.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7531312397b1913e6b0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Abstraction Test 2",
+      "description": "Advanced abstraction and interface concepts.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd789d9b62922b29668f8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Encapsulation Test 1",
+      "description": "Learn about data hiding and encapsulation.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7b105aff48eaa3dd5bb&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Encapsulation Test 2",
+      "description": "Advanced encapsulation techniques.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7d14fcc15773e877bfe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Inheritance Test 1",
+      "description": "Understand inheritance and class hierarchy.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7f67a7445964af8585b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "Polymorphism Test 1",
+      "description": "Learn method overriding and overloading.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd8484c553077464ae870&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    },
+    {
+      "title": "Polymorphism Test 2",
+      "description": "Advanced polymorphism concepts.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd86805aff46aac3dd694&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    }
+  ],
+  "powerbiexamone": [
+    {
+      "title": "Types of Data",
+      "description": "Test your understanding of different data types used in Power BI and analytics.",
+      "link": "https://your-classplus-link.com/powerbi-exam1",
+      "image": "https://img.icons8.com/color/96/database.png"
+    },
+    {
+      "title": "Data Cleaning",
+      "description": "Evaluate your skills in cleaning, filtering, and preparing raw data.",
+      "link": "https://your-classplus-link.com/powerbi-exam2",
+      "image": "https://img.icons8.com/color/96/broom.png"
+    },
+    {
+      "title": "Data Transformation",
+      "description": "Practice transforming data using Power Query and shaping datasets.",
+      "link": "https://your-classplus-link.com/powerbi-exam3",
+      "image": "https://img.icons8.com/color/96/data-configuration.png"
+    },
+    {
+      "title": "Excel Basics",
+      "description": "Test your foundational Excel knowledge for data analysis and Power BI integration.",
+      "link": "https://your-classplus-link.com/powerbi-exam4",
+      "image": "https://img.icons8.com/color/96/microsoft-excel-2019.png"
+    }
+  ],
+  "pythonexamone": [
+    {
+      "title": "Variables and Methods 1",
+      "description": "Basics of C# variables, data types, and simple methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd46fe25d8b16e06eacd5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Variables and Methods 2",
+      "description": "Intermediate concepts of variables and methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Variables and Methods 3",
+      "description": "Advanced practice on variables and method logic.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4e08ce6aa4b778d3b9a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Class & Object",
+      "description": "Understand classes, objects, and their real-world usage.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd6a44b20a12a7365e57a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "Variables Test 2",
+      "description": "Practice problems focused on variable handling.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd502bfa9762d80038e74&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/variable.png"
+    },
+    {
+      "title": "Methods Test 1",
+      "description": "Test your understanding of defining and calling methods.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd3db68ecbc3845cf8a4e&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 2",
+      "description": "Advanced method-related problem solving.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd40405aff430893dd4fe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 3",
+      "description": "Complex method execution and logic flow.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd429e25d8b8b066eacc5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 4",
+      "description": "Expert-level method handling scenarios.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd43ebfa9761261038e49&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Constructors",
+      "description": "Learn about constructors and object initialization.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/settings.png"
+    },
+    {
+      "title": "Abstraction Test 1",
+      "description": "Understand abstraction and abstract classes.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7531312397b1913e6b0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Abstraction Test 2",
+      "description": "Advanced abstraction and interface concepts.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd789d9b62922b29668f8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Encapsulation Test 1",
+      "description": "Learn about data hiding and encapsulation.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7b105aff48eaa3dd5bb&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Encapsulation Test 2",
+      "description": "Advanced encapsulation techniques.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7d14fcc15773e877bfe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Inheritance Test 1",
+      "description": "Understand inheritance and class hierarchy.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7f67a7445964af8585b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "Polymorphism Test 1",
+      "description": "Learn method overriding and overloading.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd8484c553077464ae870&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    },
+    {
+      "title": "Polymorphism Test 2",
+      "description": "Advanced polymorphism concepts.",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd86805aff46aac3dd694&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    }
+  ],
+  "variables-datatypes": [
+    {
+      "title": "Variables Test 1",
+      "desc": "Basics of variables & data types",
+      "link": "https://online-test.classplusapp.com/?testId=69f04071fcc661f21f5b3e11&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/variable.png"
+    },
+    {
+      "title": "Variables Test 2",
+      "desc": "Practice on variable handling",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd502bfa9762d80038e74&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/variable.png"
+    }
+  ],
+  "operators": [
+    {
+      "title": "Operators Test",
+      "desc": "Arithmetic & logical operators",
+      "link": "https://online-test.classplusapp.com/?testId=69de13e57921de2e0827eb68&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/calculator.png"
+    }
+  ],
+  "typecasting": [
+    {
+      "title": "Type Casting Test",
+      "desc": "Implicit & explicit casting",
+      "link": "https://online-test.classplusapp.com/?testId=69de14615a7a06f39f517903&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/synchronize.png"
+    }
+  ],
+  "conditionals": [
+    {
+      "title": "Condition Test",
+      "desc": "If-else and switch statements",
+      "link": "https://online-test.classplusapp.com/?testId=69de14afb4d7a6771d3e96dd&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/decision.png"
+    }
+  ],
+  "loops": [
+    {
+      "title": "Loops Concept Test 1",
+      "desc": "Loop basics",
+      "link": "https://online-test.classplusapp.com/?testId=69dcdcd0b392b8de4d97e58a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/repeat.png"
+    },
+    {
+      "title": "Loops Concept Test 2",
+      "desc": "Advanced looping",
+      "link": "https://online-test.classplusapp.com/?testId=69dcdd114bf262197c9e428a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/repeat.png"
+    },
+    {
+      "title": "Loops Code Test",
+      "desc": "Code-based loop problems",
+      "link": "https://online-test.classplusapp.com/?testId=69dce06f62de93680692acf1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/repeat.png"
+    }
+  ],
+  "arrays": [
+    {
+      "title": "Arrays Concept 1",
+      "desc": "Array basics",
+      "link": "https://online-test.classplusapp.com/?testId=69dce0dcb94ed1be3666d4c2&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    },
+    {
+      "title": "Arrays Concept 2",
+      "desc": "Intermediate arrays",
+      "link": "https://online-test.classplusapp.com/?testId=69dce10744a5b8b78c1e50f6&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    },
+    {
+      "title": "Arrays Concept 3",
+      "desc": "Advanced arrays",
+      "link": "https://online-test.classplusapp.com/?testId=69dce14cc835a857bd7c4b17&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    },
+    {
+      "title": "Arrays Code 1",
+      "desc": "Coding problems",
+      "link": "https://online-test.classplusapp.com/?testId=69dce18b7a7445d817f86091&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    },
+    {
+      "title": "Arrays Code 2",
+      "desc": "Advanced coding",
+      "link": "https://online-test.classplusapp.com/?testId=69dce202b94ed1c78366d97f&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    },
+    {
+      "title": "Arrays Code 3",
+      "desc": "Practice set",
+      "link": "https://online-test.classplusapp.com/?testId=69dce1c53dee465e0a47a9f2&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    },
+    {
+      "title": "Arrays Code 4",
+      "desc": "Expert level",
+      "link": "https://online-test.classplusapp.com/?testId=69dce22d4bf262a3c49e4927&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/grid.png"
+    }
+  ],
+  "strings": [
+    {
+      "title": "Strings Concept 1",
+      "desc": "Introduction to strings",
+      "link": "https://online-test.classplusapp.com/?testId=69df716985b652d5bbc07add&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/abc.png"
+    },
+    {
+      "title": "Strings Concept 2",
+      "desc": "Functions in strings (ex: ToUpper())",
+      "link": "https://online-test.classplusapp.com/?testId=69df71bb44a5b81f2120131d&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/abc.png"
+    },
+    {
+      "title": "Strings Concept 3",
+      "desc": "Find/Search methods in strings",
+      "link": "https://online-test.classplusapp.com/?testId=69df71ec8bbd86437a5abcae&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/abc.png"
+    },
+    {
+      "title": "Strings Code 1",
+      "desc": "Code based string problems",
+      "link": "https://online-test.classplusapp.com/?testId=69df721fbdbc62306d06e07a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/abc.png"
+    }
+  ],
+  "methods": [
+    {
+      "title": "Methods Test 1",
+      "desc": "Basic methods",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd3db68ecbc3845cf8a4e&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 2",
+      "desc": "Intermediate methods",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd40405aff430893dd4fe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 3",
+      "desc": "Advanced methods",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd429e25d8b8b066eacc5&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "Methods Test 4",
+      "desc": "Expert level",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd43ebfa9761261038e49&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    }
+  ],
+  "oops": [
+    {
+      "title": "Basic OOPS",
+      "desc": "Core OOPS fundamentals",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd67979af990562c8b905&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "Class & Object",
+      "desc": "Understand classes and objects",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd6a44b20a12a7365e57a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "Constructors",
+      "desc": "Object initialization",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd4c16c7839e05b6409df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/settings.png"
+    },
+    {
+      "title": "Encapsulation Test 1",
+      "desc": "Data hiding concepts",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7b105aff48eaa3dd5bb&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Encapsulation Test 2",
+      "desc": "Advanced encapsulation",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7d14fcc15773e877bfe&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/privacy.png"
+    },
+    {
+      "title": "Inheritance Test 1",
+      "desc": "Class hierarchy basics",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7f67a7445964af8585b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "Inheritance Test 2",
+      "desc": "Advanced inheritance",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd816b94ed1545866d1ec&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "Polymorphism Test 1",
+      "desc": "Overloading & overriding",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd8484c553077464ae870&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    },
+    {
+      "title": "Polymorphism Test 2",
+      "desc": "Advanced polymorphism",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd86805aff46aac3dd694&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/merge.png"
+    },
+    {
+      "title": "Abstraction Test 1",
+      "desc": "Abstract classes",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd7531312397b1913e6b0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    },
+    {
+      "title": "Abstraction Test 2",
+      "desc": "Interfaces",
+      "link": "https://online-test.classplusapp.com/?testId=69dcd789d9b62922b29668f8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/layers.png"
+    }
+  ],
+  "collections": [
+    {
+      "title": "Collections Test",
+      "desc": "List, Dictionary basics",
+      "link": "https://online-test.classplusapp.com/?testId=69de154d4aed9e573c90f9b1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    }
+  ],
+  "generics": [
+    {
+      "title": "Generics Test",
+      "desc": "Generic classes & methods",
+      "link": "https://online-test.classplusapp.com/?testId=69de15a07f465857080d2186&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/settings.png"
+    }
+  ],
+  "delegates": [
+    {
+      "title": "Delegates Test",
+      "desc": "Delegates & events",
+      "link": "https://online-test.classplusapp.com/?testId=69de1826407c6665f5463ee7&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/connection-status-on.png"
+    }
+  ],
+  "advanced-csharp": [
+    {
+      "title": "LINQ",
+      "desc": "LINQ & advanced topics",
+      "link": "https://online-test.classplusapp.com/?testId=69de15fd334c1a07ffc01fe1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/rocket.png"
+    },
+    {
+      "title": "Dependency Injection",
+      "desc": "DI concepts",
+      "link": "https://online-test.classplusapp.com/?testId=69de15fd334c1a07ffc01fe1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/rocket.png"
+    },
+    {
+      "title": "Async Programming",
+      "desc": "Async & Await",
+      "link": "https://online-test.classplusapp.com/?testId=69de15fd334c1a07ffc01fe1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/rocket.png"
+    },
+    {
+      "title": "Advanced C#",
+      "desc": "All topics level1",
+      "link": "https://online-test.classplusapp.com/?testId=69de2cc2b25cd586792b45cd&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/rocket.png"
+    },
+    {
+      "title": "Advanced C#",
+      "desc": "All topics leve2",
+      "link": "https://online-test.classplusapp.com/?testId=69de2d2aac2b77a42a0576bc&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/rocket.png"
+    },
+    {
+      "title": "Advanced C#",
+      "desc": "All topics level3",
+      "link": "",
+      "image": "https://img.icons8.com/color/96/rocket.png"
+    }
+  ],
+  "web fundamentals": [
+    {
+      "title": "Web Fundamentals Test 1",
+      "desc": "Introduction to Web, Client–Server Architecture",
+      "link": "https://online-test.classplusapp.com/?testId=69e75f872faaee51bfe49715&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/internet.png"
+    },
+    {
+      "title": "Web Fundamentals Test 2",
+      "desc": "HTTP/HTTPS, Request–Response Lifecycle",
+      "link": "https://online-test.classplusapp.com/?testId=69e7600cafaa137c8da88e30&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/internet.png"
+    }
+  ],
+  "mvc architecture": [
+    {
+      "title": "MVC Architecture Test 1",
+      "desc": "What is MVC, MVC Request Flow",
+      "link": "https://online-test.classplusapp.com/?testId=69e7609c700c4108cc48f192&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    },
+    {
+      "title": "MVC Architecture Test 2",
+      "desc": "Roles of Model, View, Controller, Advantages",
+      "link": "https://online-test.classplusapp.com/?testId=69e7610c7b7e6a58153cc30d&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/flow-chart.png"
+    }
+  ],
+  "oop concepts (foundation)": [
+    {
+      "title": "OOP Test 1",
+      "desc": "Encapsulation, Inheritance",
+      "link": "https://online-test.classplusapp.com/?testId=69e7618b1f79962f35336ce7&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "OOP Test 2",
+      "desc": "Polymorphism, Abstraction",
+      "link": "https://online-test.classplusapp.com/?testId=69e761afd53ea61201944be0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    },
+    {
+      "title": "OOP Test 3",
+      "desc": "IS-A / HAS-A, Method Return Types",
+      "link": "https://online-test.classplusapp.com/?testId=69e761cb9366ee60ddf80626&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/class.png"
+    }
+  ],
+  "design patterns": [
+    {
+      "title": "Design Patterns Test 1",
+      "desc": "Singleton, Factory Pattern",
+      "link": "https://online-test.classplusapp.com/?testId=69e761f13627507e348e7868&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/connection-status-on.png"
+    },
+    {
+      "title": "Design Patterns Test 2",
+      "desc": "Dependency Injection Basics",
+      "link": "https://online-test.classplusapp.com/?testId=69e762100ec539410c2e7d40&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/connection-status-on.png"
+    }
+  ],
+  "project & folder structure": [
+    {
+      "title": "Project Structure Test 1",
+      "desc": "MVC Project Structure, Folders",
+      "link": "https://online-test.classplusapp.com/?testId=69e76233ecb23a2061ac7af6&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/folder-invoices.png"
+    },
+    {
+      "title": "Project Structure Test 2",
+      "desc": "App_Start, Web.config Basics",
+      "link": "https://online-test.classplusapp.com/?testId=69e7625dde9f7e31bc8a10e4&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/folder-invoices.png"
+    }
+  ],
+  "controllers & routing": [
+    {
+      "title": "Controllers Test 1",
+      "desc": "Controllers & Action Methods",
+      "link": "https://online-test.classplusapp.com/?testId=69e7628b450b8cad294aad69&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/api-settings.png"
+    },
+    {
+      "title": "Controllers Test 2",
+      "desc": "Action Results & Routing",
+      "link": "https://online-test.classplusapp.com/?testId=69e762a62faaeebcdbe49bb1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/api-settings.png"
+    }
+  ],
+  "views & razor": [
+    {
+      "title": "Views Test 1",
+      "desc": "Razor Syntax, Layout Pages",
+      "link": "https://online-test.classplusapp.com/?testId=69e762cede9f7ed8b68a10ee&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/code.png"
+    },
+    {
+      "title": "Views Test 2",
+      "desc": "Strongly Typed Views, Partial Views",
+      "link": "https://online-test.classplusapp.com/?testId=69e762e950f524e61700f072&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/code.png"
+    }
+  ],
+  "html helpers & extension methods": [
+    {
+      "title": "HTML Helpers Test 1",
+      "desc": "HTML Helpers, Strongly Typed Helpers",
+      "link": "https://online-test.classplusapp.com/?testId=69e7631b08fb353648d1a90b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+      "title": "HTML Helpers Test 2",
+      "desc": "Custom Helpers, Extension Methods",
+      "link": "https://online-test.classplusapp.com/?testId=69e7633c700c41aa9d48f237&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/source-code.png"
+    }
+  ],
+  "state management": [
+    {
+      "title": "State Management Test 1",
+      "desc": "ViewData, ViewBag, TempData",
+      "link": "https://online-test.classplusapp.com/?testId=69e7636fe9d86007e5cf47ec&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    },
+    {
+      "title": "State Management Test 2",
+      "desc": "Session, Cookies",
+      "link": "https://online-test.classplusapp.com/?testId=69e76396743d9987b781a5c4&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    },
+    {
+      "title": "State Management Test 3",
+      "desc": "Diff B/W VB,VD,TDSession, Cookies",
+      "link": "https://online-test.classplusapp.com/?testId=69e763cb41d33da53406d5e4&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    }
+  ],
+  "model binding & validation": [
+    {
+      "title": "Model Binding Test 1",
+      "desc": "Model Binding, Data Annotations",
+      "link": "https://online-test.classplusapp.com/?testId=69e7640ede9f7e0dd58a119c&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/checked--v1.png"
+    },
+    {
+      "title": "Model Binding Test 2",
+      "desc": "Client-Side & Server-Side Validation",
+      "link": "https://online-test.classplusapp.com/?testId=69e7642c2469398e4eac2ea7&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/checked--v1.png"
+    },
+    {
+      "title": "Model Binding Test 3",
+      "desc": "Scaffolding",
+      "link": "https://online-test.classplusapp.com/?testId=69e76447861b200b34e40a07&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/checked--v1.png"
+    }
+  ],
+  "entity framework (ef)": [
+    {
+      "title": "EF Test 1",
+      "desc": "Introduction, DbContext & DbSet",
+      "link": "https://online-test.classplusapp.com/?testId=69e7647cde9f7e28408a11ad&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    },
+    {
+      "title": "EF Test 2",
+      "desc": "Code First, Migrations, CRUD",
+      "link": "https://online-test.classplusapp.com/?testId=69e764cb9fb2385269285fb8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/database.png"
+    }
+  ],
+  "linq": [
+    {
+      "title": "LINQ Test 1",
+      "desc": "Where, Select",
+      "link": "https://online-test.classplusapp.com/?testId=69e764f1d53ea61ecc944d58&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/filter.png"
+    },
+    {
+      "title": "LINQ Test 2",
+      "desc": "FirstOrDefault, SingleOrDefault",
+      "link": "https://online-test.classplusapp.com/?testId=69e765159fb238128d285fc8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/filter.png"
+    },
+    {
+      "title": "LINQ Test 3",
+      "desc": "OrderBy, GroupBy, Deferred Execution",
+      "link": "https://online-test.classplusapp.com/?testId=69e7653724693929fcac2ed1&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/filter.png"
+    }
+  ],
+  "filters": [
+    {
+      "title": "Filters Test 1",
+      "desc": "Authorization, Action Filter",
+      "link": "https://online-test.classplusapp.com/?testId=69e765642faaeec18ce49c9b&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/security-checked.png"
+    },
+    {
+      "title": "Filters Test 2",
+      "desc": "Result Filter, Exception Filter",
+      "link": "https://online-test.classplusapp.com/?testId=69e765882faaee7ceae49ca0&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/security-checked.png"
+    }
+  ],
+  "security, ajax & client interaction": [
+    {
+      "title": "Security Test 1",
+      "desc": "Authentication, Authorization, Security Practices",
+      "link": "https://online-test.classplusapp.com/?testId=69e765aaf8f3bb9a6a41ddd8&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/lock--v1.png"
+    },
+    {
+      "title": "Security Test 2",
+      "desc": "AJAX, jQuery AJAX, Partial Page Updates",
+      "link": "https://online-test.classplusapp.com/?testId=69e765c87b7e6a68c43cc81a&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/lock--v1.png"
+    }
+  ],
+  "dependency injection (advanced)": [
+    {
+      "title": "DI Test 1",
+      "desc": "Constructor Injection, Interface Design",
+      "link": "https://online-test.classplusapp.com/?testId=69e766019992000575a0e8df&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/connection-status-on.png"
+    },
+    {
+      "title": "DI Test 2",
+      "desc": "Loose Coupling",
+      "link": "https://online-test.classplusapp.com/?testId=69e7663cae3cea9fbc990fdf&defaultLanguage=en",
+      "image": "https://img.icons8.com/color/96/connection-status-on.png"
+    }
+  ]
+}

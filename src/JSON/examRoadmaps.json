@@ -1,0 +1,702 @@
+{
+  "angularexam": {
+    "sections": [
+      {
+        "title": "Angular Learning Path",
+        "items": [
+          "Core Basics",
+          "TypeScript Fundamentals",
+          "Folder Structure",
+          "Components",
+          "Data Binding",
+          "Directives",
+          "Templates & View",
+          "Pipes",
+          "Component Communication",
+          "Services & Dependency Injection",
+          "Routing & Navigation",
+          "Forms",
+          "Reactive Forms",
+          "Template-driven Forms",
+          "HTTP & API Integration",
+          "Lifecycle Hooks",
+          "Advanced Concepts",
+          "State Management (NgRx)",
+          "RxJS"
+        ],
+        "route": "/angularexam-page"
+      }
+    ]
+  },
+  "awsexam": {
+    "sections": [
+      {
+        "title": "1. Linux & Basics",
+        "items": [
+          "Linux Commands",
+          "File System & Permissions",
+          "Shell Scripting",
+          "Networking Basics"
+        ],
+        "route": "/aws-exam-1"
+      },
+      {
+        "title": "2. Version Control (Git)",
+        "items": [
+          "Git Basics",
+          "Branching & Merging",
+          "GitHub / GitLab",
+          "Pull Requests"
+        ],
+        "route": "/aws-exam-2"
+      },
+      {
+        "title": "3. AWS Cloud Services",
+        "items": [
+          "EC2 (Virtual Servers)",
+          "S3 (Storage)",
+          "IAM (Access Control)",
+          "VPC (Networking)",
+          "Load Balancer",
+          "CloudWatch"
+        ],
+        "route": "/aws-exam-3"
+      },
+      {
+        "title": "4. CI/CD Pipelines",
+        "items": [
+          "Jenkins",
+          "GitHub Actions",
+          "Build Automation",
+          "Deployment Pipelines"
+        ],
+        "route": "/aws-exam-4"
+      },
+      {
+        "title": "5. Containers & Orchestration",
+        "items": [
+          "Docker",
+          "Docker Images & Containers",
+          "Kubernetes Basics",
+          "Container Deployment"
+        ],
+        "route": "/aws-exam-5"
+      },
+      {
+        "title": "6. Monitoring & Deployment",
+        "items": [
+          "Monitoring Tools",
+          "Logging Systems",
+          "Auto Scaling",
+          "Deployment Strategies"
+        ],
+        "route": "/aws-exam-6"
+      }
+    ]
+  },
+  "dotnetexam": {
+    "sections": [
+      {
+        "title": " C# Fundamentals",
+        "items": [
+          "Variables",
+          "Operators",
+          "Casting",
+          "Conditions",
+          "Loops",
+          "Arrays",
+          "Strings",
+          "Methods",
+          "OOPS",
+          "Collections",
+          "Generics",
+          "Delegates",
+          "Advanced"
+        ],
+        "route": "/dotnet-topics",
+        "subroutes": [
+          "variables-datatypes",
+          "operators",
+          "typecasting",
+          "conditionals",
+          "loops",
+          "arrays",
+          "strings",
+          "methods",
+          "oops",
+          "collections",
+          "generics",
+          "delegates",
+          "advanced-csharp"
+        ]
+      },
+      {
+        "title": " ASP.NET MVC",
+        "items": [
+          "Web Fundamentals",
+          "MVC Architecture",
+          "OOP Concepts",
+          "Design Patterns",
+          "Project Structure",
+          "Controllers & Routing",
+          "Views & Razor",
+          "HTML Helpers",
+          "State Management",
+          "Model Binding",
+          "Entity Framework",
+          "LINQ",
+          "Filters",
+          "Security & AJAX",
+          "Dependency Injection"
+        ],
+        "route": "/dotnet-topic1",
+        "subroutes": [
+          "Web Fundamentals",
+          "MVC Architecture",
+          "OOP Concepts (Foundation)",
+          "Design Patterns",
+          "Project & Folder Structure",
+          "Controllers & Routing",
+          "Views & Razor",
+          "HTML Helpers & Extension Methods",
+          "State Management",
+          "Model Binding & Validation",
+          "Entity Framework (EF)",
+          "LINQ",
+          "Filters",
+          "Security, AJAX & Client Interaction",
+          "Dependency Injection (Advanced)"
+        ]
+      },
+      {
+        "title": "ASP.NET Core MVC",
+        "items": [
+          ".NET MVC vs .NET Core MVC",
+          "Core Project Structure (Program.cs, appsettings.json)",
+          "Built-in Dependency Injection (Service Collection, Lifetimes)",
+          "Middleware Pipeline (Use, Run, Map)",
+          "Controllers & Actions (Core flow)",
+          "Routing (Endpoint, Attribute Routing)",
+          "Model Binding (Core behavior)",
+          "Tag Helpers (Razor UI binding)",
+          "Filters (Execution pipeline)",
+          "Entity Framework Core (Basics & Differences)"
+        ],
+        "route": "/dotnet-topic2"
+      },
+      {
+        "title": " EF,Entity Framework Core",
+        "items": [
+          "ORM Concepts",
+          "DbContext & DbSet",
+          "Migrations",
+          "CRUD Operations",
+          "LINQ Queries",
+          "Difference b/w EF,EFCore"
+        ],
+        "route": "/dotnet-topic4"
+      },
+      {
+        "title": "Microservices",
+        "items": [
+          "Web API (Foundation) – API fundamentals, routing, controllers, DI, authentication",
+          "Microservices Fundamentals",
+          "Microservices Basics",
+          "Monolithic vs Microservices",
+          "Characteristics & Benefits",
+          "Service Design + Communication",
+          "Service Design Principles",
+          "Database per Service",
+          "Bounded Context",
+          "REST, Messaging, Events",
+          "API Layer",
+          "API Controllers",
+          "MVC vs API",
+          "Dependency Injection",
+          "Folder Structure",
+          "Postman & Swagger",
+          "API Gateway + Discovery",
+          "API Gateway",
+          "Routing & Aggregation",
+          "Ocelot",
+          "Service Discovery",
+          "Data + Security",
+          "Saga Pattern",
+          "JWT, OAuth, CORS",
+          "API Security",
+          "Advanced Microservices",
+          "Resilience (Polly)",
+          "Logging & Monitoring",
+          "Docker & Kubernetes",
+          "CI/CD"
+        ],
+        "route": "/dotnet-topic3"
+      }
+    ]
+  },
+  "htmlexam": {
+    "sections": [
+      {
+        "title": "HTML Basics",
+        "items": [
+          "What is HTML?",
+          "HTML Document Structure",
+          "Elements & Tags",
+          "Attributes",
+          "Headings & Paragraphs",
+          "Text Formatting"
+        ],
+        "route": "/html-topic/basics"
+      },
+      {
+        "title": "Text & Links",
+        "items": [
+          "Anchor Tag (<a>)",
+          "Internal & External Links",
+          "Lists (ul, ol, li)",
+          "Description Lists",
+          "Inline vs Block Elements",
+          "Semantic Text Tags"
+        ],
+        "route": "/html-topic/text"
+      },
+      {
+        "title": "Media Elements",
+        "items": [
+          "Images (<img>)",
+          "Audio & Video",
+          "Iframes",
+          "Figure & Figcaption",
+          "Responsive Images",
+          "Alt Attributes"
+        ],
+        "route": "/html-topic/media"
+      },
+      {
+        "title": "Tables",
+        "items": [
+          "Table Structure",
+          "thead, tbody, tfoot",
+          "Rowspan & Colspan",
+          "Table Styling Basics",
+          "Responsive Tables",
+          "Best Practices"
+        ],
+        "route": "/html-topic/tables"
+      },
+      {
+        "title": "Forms",
+        "items": [
+          "Form Tag",
+          "Input Types",
+          "Labels & Placeholders",
+          "Form Validation",
+          "Radio & Checkbox",
+          "Textarea & Select"
+        ],
+        "route": "/html-topic/forms"
+      },
+      {
+        "title": "Semantic HTML",
+        "items": [
+          "header, footer",
+          "section, article",
+          "nav, aside",
+          "main tag",
+          "Accessibility Basics",
+          "SEO Friendly HTML"
+        ],
+        "route": "/html-topic/semantic"
+      },
+      {
+        "title": "Advanced HTML",
+        "items": [
+          "Meta Tags",
+          "Favicon",
+          "HTML APIs (Drag & Drop)",
+          "Local Storage Basics",
+          "Canvas Basics",
+          "SVG Basics"
+        ],
+        "route": "/html-topic/advanced"
+      },
+      {
+        "title": "Best Practices",
+        "items": [
+          "Clean Code Structure",
+          "SEO Optimization",
+          "Accessibility (a11y)",
+          "Performance Optimization",
+          "Cross Browser Support",
+          "Validation Tools"
+        ],
+        "route": "/html-topic/best-practices"
+      },
+      {
+        "title": "HTML Complete Learning Path",
+        "items": [
+          "1. Introduction (HTML Basics & Structure)",
+          "2. Basic Tags (Headings, Paragraph, br, hr, Comments)",
+          "3. Text Formatting (b, i, u, sup, sub, mark, small)",
+          "4. Lists (ol, ul, li)",
+          "5. Links & Images (a, img, attributes)",
+          "6. Tables (table, tr, td, th)",
+          "7. Forms (form, input, radio, checkbox, select)",
+          "8. Layout Basics (div, span, block vs inline)",
+          "9. Media (audio, video)",
+          "10. Semantic Tags (header, nav, section, article, footer)"
+        ],
+        "route": "/htmlexam-page"
+      }
+    ]
+  },
+  "javaexam": {
+    "sections": [
+      {
+        "title": "1. Core Java (Foundation)",
+        "items": [
+          "Data Types and Variables",
+          "Operators and Control Statements",
+          "Arrays and Strings",
+          "OOP Concepts",
+          "Abstraction and Encapsulation",
+          "Exception Handling",
+          "Collections",
+          "Multithreading",
+          "File Handling"
+        ],
+        "route": "/java-exam-1"
+      },
+      {
+        "title": "2. JDBC (Database Connectivity)",
+        "items": [
+          "DriverManager and Connection",
+          "Statement vs PreparedStatement",
+          "ResultSet Handling",
+          "CRUD Operations",
+          "Transactions",
+          "Batch Processing"
+        ],
+        "route": "/java-exam-2"
+      },
+      {
+        "title": "3. Servlets (Backend Logic)",
+        "items": [
+          "Servlet Lifecycle",
+          "doGet vs doPost",
+          "Request and Response",
+          "Session Management",
+          "RequestDispatcher",
+          "Filters and Listeners"
+        ],
+        "route": "/java-exam-3"
+      },
+      {
+        "title": "4. JSP (View Layer)",
+        "items": [
+          "JSP Lifecycle",
+          "Expression Language",
+          "JSTL",
+          "MVC Integration"
+        ],
+        "route": "/java-exam-4"
+      },
+      {
+        "title": "5. MVC Architecture",
+        "items": [
+          "Model Layer",
+          "View Layer",
+          "Controller Layer"
+        ],
+        "route": "/java-exam-5"
+      },
+      {
+        "title": "6. Spring Framework",
+        "items": [
+          "IoC",
+          "Dependency Injection",
+          "Bean Lifecycle",
+          "ApplicationContext"
+        ],
+        "route": "/java-exam-6"
+      }
+    ]
+  },
+  "jsexam": {
+    "sections": [
+      {
+        "title": "JavaScript Basics",
+        "items": [
+          "Variables (var, let, const)",
+          "Data Types",
+          "Operators",
+          "Type Conversion",
+          "Conditional Statements",
+          "Loops"
+        ],
+        "route": "/js-topic/basics"
+      },
+      {
+        "title": "Functions",
+        "items": [
+          "Function Declaration",
+          "Function Expression",
+          "Arrow Functions",
+          "Parameters & Return",
+          "Scope (Global, Local)",
+          "Closures"
+        ],
+        "route": "/js-topic/functions"
+      },
+      {
+        "title": "Arrays & Objects",
+        "items": [
+          "Arrays (map, filter, reduce)",
+          "Objects & Properties",
+          "Destructuring",
+          "Spread & Rest",
+          "JSON",
+          "Object Methods"
+        ],
+        "route": "/js-topic/arrays"
+      },
+      {
+        "title": "DOM Manipulation",
+        "items": [
+          "Selecting Elements",
+          "Event Handling",
+          "DOM Traversing",
+          "Creating & Removing Elements",
+          "Forms Handling",
+          "Event Delegation"
+        ],
+        "route": "/js-topic/dom"
+      },
+      {
+        "title": "Asynchronous JavaScript",
+        "items": [
+          "Callbacks",
+          "Promises",
+          "Async / Await",
+          "Fetch API",
+          "Error Handling",
+          "API Calls"
+        ],
+        "route": "/js-topic/async"
+      },
+      {
+        "title": "ES6+ Features",
+        "items": [
+          "Let & Const",
+          "Arrow Functions",
+          "Template Literals",
+          "Modules (import/export)",
+          "Default Parameters",
+          "Optional Chaining"
+        ],
+        "route": "/js-topic/es6"
+      },
+      {
+        "title": "Advanced JavaScript",
+        "items": [
+          "Execution Context",
+          "Hoisting",
+          "Event Loop",
+          "Call Stack",
+          "Memory Management",
+          "Debounce & Throttle"
+        ],
+        "route": "/js-topic/advanced"
+      },
+      {
+        "title": "Browser & Storage",
+        "items": [
+          "LocalStorage",
+          "SessionStorage",
+          "Cookies",
+          "Window Object",
+          "History API",
+          "Geolocation API"
+        ],
+        "route": "/js-topic/browser"
+      },
+      {
+        "title": "Best Practices",
+        "items": [
+          "Clean Code",
+          "Error Handling",
+          "Debugging",
+          "Performance Optimization",
+          "Security Basics",
+          "Code Structure"
+        ],
+        "route": "/js-topic/best"
+      },
+      {
+        "title": "JavaScript Learning Path",
+        "items": [
+          "Introduction (What is JS, Uses, Working)",
+          "Project / Folder Structure",
+          "Variables (var, let, const)",
+          "Data Types",
+          "Operators",
+          "Conditional Statements (if, switch)",
+          "Loops (for, while, do...while)",
+          "Break & Continue",
+          "Arrays & JSON",
+          "Functions (Declaration & Expression)",
+          "Types of Functions",
+          "DOM & BOM",
+          "DOM Traversal & Manipulation",
+          "Form Validations"
+        ],
+        "route": "/jsexam-page"
+      }
+    ]
+  },
+  "powerbiexam": {
+    "sections": [
+      {
+        "title": "1. Data Fundamentals",
+        "items": [
+          "Types of Data",
+          "Data Cleaning",
+          "Data Transformation",
+          "Excel Basics"
+        ],
+        "route": "/powerbi-exam-1"
+      },
+      {
+        "title": "2. Power BI Basics",
+        "items": [
+          "Power BI Interface",
+          "Importing Data",
+          "Data Modeling",
+          "Relationships"
+        ],
+        "route": "/powerbi-exam-2"
+      },
+      {
+        "title": "3. Data Visualization",
+        "items": [
+          "Charts and Graphs",
+          "Dashboards",
+          "Filters and Slicers",
+          "Drill Down Reports"
+        ],
+        "route": "/powerbi-exam-3"
+      },
+      {
+        "title": "4. DAX (Data Analysis Expressions)",
+        "items": [
+          "Calculated Columns",
+          "Measures",
+          "Basic Functions",
+          "Time Intelligence"
+        ],
+        "route": "/powerbi-exam-4"
+      },
+      {
+        "title": "5. Reports and Publishing",
+        "items": [
+          "Report Creation",
+          "Dashboard Sharing",
+          "Power BI Service",
+          "Data Refresh"
+        ],
+        "route": "/powerbi-exam-5"
+      }
+    ]
+  },
+  "pythonexam": {
+    "sections": [
+      {
+        "title": "1. Python Fundamentals",
+        "items": [
+          "Data Types and Variables",
+          "Operators and Control Statements",
+          "Functions and Modules",
+          "Classes and Objects",
+          "Inheritance",
+          "Polymorphism",
+          "Encapsulation",
+          "Abstraction"
+        ],
+        "route": "/python-exam-1"
+      },
+      {
+        "title": "2. Database (SQL)",
+        "items": [
+          "SQL Basics",
+          "CRUD Operations",
+          "Joins and Relationships",
+          "MySQL or PostgreSQL"
+        ],
+        "route": "/python-exam-3"
+      },
+      {
+        "title": "3. Django Framework",
+        "items": [
+          "MVT Architecture",
+          "Models Views Templates",
+          "Forms and Authentication",
+          "Django ORM"
+        ],
+        "route": "/python-exam-4"
+      },
+      {
+        "title": "4. REST APIs",
+        "items": [
+          "Django REST Framework",
+          "API Development",
+          "JWT Authentication",
+          "API Testing"
+        ],
+        "route": "/python-exam-5"
+      },
+      {
+        "title": "5. Deployment and Tools",
+        "items": [
+          "Git and GitHub",
+          "AWS Deployment",
+          "Debugging",
+          "Virtual Environments"
+        ],
+        "route": "/python-exam-6"
+      }
+    ]
+  },
+  "dotnettopics": {
+    "sections": []
+  },
+  "dotnettopic1": {
+    "sections": []
+  },
+  "dotnettopic2": {
+    "sections": []
+  },
+  "dotnettopic3": {
+    "sections": [
+      {
+        "title": "dotnettopic3 Topics",
+        "items": [
+          "Web API",
+          "Microservices"
+        ],
+        "route": "/mvc-topic/"
+      }
+    ]
+  },
+  "dotnettopic4": {
+    "sections": [
+      {
+        "title": "dotnettopic4 Topics",
+        "items": [
+          "entity-framework",
+          "entity-framework-core"
+        ],
+        "route": "/mvc-topic/"
+      }
+    ]
+  }
+}

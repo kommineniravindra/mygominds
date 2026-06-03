@@ -1,0 +1,355 @@
+.cert-section {
+  background-color: #fffaf8;
+  padding: 0rem 2rem 6rem 2rem;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background Sweeping Lines */
+.cert-section::before {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  left: 30%;
+  width: 150vw;
+  height: 150vw;
+  border: 1px solid rgba(234, 88, 12, 0.08);
+  border-radius: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+  z-index: 0;
+  box-shadow: 
+    inset 0 0 0 40px transparent,
+    inset 0 0 0 41px rgba(234, 88, 12, 0.05),
+    inset 0 0 0 80px transparent,
+    inset 0 0 0 81px rgba(234, 88, 12, 0.03);
+}
+
+.cert-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cert-content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.cert-left {
+  flex: 1;
+}
+
+.cert-right {
+  flex: 1;
+  position: relative;
+}
+
+.cert-tag {
+  color: #ea580c;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cert-tag::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ea580c;
+}
+
+.cert-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.1;
+  margin: 0 0 0.5rem 0;
+}
+
+.cert-title .highlight-italic {
+  color: #ea580c;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.cert-desc {
+  font-size: 1.15rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 90%;
+}
+
+.cert-features {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2rem;
+  padding-right: 0;
+}
+
+.cert-feature {
+  flex: 1;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  border-right: 1px solid #e2e8f0;
+}
+
+.cert-feature:first-child {
+  padding-left: 0;
+}
+
+.cert-feature:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.cert-feature-icon {
+  width: 36px;
+  height: 36px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, transparent 100%);
+  color: #ea580c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.cert-feature h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 0.35rem 0;
+}
+
+.cert-feature p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cert-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cert-btn {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  padding: 0.75rem 0.75rem 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.4);
+}
+
+.cert-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px -5px rgba(249, 115, 22, 0.5);
+}
+
+.cert-btn-icon {
+  background-color: white;
+  color: #f97316;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.cert-trust {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cert-avatars {
+  display: flex;
+}
+
+.cert-avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -12px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cert-avatars img:first-child {
+  margin-left: 0;
+}
+
+.cert-trust p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.cert-trust strong {
+  color: #ea580c;
+  font-weight: 800;
+}
+
+/* Right Side Image */
+.cert-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-main-img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3);
+  rotate: -6deg;
+  scale: 1;
+  transition: rotate 0.6s ease, scale 0.6s ease;
+  position: relative;
+  z-index: 2;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    translate: 0 0px;
+  }
+  50% {
+    translate: 0 -15px;
+  }
+  100% {
+    translate: 0 0px;
+  }
+}
+
+.cert-image-wrapper:hover .cert-main-img {
+  rotate: 0deg;
+  scale: 1.03;
+  animation-play-state: paused;
+}
+
+/* Add dotted background pattern */
+.cert-bg-dots {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(#ea580c 20%, transparent 20%);
+  background-size: 15px 15px;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.cert-bg-dots.top-right {
+  top: -2rem;
+  right: -2rem;
+}
+
+.cert-bg-dots.bottom-left {
+  bottom: -2rem;
+  left: -2rem;
+}
+
+.cert-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, rgba(255, 250, 248, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .cert-section {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
+  .cert-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .cert-title {
+    font-size: 2.8rem;
+  }
+  
+  .cert-features {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cert-section {
+    padding: 2rem 1.25rem 3rem 1.25rem;
+  }
+
+  .cert-features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cert-feature {
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 1.5rem;
+  }
+  
+  .cert-feature:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .cert-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .cert-title {
+    font-size: 2.2rem;
+  }
+  
+  .cert-main-img {
+    rotate: 0deg;
+  }
+  
+  .cert-bg-dots {
+    display: none;
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "categories": [
+    {
+      "title": "Full-stack Technologies",
+      "courses": [
+        {
+          "title": ".NET Fullstack",
+          "desc": "Master C#, ASP.NET Core, Entity Framework, and modern Front-end development.",
+          "route": "/dotnet-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776237666/Dotnet_azyxug.png"
+        },
+        {
+          "title": "Java Fullstack",
+          "desc": "Build enterprise apps using Spring Boot, Microservices, and React.",
+          "route": "/java-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776248156/Java_fn68sx.png"
+        },
+        {
+          "title": "Python Fullstack",
+          "desc": "Learn Django, Flask, APIs, and frontend integration.",
+          "route": "/python-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776256445/Python_3_kdn4me.png"
+        }
+      ]
+    },
+    {
+      "title": "Front-End",
+      "courses": [
+        {
+          "title": "HTML",
+          "desc": "Learn structure of web pages using semantic HTML5 elements.",
+          "route": "/html-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776253970/Html_1_q4qv0g.png"
+        },
+        {
+          "title": "CSS",
+          "desc": "Design responsive and modern UI using CSS3, Flexbox, and Grid.",
+          "route": "/css-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776253970/Css_1_y0nnoy.png"
+        },
+        {
+          "title": "JavaScript",
+          "desc": "Master core JavaScript, DOM manipulation, and ES6 concepts.",
+          "route": "/js-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776250961/Js_tqd3vx.png"
+        },
+        {
+          "title": "Bootstrap",
+          "desc": "Build responsive websites quickly using Bootstrap framework.",
+          "route": "/bootstrap-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776250960/Bootstrap_lk4i1d.png"
+        },
+        {
+          "title": "Angular",
+          "desc": "Build dynamic single-page applications using Angular framework.",
+          "route": "/angular-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776332562/Angular_e2zu6f.png"
+        },
+        {
+          "title": "React",
+          "desc": "Create interactive UI components using React library.",
+          "route": "/react-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776332566/React_w5l8ju.png"
+        }
+      ]
+    },
+    {
+      "title": "Database",
+      "courses": [
+        {
+          "title": "SQL Server",
+          "desc": "Learn Microsoft SQL Server, queries, stored procedures, and optimization.",
+          "route": "/sqlserver-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776256445/Sqlserver_nlsawj.png"
+        },
+        {
+          "title": "Oracle",
+          "desc": "Understand Oracle DB concepts, PL/SQL, and enterprise database systems.",
+          "route": "/oracle-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776256445/Oracle_osewlm.png"
+        },
+        {
+          "title": "MySQL",
+          "desc": "Work with MySQL database, joins, indexing, and CRUD operations.",
+          "route": "/mysql-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776256445/Mysql_biqkxi.png"
+        },
+        {
+          "title": "MongoDB",
+          "desc": "Learn NoSQL database concepts, collections, and document-based storage.",
+          "route": "/mongodb-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776256445/Mongodb_fnmy8e.png"
+        }
+      ]
+    },
+    {
+      "title": "Cloud",
+      "courses": [
+        {
+          "title": "Azure DevOps",
+          "desc": "Learn Azure cloud services, DevOps pipelines, deployment, and monitoring.",
+          "route": "/azure-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776253970/Azure_1_aqoqfx.png"
+        },
+        {
+          "title": "AWS DevOps",
+          "desc": "Master CI/CD, Docker, Kubernetes, and AWS cloud deployment.",
+          "route": "/aws-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776253970/Aws_1_iwkaud.png"
+        }
+      ]
+    },
+    {
+      "title": "Data Analytics & Business Intelligence",
+      "courses": [
+        {
+          "title": "Power BI",
+          "desc": "Learn dashboards, data modeling, and business analytics.",
+          "route": "/powerbi-exam",
+          "image": "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776253970/PowerBi_1_xm6fer.png"
+        }
+      ]
+    }
+  ]
+}

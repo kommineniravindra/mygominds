@@ -1,0 +1,159 @@
+.mg-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #f1f5f9;
+}
+
+.mg-carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.mg-carousel-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mg-carousel-image {
+  width: 100%;
+  /* height: auto;
+  max-height: 400px; */
+  aspect-ratio: 1800 / 550;
+  object-fit: cover;
+  display: block;
+}
+
+.mg-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #0f172a;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.mg-carousel-btn:hover {
+  background-color: white;
+  color: #ea580c;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.mg-carousel-btn.prev {
+  left: 1rem;
+}
+
+.mg-carousel-btn.next {
+  right: 1rem;
+}
+
+.mg-carousel-indicators {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.mg-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.mg-carousel-dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mg-carousel-dot.active {
+  background-color: white;
+  width: 24px;
+  border-radius: 5px;
+}
+
+.mg-carousel-empty {
+  padding: 3rem;
+  text-align: center;
+  background: #f8fafc;
+  border-radius: 1rem;
+  color: #64748b;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mg-carousel-image {
+    /* Let the image scale naturally so no text is cropped */
+    aspect-ratio: auto; 
+    height: auto;
+  }
+  
+  .mg-carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+  
+  .mg-carousel-btn.prev {
+    left: 0.25rem;
+  }
+  
+  .mg-carousel-btn.next {
+    right: 0.25rem;
+  }
+  
+  .mg-carousel-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .mg-carousel-dot.active {
+    width: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mg-carousel-container {
+    border-radius: 0.5rem;
+  }
+
+  .mg-carousel-image {
+    aspect-ratio: auto; 
+    height: auto;
+  }
+  
+  .mg-carousel-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .mg-carousel-indicators {
+    bottom: 0.5rem;
+  }
+}
