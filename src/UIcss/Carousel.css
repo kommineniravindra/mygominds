@@ -23,10 +23,8 @@
 
 .mg-carousel-image {
   width: 100%;
-  /* height: auto;
-  max-height: 400px; */
-  aspect-ratio: 1800 / 550;
-  object-fit: cover;
+  aspect-ratio: 25 / 9; /* Wider ratio decreases the height */
+  object-fit: fill; /* Ensures complete image fits exactly with no gaps */
   display: block;
 }
 
