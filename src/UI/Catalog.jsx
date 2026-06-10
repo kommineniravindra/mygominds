@@ -2,10 +2,39 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiClock, FiBookOpen, FiArrowRight } from 'react-icons/fi';
-import { FaStar, FaBrain, FaReact, FaDatabase, FaCloud, FaCogs, FaLaptopCode } from 'react-icons/fa';
+import { FaStar, FaBrain, FaReact, FaDatabase, FaCloud, FaCogs, FaLaptopCode, FaJava, FaPython, FaMicrosoft, FaNodeJs, FaAngular, FaChartBar, FaTheaterMasks, FaProjectDiagram } from 'react-icons/fa';
+import { SiMongodb, SiPostgresql, SiOpenai, SiSelenium, SiExpress } from 'react-icons/si';
+import { VscAzureDevops } from 'react-icons/vsc';
 import CourseLeadModal from '../components/CourseLeadModal';
 import '../UIcss/Catalog.css';
-const getCourseIcon = (category) => {
+const getCourseIcon = (course) => {
+  const title = course.title || '';
+  const category = course.category || '';
+  
+  if (title.includes('.NET')) return <FaMicrosoft />;
+  if (title.includes('Java')) return <FaJava />;
+  if (title.includes('Python')) return <FaPython />;
+  if (title.includes('DSA')) return <FaProjectDiagram />;
+  if (title.includes('MEAN')) return (
+    <div className="multi-icon-watermark">
+      <SiMongodb /> <SiExpress /> <FaAngular /> <FaNodeJs />
+    </div>
+  );
+  if (title.includes('MERN')) return (
+    <div className="multi-icon-watermark">
+      <SiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs />
+    </div>
+  );
+  if (title.includes('React')) return <FaReact />;
+  if (title.includes('Angular')) return <FaAngular />;
+  if (title.includes('PostgreSQL')) return <SiPostgresql />;
+  if (title.includes('MongoDB')) return <SiMongodb />;
+  if (title.includes('POWER BI')) return <FaChartBar />;
+  if (title.includes('Generative AI')) return <SiOpenai />;
+  if (title.includes('Selenium')) return <SiSelenium />;
+  if (title.includes('Playwright')) return <FaTheaterMasks />;
+  if (title.includes('Azure DevOps')) return <VscAzureDevops />;
+
   if (category.includes('FRONTEND')) return <FaReact />;
   if (category.includes('DATABASE') || category.includes('SQL')) return <FaDatabase />;
   if (category.includes('CLOUD')) return <FaCloud />;
@@ -18,6 +47,7 @@ const getCourseColors = (title) => {
   if (title.includes('Java')) return { bg: '#e0f2fe', text: '#0284c7', iconBg: '#3b82f6' };
   if (title.includes('Python')) return { bg: '#dcfce7', text: '#16a34a', iconBg: '#22c55e' };
   if (title.includes('React') || title.includes('Angular')) return { bg: '#e0f2fe', text: '#0284c7', iconBg: '#3b82f6' };
+  if (title.includes('DSA')) return { bg: '#ffe4e6', text: '#f43f5e', iconBg: '#e11d48' };
   return { bg: '#ffedd5', text: '#ea580c', iconBg: '#f97316' };
 };
 export const courses = [
@@ -31,8 +61,6 @@ export const courses = [
     duration: '5 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹35,000',
-      discountPrice: '₹15,000',
       description: "Become a professional full stack developer using Microsoft technologies. Learn to build scalable web applications using .NET, C#, and modern frontend tools.",
       coreCurriculum: [
         "C# Programming Fundamentals",
@@ -64,8 +92,6 @@ export const courses = [
     duration: '4 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹30,000',
-      discountPrice: '₹12,000',
       description: "Become a complete full stack developer by mastering frontend, backend, databases, and real-world project development using Java technologies.",
       coreCurriculum: [
         "Core Java & OOP Concepts",
@@ -96,8 +122,6 @@ export const courses = [
     duration: '6 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹30,000',
-      discountPrice: '₹12,000',
       description: "Become a complete full stack developer using Python by mastering backend development, frontend technologies, and building real-world scalable web applications.",
       coreCurriculum: [
         "Python Programming Fundamentals",
@@ -123,13 +147,12 @@ export const courses = [
     title: 'Full Stack MEAN\n Development',
     slug: 'fullstack-mean',
     category: 'DEVELOPMENT',
+    isHidden: true,
     rating: '4.8',
     reviews: '105 reviews',
     duration: '5 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹35,000',
-      discountPrice: '₹15,000',
       description: "Master the MEAN stack (MongoDB, Express.js, Angular, Node.js) and build dynamic, robust web applications from end to end.",
       coreCurriculum: [
         "JavaScript & TypeScript Advanced Concepts",
@@ -154,13 +177,12 @@ export const courses = [
     title: 'Full Stack MERN\n Development',
     slug: 'fullstack-mern',
     category: 'DEVELOPMENT',
+    isHidden: true,
     rating: '4.9',
     reviews: '150 reviews',
     duration: '5 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹35,000',
-      discountPrice: '₹15,000',
       description: "Become a proficient MERN stack developer (MongoDB, Express.js, React, Node.js). Build scalable single-page applications and powerful APIs.",
       coreCurriculum: [
         "Modern JavaScript (ES6+)",
@@ -190,8 +212,6 @@ export const courses = [
     duration: '3 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹25,000',
-      discountPrice: '₹10,000',
       description: "Learn data analytics and visualization using Power BI. Transform raw data into meaningful insights and interactive dashboards for business decision-making.",
       coreCurriculum: [
         "Introduction to Data Analytics",
@@ -223,8 +243,6 @@ export const courses = [
     duration: '4 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹45,000',
-      discountPrice: '₹20,000',
       description: "Dive deep into the world of Generative AI. Learn to build, fine-tune, and deploy state-of-the-art LLMs, stable diffusion models, and advanced Gen AI applications.",
       coreCurriculum: [
         "Introduction to Generative AI",
@@ -254,8 +272,6 @@ export const courses = [
     duration: '2 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹20,000',
-      discountPrice: '₹8,000',
       description: "Master React.js to build fast, interactive, and modern single-page web applications from scratch.",
       coreCurriculum: [
         "React Fundamentals & JSX",
@@ -283,8 +299,6 @@ export const courses = [
     duration: '2 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹22,000',
-      discountPrice: '₹9,000',
       description: "Learn Angular to build scalable enterprise-level single-page applications using TypeScript and component-based architecture.",
       coreCurriculum: [
         "TypeScript Fundamentals",
@@ -312,8 +326,6 @@ export const courses = [
     duration: '2 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹40,000',
-      discountPrice: '₹18,000',
       description: "Master CI/CD pipelines, version control, and cloud infrastructure management using Microsoft Azure DevOps tools.",
       coreCurriculum: [
         "Azure Fundamentals",
@@ -341,8 +353,6 @@ export const courses = [
     duration: '1.5 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹15,000',
-      discountPrice: '₹6,000',
       description: "Become an expert in PostgreSQL. Learn database design, complex querying, optimization, and administration.",
       coreCurriculum: [
         "Relational Database Concepts",
@@ -370,8 +380,6 @@ export const courses = [
     duration: '2 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹25,000',
-      discountPrice: '₹10,000',
       description: "Learn to automate web applications using Selenium WebDriver, Java, and TestNG framework.",
       coreCurriculum: [
         "Java for Automation",
@@ -399,8 +407,6 @@ export const courses = [
     duration: '2 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹28,000',
-      discountPrice: '₹12,000',
       description: "Master end-to-end modern web testing using Playwright with JavaScript/TypeScript for fast and reliable automation.",
       coreCurriculum: [
         "JavaScript/TypeScript Basics",
@@ -428,8 +434,6 @@ export const courses = [
     duration: '1.5 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹18,000',
-      discountPrice: '₹7,000',
       description: "Learn SQL from scratch to manage, query, and analyze relational databases efficiently. Essential for backend developers and data analysts.",
       coreCurriculum: [
         "Relational Database Basics",
@@ -457,8 +461,6 @@ export const courses = [
     duration: '1 Month',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹15,000',
-      discountPrice: '₹6,000',
       description: "Master NoSQL database concepts and MongoDB. Learn document-oriented data modeling, aggregation framework, and scaling.",
       coreCurriculum: [
         "NoSQL vs SQL Concepts",
@@ -475,6 +477,35 @@ export const courses = [
         "Placement Assistance"
       ]
     }
+  },
+  {
+    id: 19,
+    title: 'Data Structures\n & Algorithms (DSA)',
+    slug: 'dsa',
+    category: 'DSA',
+    rating: '4.9',
+    reviews: '200 reviews',
+    duration: '4 Months',
+    lessons: 'Lessons',
+    details: {
+      description: "Master Data Structures and Algorithms from scratch to advanced level. Ace coding interviews of top tech companies by building strong problem-solving skills.",
+      coreCurriculum: [
+        "Time and Space Complexity Analysis",
+        "Arrays, Strings & Pointers",
+        "Recursion & Backtracking",
+        "Linked Lists, Stacks & Queues",
+        "Trees, Tries & Heaps",
+        "Graphs & Graph Algorithms",
+        "Dynamic Programming",
+        "Greedy Algorithms"
+      ],
+      keyHighlights: [
+        "500+ Coding Problems Solved",
+        "Interview Preparation for MAANG",
+        "Mock Interviews",
+        "Placement Assistance"
+      ]
+    }
   },{
     id: 17,
     title: '.NET Fullstack\n with\n Real Time Project',
@@ -485,8 +516,6 @@ export const courses = [
     duration: '5 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹35,000',
-      discountPrice: '₹15,000',
       description: "Become a professional full stack developer using Microsoft technologies. Learn to build scalable web applications using .NET, C#, and modern frontend tools.",
       coreCurriculum: [
         "C# Programming Fundamentals",
@@ -518,8 +547,6 @@ export const courses = [
     duration: '4 Months',
     lessons: 'Lessons',
     details: {
-      originalPrice: '₹30,000',
-      discountPrice: '₹12,000',
       description: "Become a complete full stack developer by mastering frontend, backend, databases, and real-world project development using Java technologies.",
       coreCurriculum: [
         "Core Java & OOP Concepts",
@@ -577,7 +604,7 @@ const Catalog = () => {
         <div className="mg-catalog-grid-wrapper">
           <div className="mg-catalog-grid-animated">
             {/* Render the list twice for seamless infinite scrolling */}
-            {[...courses, ...courses].map((course, index) => (
+            {[...courses.filter(course => (course.category === 'DEVELOPMENT' || course.category === 'AI' || course.category === 'DSA' || course.title.includes('DSA') || course.title.includes('Agentic AI')) && !course.isHidden), ...courses.filter(course => (course.category === 'DEVELOPMENT' || course.category === 'AI' || course.category === 'DSA' || course.title.includes('DSA') || course.title.includes('Agentic AI')) && !course.isHidden)].map((course, index) => (
               <Link 
                 to={`/course/${course.slug}`} 
                 className={`mg-catalog-card theme-${course.id}`} 
@@ -588,7 +615,7 @@ const Catalog = () => {
                 {/* Image Section */}
                 <div className="mg-catalog-image-container">
                   <div className="course-bg-watermark">
-                    {getCourseIcon(course.category)}
+                    {getCourseIcon(course)}
                   </div>
                   <h3 className="course-bg-title">{course.title}</h3>
                 </div>

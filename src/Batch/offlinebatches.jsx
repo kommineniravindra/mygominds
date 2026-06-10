@@ -1,100 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   FiSearch, FiFilter, FiCalendar, FiClock, FiFileText, 
   FiMoreHorizontal, FiChevronLeft, FiChevronRight,
-  FiTrendingUp, FiCode, FiEdit3, FiMonitor, FiSpeaker, FiVideo
+  FiTrendingUp, FiCode, FiEdit3, FiMonitor, FiSpeaker, FiMapPin,
+  FiVideo,
+  FiPlay
 } from 'react-icons/fi';
 import { BsStopwatch } from 'react-icons/bs';
 import { FaUserTie } from 'react-icons/fa';
-import '../Batches/onlinebatches.css';
+import '../Batchcss/offlinebatches.css';
+import DemoModal from '../components/DemoModal';
 
-const batchesData = [
-  {
-    id: 1,
-    courseName: 'Full Stack Java with AI',
-    level: 'Beginner to Advanced',
-    facultyName: 'Mr. Rahul Verma',
-    facultyRole: 'Excel Expert',
-    date: '25 May 2024',
-    day: 'Saturday',
-    durationHours: '30 Hours',
-    sessions: '10 Sessions',
-    time: '7:00 PM - 9:00 PM',
-    timezone: '(IST)',
-    icon: <FiTrendingUp />,
-    iconColor: '#f97316',
-    iconBg: '#ffedd5'
-  },
-  {
-    id: 2,
-    courseName: 'Full Stack Web Development',
-    level: 'Beginner to Advanced',
-    facultyName: 'Mr. Sandeep Jha',
-    facultyRole: 'Full Stack Developer',
-    date: '28 May 2024',
-    day: 'Tuesday',
-    durationHours: '60 Hours',
-    sessions: '20 Sessions',
-    time: '8:00 PM - 10:00 PM',
-    timezone: '(IST)',
-    icon: <FiCode />,
-    iconColor: '#3b82f6',
-    iconBg: '#dbeafe'
-  },
-  {
-    id: 3,
-    courseName: 'Full Stack .NET with AI',
-    level: 'Beginner to Advanced',
-    facultyName: 'Ms. Priya Sharma',
-    facultyRole: 'Tally Expert',
-    date: '30 May 2024',
-    day: 'Thursday',
-    durationHours: '20 Hours',
-    sessions: '10 Sessions',
-    time: '6:00 PM - 8:00 PM',
-    timezone: '(IST)',
-    icon: <FiEdit3 />,
-    iconColor: '#22c55e',
-    iconBg: '#dcfce7'
-  },
-  {
-    id: 4,
-    courseName: 'Full Stack Python with AI',
-    level: 'Beginner',
-    facultyName: 'Mr. Amit Malhotra',
-    facultyRole: 'Creative Designer',
-    date: '01 June 2024',
-    day: 'Saturday',
-    durationHours: '15 Hours',
-    sessions: '5 Sessions',
-    time: '5:00 PM - 7:00 PM',
-    timezone: '(IST)',
-    icon: <FiMonitor />,
-    iconColor: '#a855f7',
-    iconBg: '#f3e8ff'
-  },
-  {
-    id: 5,
-    courseName: 'Real Time Project',
-    level: 'Beginner to Advanced',
-    facultyName: 'Ms. Neha Gupta',
-    facultyRole: 'Digital Marketing Expert',
-    date: '03 June 2024',
-    day: 'Monday',
-    durationHours: '40 Hours',
-    sessions: '15 Sessions',
-    time: '7:30 PM - 9:30 PM',
-    timezone: '(IST)',
-    icon: <FiSpeaker />,
-    iconColor: '#eab308',
-    iconBg: '#fef9c3'
-  }
+const iconMap = [
+  { icon: <FiTrendingUp />, iconColor: '#f97316', iconBg: '#ffedd5' },
+  { icon: <FiCode />, iconColor: '#3b82f6', iconBg: '#dbeafe' },
+  { icon: <FiEdit3 />, iconColor: '#22c55e', iconBg: '#dcfce7' },
+  { icon: <FiMonitor />, iconColor: '#a855f7', iconBg: '#f3e8ff' },
+  { icon: <FiSpeaker />, iconColor: '#eab308', iconBg: '#fef9c3' },
+  { icon: <FiMapPin />, iconColor: '#ef4444', iconBg: '#fee2e2' }
 ];
 
-const OnlineBatches = () => {
+const getBatchIcon = (index) => iconMap[index % iconMap.length];
+
+const OfflineBatches = () => {
+  const [batchesData, setBatchesData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterDate, setFilterDate] = useState('');
   const [showDatePicker, setShowDatePicker] = useState(false);
+  
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [selectedDemoBatch, setSelectedDemoBatch] = useState(null);
+
+  const openDemoModal = (batch) => {
+    // Need to fill the form every time
+    setSelectedDemoBatch(batch);
+    setIsDemoModalOpen(true);
+  };
+
+  useEffect(() => {
+    const fetchBatches = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/api/offline-batches');
+        if (response.ok) {
+          const data = await response.json();
+          setBatchesData(data);
+        }
+      } catch (error) {
+        console.error('Error fetching offline batches:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchBatches();
+  }, []);
 
   const availableDates = [...new Set(batchesData.map(b => b.date))];
 
@@ -103,7 +62,7 @@ const OnlineBatches = () => {
     const matchesSearch = 
       batch.courseName.toLowerCase().includes(searchLower) ||
       batch.facultyName.toLowerCase().includes(searchLower) ||
-      batch.facultyRole.toLowerCase().includes(searchLower);
+      (batch.experience && batch.experience.toLowerCase().includes(searchLower));
 
     const matchesDate = filterDate === '' || batch.date === filterDate;
 
@@ -111,7 +70,7 @@ const OnlineBatches = () => {
   });
 
   return (
-    <div className="online-batches-page">
+    <div className="offline-batches-page">
       {/* Header Section */}
       <div className="ob-header-wrapper">
         <div className="ob-header-dots"></div>
@@ -119,9 +78,9 @@ const OnlineBatches = () => {
         <div className="ob-header-content">
           <div className="ob-title-section">
             <h1 className="ob-title">
-              Online Training <span className="text-blue">Batches</span>
+              Offline Training <span className="text-blue">Batches</span>
             </h1>
-            <p className="ob-subtitle">Manage and view all upcoming online training batches</p>
+            <p className="ob-subtitle">Manage and view all upcoming offline training batches</p>
           </div>
           <div className="ob-actions">
             <div className="ob-search-box">
@@ -182,13 +141,17 @@ const OnlineBatches = () => {
 
           {/* Table Body */}
           <div className="ob-table-body">
-            {filteredBatches.length > 0 ? (
-              filteredBatches.map((batch) => (
-              <div className="ob-table-row" key={batch.id}>
+            {loading ? (
+              <div className="ob-no-results">Loading batches...</div>
+            ) : filteredBatches.length > 0 ? (
+              filteredBatches.map((batch, index) => {
+                const batchIcon = getBatchIcon(index);
+                return (
+              <div className="ob-table-row" key={batch._id || index}>
                 {/* Course Name */}
                 <div className="ob-td col-course">
-                  <div className="ob-course-icon-wrapper" style={{ backgroundColor: batch.iconBg, color: batch.iconColor }}>
-                    {batch.icon}
+                  <div className="ob-course-icon-wrapper" style={{ backgroundColor: batchIcon.iconBg, color: batchIcon.iconColor }}>
+                    {batchIcon.icon}
                   </div>
                   <div className="ob-course-info">
                     <h3 className="ob-course-name">{batch.courseName}</h3>
@@ -202,7 +165,7 @@ const OnlineBatches = () => {
                   </div>
                   <div className="ob-faculty-info">
                     <span className="ob-faculty-name">{batch.facultyName}</span>
-                    <span className="ob-faculty-role">{batch.facultyRole}</span>
+                    <span className="ob-faculty-role">{batch.experience}</span>
                   </div>
                 </div>
 
@@ -222,7 +185,7 @@ const OnlineBatches = () => {
                     <BsStopwatch />
                   </div>
                   <div className="ob-cell-info">
-                    <span className="ob-primary-text">{batch.durationHours}</span>
+                    <span className="ob-primary-text">{batch.durationMonths}</span>
                   </div>
                 </div>
 
@@ -238,19 +201,26 @@ const OnlineBatches = () => {
 
                 {/* Syllabus */}
                 <div className="ob-td col-syllabus">
-                  <button className="ob-syllabus-btn">
-                    <FiFileText /> View Syllabus
-                  </button>
+                  {batch.syllabusFile ? (
+                    <a href={`http://localhost:3000/${batch.syllabusFile}`} target="_blank" rel="noreferrer" className="ob-syllabus-btn" style={{textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}>
+                      <FiFileText style={{marginRight: '5px'}}/> View
+                    </a>
+                  ) : (
+                    <button className="ob-syllabus-btn" style={{opacity: 0.5, cursor: 'not-allowed'}} disabled>
+                      <FiFileText style={{marginRight: '5px'}}/> View
+                    </button>
+                  )}
                 </div>
 
                 {/* Action */}
                 <div className="ob-td col-action">
-                  <button className="ob-zoom-btn">
-                    <FiVideo /> Zoom
+                  <button className="ob-zoom-btn" onClick={() => openDemoModal(batch)}>
+                    <FiPlay /> Demo
                   </button>
                 </div>
               </div>
-            ))
+            );
+          })
           ) : (
             <div className="ob-no-results">
               No batches found matching your criteria.
@@ -259,10 +229,16 @@ const OnlineBatches = () => {
           </div>
         </div>
 
-
       </div>
+      <DemoModal 
+        isOpen={isDemoModalOpen} 
+        onClose={() => setIsDemoModalOpen(false)} 
+        courseName={selectedDemoBatch?.courseName} 
+        batchType="Offline"
+        actionLink={selectedDemoBatch?.actionLink}
+      />
     </div>
   );
 };
 
-export default OnlineBatches;
+export default OfflineBatches;

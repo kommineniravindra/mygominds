@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiPhone, FiMail, FiLinkedin, FiInstagram, FiYoutube, FiGlobe, FiMapPin, FiChevronDown, FiMenu, FiX, FiHome, FiBookOpen, FiImage, FiLayers, FiInfo, FiFileText, FiUser } from 'react-icons/fi';
+import { FiPhone, FiMail, FiLinkedin, FiInstagram, FiYoutube, FiFacebook, FiGlobe, FiMapPin, FiChevronDown, FiMenu, FiX, FiHome, FiBookOpen, FiImage, FiLayers, FiInfo, FiFileText, FiUser } from 'react-icons/fi';
+import { FaGooglePlay } from 'react-icons/fa';
 import '../css/Navbar.css';
 
 const Navbar = () => {
@@ -40,14 +41,20 @@ const Navbar = () => {
             </div>
           </div>
           <div className="top-navbar-right">
-            <a href="#" className="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/mygominds/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
               <FiLinkedin />
             </a>
-            <a href="#" className="social-link" aria-label="Instagram">
+            <a href="https://www.instagram.com/mygominds/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
               <FiInstagram />
             </a>
-            <a href="#" className="social-link" aria-label="YouTube">
+            <a href="https://www.youtube.com/@mygominds" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="YouTube">
               <FiYoutube />
+            </a>
+            <a href="https://www.facebook.com/people/Mygominds/61567813832047/#" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
+              <FiFacebook />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=co.nick.lukgi&hl=en-US" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Google Play Store">
+              <FaGooglePlay />
             </a>
           </div>
         </div>

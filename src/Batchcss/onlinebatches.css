@@ -616,6 +616,144 @@
   .ob-table-row {
     min-width: 800px;
     gap: 16px;
-    padding: 12px 16px;
   }
+}
+
+/* --- Zoom Modal Styles --- */
+.ob-zoom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ob-zoom-modal-content {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: relative;
+  animation: modal-fade-in 0.3s ease-out forwards;
+}
+
+@keyframes modal-fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ob-zoom-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #f1f5f9;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ob-zoom-modal-close:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.ob-zoom-modal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ob-zoom-modal-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.ob-zoom-modal-header p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ob-zoom-modal-header strong {
+  color: #3b82f6;
+}
+
+.ob-zoom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ob-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ob-form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.ob-required {
+  color: #ef4444;
+}
+
+.ob-form-group input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ob-form-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.ob-zoom-submit-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.ob-zoom-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.ob-zoom-submit-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
 }

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FiPhone, FiMail, FiMapPin, FiClock, FiShield, FiChevronRight, FiCalendar, FiArrowRight, FiSend } from 'react-icons/fi';
 import { BsSend } from 'react-icons/bs';
 import '../css/ContactUs.css';
 
 const ContactUs = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -189,9 +191,9 @@ const ContactUs = () => {
         </div>
         <div className="banner-right">
           <button className="book-demo-btn">
-            <FiCalendar className="orange-icon" /> Book Free Demo
+            <FiCalendar className="orange-icon" />Click Free Demo
           </button>
-          <button className="explore-btn">
+          <button className="explore-btn" onClick={() => navigate('/courses')}>
             Explore Courses <FiArrowRight className="orange-icon" />
           </button>
         </div>

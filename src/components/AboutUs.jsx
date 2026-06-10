@@ -1,10 +1,11 @@
 import React from 'react';
 import { FiUsers, FiAward, FiBookOpen, FiStar, FiBriefcase, FiCheckCircle, FiArrowRight, FiPlayCircle, FiUser, FiShield } from 'react-icons/fi';
 import { FaUserTie, FaBuilding, FaRegBuilding, FaRegLightbulb, FaGraduationCap } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../css/AboutUs.css';
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <div className="aboutus-page">
       {/* 1. Hero Section */}
@@ -40,21 +41,21 @@ const AboutUs = () => {
           <div className="stat-card">
              <div className="stat-icon-wrapper"><FiUsers /></div>
              <div className="stat-info">
-               <h3>15,000+</h3>
+               <h3>1,000+</h3>
                <p>Students Trained</p>
              </div>
           </div>
           <div className="stat-card">
              <div className="stat-icon-wrapper"><FaGraduationCap /></div>
              <div className="stat-info">
-               <h3>300+</h3>
+               <h3>10+</h3>
                <p>Expert Trainers</p>
              </div>
           </div>
           <div className="stat-card">
              <div className="stat-icon-wrapper"><FaRegBuilding /></div>
              <div className="stat-info">
-               <h3>1,200+</h3>
+               <h3>600+</h3>
                <p>Hiring Partners</p>
              </div>
           </div>
@@ -85,7 +86,7 @@ const AboutUs = () => {
             <p>
               Mygo Minds is a leading training and placement institute dedicated to bridging the gap between education and industry. Our mission is to equip learners with the right skills, practical knowledge, and confidence to thrive in today's competitive world.
             </p>
-            <button className="explore-btn-outline">
+            <button className="explore-btn-outline" onClick={() => navigate('/courses')}>
               Explore Courses <FiArrowRight style={{marginLeft: '4px', fontSize: '18px'}} />
             </button>
          </div>
@@ -167,7 +168,7 @@ const AboutUs = () => {
 
             {/* Buttons */}
             <div className="cta-button-section">
-               <button className="solid-orange-btn">Book Free Demo <FiArrowRight /></button>
+               <button className="solid-orange-btn">Click Free Demo <FiArrowRight /></button>
                <Link to="/contact" className="outline-orange-btn">Contact Us <FiArrowRight /></Link>
             </div>
          </div>

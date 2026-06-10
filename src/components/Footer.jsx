@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiFacebook, FiInstagram, FiLinkedin, FiYoutube, FiMail, FiPhone, FiMapPin, FiHome, FiInfo, FiMonitor, FiUsers, FiImage } from 'react-icons/fi';
+import { FaGooglePlay } from 'react-icons/fa';
 import '../css/Footer.css';
 
 const Footer = () => {
@@ -16,10 +17,11 @@ const Footer = () => {
             Empowering students and professionals with top-notch training, events, and community-driven learning experiences.
           </p>
           <div className="footer-socials">
-            <a href="#" className="social-icon linkedin" aria-label="LinkedIn"><FiLinkedin /></a>
-            <a href="#" className="social-icon instagram" aria-label="Instagram"><FiInstagram /></a>
-            <a href="#" className="social-icon youtube" aria-label="YouTube"><FiYoutube /></a>
-            <a href="#" className="social-icon facebook" aria-label="Facebook"><FiFacebook /></a>
+            <a href="https://www.linkedin.com/company/mygominds/" target="_blank" rel="noopener noreferrer" className="social-icon linkedin" aria-label="LinkedIn"><FiLinkedin /></a>
+            <a href="https://www.instagram.com/mygominds/" target="_blank" rel="noopener noreferrer" className="social-icon instagram" aria-label="Instagram"><FiInstagram /></a>
+            <a href="https://www.youtube.com/@mygominds" target="_blank" rel="noopener noreferrer" className="social-icon youtube" aria-label="YouTube"><FiYoutube /></a>
+            <a href="https://www.facebook.com/people/Mygominds/61567813832047/#" target="_blank" rel="noopener noreferrer" className="social-icon facebook" aria-label="Facebook"><FiFacebook /></a>
+            <a href="https://play.google.com/store/apps/details?id=co.nick.lukgi&hl=en-US" target="_blank" rel="noopener noreferrer" className="social-icon playstore" aria-label="Google Play Store"><FaGooglePlay /></a>
           </div>
         </div>
 

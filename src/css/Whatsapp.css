@@ -1,25 +1,39 @@
-.whatsapp-float {
+.floating-contacts {
   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+
+.whatsapp-float, .telegram-float {
   width: 60px;
   height: 60px;
-  bottom: 10px;
-  right: 10px;
-  background-color: #25D366;
   color: #ffffff;
   border-radius: 50px;
   text-align: center;
   font-size: 34px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
   text-decoration: none;
-  animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
+.whatsapp-float {
+  background-color: #25D366;
+  animation: whatsappPulse 2s infinite;
+}
+
+.telegram-float {
+  background-color: #0088cc;
+  animation: telegramPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
   }
@@ -31,11 +45,30 @@
   }
 }
 
+@keyframes telegramPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+  }
+}
+
 .whatsapp-float:hover {
   background-color: #128C7E;
   color: #ffffff;
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0px 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+.telegram-float:hover {
+  background-color: #0077b5;
+  color: #ffffff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 6px 16px rgba(0, 136, 204, 0.4);
 }
 
 .whatsapp-icon {
@@ -44,11 +77,15 @@
 
 /* Responsive for smaller screens */
 @media screen and (max-width: 768px) {
-  .whatsapp-float {
+  .floating-contacts {
+    bottom: 15px;
+    right: 15px;
+    gap: 12px;
+  }
+  
+  .whatsapp-float, .telegram-float {
     width: 50px;
     height: 50px;
-    bottom: 10px;
-    right: 10px;
     font-size: 28px;
   }
 }

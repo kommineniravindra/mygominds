@@ -5,6 +5,7 @@ import Carousel from '../UI/Carousel';
 import Roadmap from '../UI/Roadmap';
 import StudentPortal from '../UI/StudentPortal';
 import Certificate from '../UI/Certificate';
+import PopupAdModal from './PopupAdModal';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <StudentPortal />
       <Roadmap/>
       <Certificate />
+      <PopupAdModal />
       {/* Additional homepage sections can be added here in the future */}
     </div>
   );

@@ -115,6 +115,13 @@
   box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
 }
 
+.social-icon.playstore {
+  background-color: #10b981;
+}
+.social-icon.playstore:hover {
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
 .social-icon:hover {
   transform: translateY(-4px);
 }

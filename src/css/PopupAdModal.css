@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+.popup-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  padding: 10px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup-modal-content {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  animation: modalPopIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+}
+
+@keyframes modalPopIn {
+  0% { opacity: 0; transform: scale(0.9) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.popup-modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+.popup-modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+.popup-modal-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0,0,0,0.05);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #64748b;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.popup-close-btn:hover {
+  background: #fff;
+  color: #ef4444; 
+  transform: rotate(90deg) scale(1.1);
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.2);
+}
+
+.popup-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.popup-image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to top, rgba(255,255,255,0.8), transparent);
+  pointer-events: none;
+}
+
+.popup-image {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  max-height: 40vh; 
+  object-fit: contain; 
+  transition: transform 0.5s ease;
+}
+
+.popup-image:hover {
+  transform: scale(1.03);
+}
+
+.popup-body {
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.popup-title {
+  font-size: 20px;
+  font-weight: 800;
+  /* background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* background-clip: text;
+  line-height: 1.2;
+  letter-spacing: -0.5px; */
+}
+
+.popup-subtitle {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.popup-input-group:focus-within {
+  transform: translateY(-2px);
+}
+
+.popup-input-icon {
+  position: absolute;
+  left: 18px;
+  color: #94a3b8;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.popup-input-group:focus-within .popup-input-icon {
+  color: #f97316;
+}
+
+.popup-input {
+  width: 70%;
+  margin: 0 auto;
+  padding: 16px 16px 16px 50px;
+  background: #f8fafc;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #1e293b;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.popup-input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.popup-input:focus {
+  background: #fff;
+  border-color: #f97316;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.1), inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.popup-submit-btn {
+   width: 70%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 20px -5px rgba(249, 115, 22, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.popup-submit-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  transform: rotate(45deg) translateY(-100%);
+  transition: transform 0.6s ease;
+}
+
+.popup-submit-btn:hover:not(:disabled)::after {
+  transform: rotate(45deg) translateY(100%);
+}
+
+.popup-submit-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px -5px rgba(249, 115, 22, 0.5);
+}
+
+.popup-submit-btn:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px -3px rgba(249, 115, 22, 0.4);
+}
+
+.popup-submit-btn:disabled {
+  background: #cbd5e1;
+  box-shadow: none;
+  cursor: not-allowed;
+  color: #f8fafc;
+}
+
+.popup-success-msg {
+  color: #10b981;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.popup-success-msg svg {
+  color: #10b981;
+  background: #ecfdf5;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2);
+}
+
+@keyframes successPop {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 640px) {
+  .popup-modal-content {
+    border-radius: 20px;
+  }
+  .popup-body {
+    padding: 24px;
+  }
+  .popup-title {
+    font-size: 24px;
+  }
+  .popup-input {
+    padding: 14px 14px 14px 45px;
+    font-size: 15px;
+  }
+  .popup-submit-btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+}

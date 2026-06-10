@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiClock, FiBookOpen, FiArrowRight } from 'react-icons/fi';
-import { FaStar, FaGraduationCap, FaMedal, FaChartLine, FaBrain, FaReact, FaDatabase, FaCloud, FaCogs, FaLaptopCode } from 'react-icons/fa';
+import { FaStar, FaGraduationCap, FaMedal, FaChartLine, FaBrain, FaReact, FaDatabase, FaCloud, FaCogs, FaLaptopCode, FaJava, FaPython, FaMicrosoft, FaNodeJs, FaAngular, FaChartBar, FaTheaterMasks, FaProjectDiagram } from 'react-icons/fa';
+import { SiMongodb, SiPostgresql, SiOpenai, SiSelenium, SiExpress } from 'react-icons/si';
+import { VscAzureDevops } from 'react-icons/vsc';
 import { courses } from '../UI/Catalog';
 import CourseLeadModal from './CourseLeadModal';
 import '../css/courses.css';
@@ -10,7 +12,34 @@ const getThemeColor = (id) => {
   return `theme-${id}`;
 };
 
-const getCourseIcon = (category) => {
+const getCourseIcon = (course) => {
+  const title = course.title || '';
+  const category = course.category || '';
+  
+  if (title.includes('.NET')) return <FaMicrosoft />;
+  if (title.includes('Java')) return <FaJava />;
+  if (title.includes('Python')) return <FaPython />;
+  if (title.includes('MEAN')) return (
+    <div className="multi-icon-watermark">
+      <SiMongodb /> <SiExpress /> <FaAngular /> <FaNodeJs />
+    </div>
+  );
+  if (title.includes('MERN')) return (
+    <div className="multi-icon-watermark">
+      <SiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs />
+    </div>
+  );
+  if (title.includes('React')) return <FaReact />;
+  if (title.includes('Angular')) return <FaAngular />;
+  if (title.includes('PostgreSQL')) return <SiPostgresql />;
+  if (title.includes('MongoDB')) return <SiMongodb />;
+  if (title.includes('POWER BI')) return <FaChartBar />;
+  if (title.includes('Generative AI')) return <SiOpenai />;
+  if (title.includes('Selenium')) return <SiSelenium />;
+  if (title.includes('Playwright')) return <FaTheaterMasks />;
+  if (title.includes('Azure DevOps')) return <VscAzureDevops />;
+  if (title.includes('DSA') || title.includes('Data Structures')) return <FaProjectDiagram />;
+
   if (category.includes('FRONTEND')) return <FaReact />;
   if (category.includes('DATABASE') || category.includes('SQL')) return <FaDatabase />;
   if (category.includes('CLOUD')) return <FaCloud />;
@@ -78,7 +107,7 @@ const Courses = () => {
                 {/* Image Section */}
                 <div className="mg-courses-image-container">
                   <div className="course-bg-watermark">
-                    {getCourseIcon(category)}
+                    {getCourseIcon(course)}
                   </div>
                   <h3 className="course-bg-title">{course.title}</h3>
                 </div>
@@ -178,7 +207,10 @@ const Courses = () => {
         </div>
 
         {renderCategory('SQL & MONGODB', groupedCourses['SQL & MONGODB'])}
-        {renderCategory('REAL TIME PROJECT', groupedCourses['REAL TIME PROJECT'])}
+        <div className="special-courses-row">
+          {renderCategory('DSA', groupedCourses['DSA'], true, 'span-2')}
+          {renderCategory('REAL TIME PROJECT', groupedCourses['REAL TIME PROJECT'], true, 'span-3')}
+        </div>
       </div>
       
       <CourseLeadModal 
