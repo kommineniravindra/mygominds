@@ -44,10 +44,11 @@
 }
 
 .navbar-links li a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
   color: #1a1a1a;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   transition: color 0.2s ease;
   display: flex;
   align-items: center;
@@ -65,6 +66,8 @@
 
 /* Dropdown Styles */
 .dropdown {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
   position: relative;
   display: flex;
   align-items: center;
@@ -73,12 +76,14 @@
 .dropbtn {
   display: flex !important;
   align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .dropbtn-content {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-icon {
@@ -108,13 +113,13 @@
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 500px;
+  min-width: 580px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   border-radius: 12px;
   top: 100%;
-  left: -100px; /* Shift slightly left to balance the wider menu */
-  padding: 12px;
+  left: -140px; /* Shift slightly left to balance the wider menu */
+  padding: 16px;
   margin-top: 15px;
   opacity: 0;
   transform: translateY(-10px);
@@ -132,41 +137,44 @@
 }
 
 .dropdown-content a {
+  
   color: #1a1a1a;
-  padding: 16px;
+  padding: 20px;
   text-decoration: none;
   display: block;
   flex: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: background-color 0.2s ease, color 0.2s ease !important;
 }
 
 .dropdown-title {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
   display: block;
-  font-size: 15px !important;
-  font-weight: 500 !important;
-  margin-bottom: 4px;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  margin-bottom: 6px;
 }
 
 .dropdown-desc {
-  font-size: 12px !important;
+  font-size: 13px !important;
   color: #666666 !important;
   font-weight: 400 !important;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
   white-space: normal;
 }
 
 .dropdown-item-content {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px;
 }
 
 .dropdown-icon {
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 10px;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 12px;
   margin-top: 2px;
   flex-shrink: 0;
   box-sizing: content-box;
@@ -176,22 +184,28 @@
   color: #4f46e5;
   background: #eef2ff;
 }
-.online-item:hover {
-  background-color: #f5f7ff !important;
+.online-item {
+  background-color: #f5f7ff;
 }
-.online-item:hover .dropdown-title {
-  color: #4f46e5 !important;
+.online-item .dropdown-title {
+  color: #4f46e5;
+}
+.online-item:hover {
+  background-color: #eef2ff;
 }
 
 .offline-icon {
   color: #059669;
   background: #ecfdf5;
 }
-.offline-item:hover {
-  background-color: #f0fdf4 !important;
+.offline-item {
+  background-color: #f0fdf4;
 }
-.offline-item:hover .dropdown-title {
-  color: #059669 !important;
+.offline-item .dropdown-title {
+  color: #059669;
+}
+.offline-item:hover {
+  background-color: #d1fae5;
 }
 
 .dropdown:hover .dropdown-content {
@@ -203,19 +217,21 @@
 
 /* CTA Button Styles */
 .navbar-cta .enroll-btn {
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  background-color: #f97316;
   color: #ffffff;
   border: none;
-  padding: 12px 32px;
+  padding: 10px 24px;
   border-radius: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.5px;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(249, 115, 22, 0.4);
   position: relative;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .navbar-cta .enroll-btn::after {
@@ -262,6 +278,42 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.top-navbar-center {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.top-marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-marquee-content {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollMarquee 40s linear infinite;
+}
+
+.top-marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-text {
+  color: #f8fafc;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding-right: 10px;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
 .top-navbar-left {
   display: flex;

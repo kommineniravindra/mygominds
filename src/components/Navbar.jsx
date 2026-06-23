@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiPhone, FiMail, FiLinkedin, FiInstagram, FiYoutube, FiFacebook, FiGlobe, FiMapPin, FiChevronDown, FiMenu, FiX, FiHome, FiBookOpen, FiImage, FiLayers, FiInfo, FiFileText, FiUser } from 'react-icons/fi';
+import { FiPhone, FiMail, FiLinkedin, FiInstagram, FiYoutube, FiFacebook, FiGlobe, FiMapPin, FiChevronDown, FiMenu, FiX, FiHome, FiBookOpen, FiImage, FiLayers, FiInfo, FiFileText, FiUser, FiAward } from 'react-icons/fi';
 import { FaGooglePlay } from 'react-icons/fa';
 import '../css/Navbar.css';
 
@@ -40,6 +40,16 @@ const Navbar = () => {
               <span>mygominds@gmail.com</span>
             </div>
           </div>
+
+          <div className="top-navbar-center">
+            <div className="top-marquee-container">
+              <div className="top-marquee-content">
+                <span className="marquee-text">🚀 New batches starting soon! Book your seat now and get early bird discounts. 🎓 &nbsp;&nbsp;|&nbsp;&nbsp; 🌟 Master in-demand IT skills with expert-led courses! &nbsp;&nbsp;|&nbsp;&nbsp; 💼 100% Placement Assistance Guaranteed! &nbsp;&nbsp;|&nbsp;&nbsp; 📞 Call us today to schedule a free counseling session! &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+                <span className="marquee-text">🚀 New batches starting soon! Book your seat now and get early bird discounts. 🎓 &nbsp;&nbsp;|&nbsp;&nbsp; 🌟 Master in-demand IT skills with expert-led courses! &nbsp;&nbsp;|&nbsp;&nbsp; 💼 100% Placement Assistance Guaranteed! &nbsp;&nbsp;|&nbsp;&nbsp; 📞 Call us today to schedule a free counseling session! &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+              </div>
+            </div>
+          </div>
+
           <div className="top-navbar-right">
             <a href="https://www.linkedin.com/company/mygominds/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
               <FiLinkedin />
@@ -78,6 +88,7 @@ const Navbar = () => {
             <li><Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMobileMenu}><FiHome className="nav-icon" /> Home</Link></li>
             <li><Link to="/courses" className={location.pathname === '/courses' ? 'active' : ''} onClick={closeMobileMenu}><FiBookOpen className="nav-icon" /> Courses</Link></li>
             <li><Link to="/gallery" className={location.pathname === '/gallery' ? 'active' : ''} onClick={closeMobileMenu}><FiImage className="nav-icon" /> Gallery</Link></li>
+            <li><Link to="/alumni" className={location.pathname === '/alumni' ? 'active' : ''} onClick={closeMobileMenu}><FiAward className="nav-icon" /> Alumni</Link></li>
             <li className="dropdown">
               <a href="#new-batches" className="dropbtn">
                 <span className="dropbtn-content"><FiLayers className="nav-icon" /> New Batches</span>

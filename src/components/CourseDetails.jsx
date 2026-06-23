@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { courses } from '../UI/Catalog';
-import { FiArrowLeft, FiClock, FiBookOpen, FiAward, FiVideo, FiMonitor, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowLeft, FiClock, FiBookOpen, FiAward, FiVideo, FiMonitor, FiCheckCircle, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { FaCheckCircle as FaCheckSolid } from 'react-icons/fa';
 import '../css/CourseDetails.css';
 
 const CourseDetails = () => {
   const { slug } = useParams();
+  const [openFAQ, setOpenFAQ] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+
   const course = courses.find((c) => c.slug === slug);
 
   if (!course) {
@@ -134,9 +140,44 @@ const CourseDetails = () => {
           
         </div>
       </div>
+
+      {/* Course Bottom Image */}
+      {details.bottomImage && (
+        <div className="course-bottom-image-container">
+          <img 
+            src={details.bottomImage} 
+            alt={`${course.title} Details`} 
+            className="course-bottom-image"
+          />
+        </div>
+      )}
+      {/* FAQ Section */}
+              {details.faqs && details.faqs.length > 0 && (
+                <div className="section-margin faq-section-wrapper">
+                  <h3 className="section-title faq-title">Frequently Asked Questions</h3>
+                  <div className="faq-list">
+                    {details.faqs.map((faq, idx) => (
+                      <div 
+                        key={idx} 
+                        className={`faq-item ${openFAQ === idx ? 'open' : ''}`}
+                        onClick={() => toggleFAQ(idx)}
+                      >
+                        <div className="faq-question">
+                          <span>{faq.question}</span>
+                          {openFAQ === idx ? <FiChevronUp className="faq-icon" /> : <FiChevronDown className="faq-icon" />}
+                        </div>
+                        <div className="faq-answer-wrapper">
+                          <div className="faq-answer">
+                            <p>{faq.answer}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
     </div>
   );
 };
 
 export default CourseDetails;
-

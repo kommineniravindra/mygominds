@@ -69,6 +69,39 @@ const OfflineBatches = () => {
     return matchesSearch && matchesDate;
   });
 
+  const sortedBatches = [...filteredBatches].sort((a, b) => {
+    const parseDate = (dateStr) => {
+      if (!dateStr) return Number.MAX_SAFE_INTEGER; // Put empty dates at the end
+      const parts = dateStr.includes('-') ? dateStr.split('-') : dateStr.split('/');
+      if (parts.length === 3) {
+        const [day, month, year] = parts;
+        return new Date(Number(year), Number(month) - 1, Number(day)).getTime();
+      }
+      const time = new Date(dateStr).getTime();
+      return isNaN(time) ? Number.MAX_SAFE_INTEGER : time;
+    };
+    
+    const dateDiff = parseDate(a.date) - parseDate(b.date);
+    if (dateDiff !== 0) return dateDiff;
+
+    // Secondary sort by time if dates are identical
+    const parseTime = (timeStr) => {
+      if (!timeStr) return 0;
+      const match = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i);
+      if (!match) return 0;
+      let hours = parseInt(match[1], 10);
+      const minutes = parseInt(match[2], 10);
+      const ampm = match[3].toUpperCase();
+      
+      if (ampm === 'PM' && hours < 12) hours += 12;
+      if (ampm === 'AM' && hours === 12) hours = 0;
+      
+      return hours * 60 + minutes; // Returns total minutes from midnight
+    };
+
+    return parseTime(a.time) - parseTime(b.time);
+  });
+
   return (
     <div className="offline-batches-page">
       {/* Header Section */}
@@ -135,7 +168,6 @@ const OfflineBatches = () => {
             <div className="ob-th col-date">Date</div>
             <div className="ob-th col-duration">Duration</div>
             <div className="ob-th col-timings">Timings</div>
-            <div className="ob-th col-syllabus">Syllabus</div>
             <div className="ob-th col-action">Action</div>
           </div>
 
@@ -143,8 +175,8 @@ const OfflineBatches = () => {
           <div className="ob-table-body">
             {loading ? (
               <div className="ob-no-results">Loading batches...</div>
-            ) : filteredBatches.length > 0 ? (
-              filteredBatches.map((batch, index) => {
+            ) : sortedBatches.length > 0 ? (
+              sortedBatches.map((batch, index) => {
                 const batchIcon = getBatchIcon(index);
                 return (
               <div className="ob-table-row" key={batch._id || index}>
@@ -197,19 +229,6 @@ const OfflineBatches = () => {
                   <div className="ob-cell-info">
                     <span className="ob-primary-text">{batch.time}</span>
                   </div>
-                </div>
-
-                {/* Syllabus */}
-                <div className="ob-td col-syllabus">
-                  {batch.syllabusFile ? (
-                    <a href={`http://localhost:3000/${batch.syllabusFile}`} target="_blank" rel="noreferrer" className="ob-syllabus-btn" style={{textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <FiFileText style={{marginRight: '5px'}}/> View
-                    </a>
-                  ) : (
-                    <button className="ob-syllabus-btn" style={{opacity: 0.5, cursor: 'not-allowed'}} disabled>
-                      <FiFileText style={{marginRight: '5px'}}/> View
-                    </button>
-                  )}
                 </div>
 
                 {/* Action */}

@@ -1,0 +1,1081 @@
+[
+  {
+    "id": 1,
+    "title": ".NET Fullstack\n Development",
+    "slug": "dotnet-fullstack",
+    "category": "DEVELOPMENT",
+    "rating": "4.8",
+    "reviews": "110 reviews",
+    "duration": "3 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become a professional full stack developer using Microsoft technologies. Learn to build scalable web applications using .NET, C#, and modern frontend tools.",
+      "coreCurriculum": [
+        "Frontend Development",
+        "Advanced Frontend with React",
+        "C# Programming Fundamentals",
+        "Object-Oriented Programming (OOP)",
+        "ASP.NET Core Fundamentals",
+        "Web APIs Development",
+        "Advanced Topic 10 in .NET Fullstack Development",
+        "Authentication & Authorization",
+        "Data Access with EF Core",
+        "Deployment & Hosting"
+      ],
+      "keyHighlights": [
+        "Real-time Project Development",
+        "Industry-Level Training",
+        "Hands-on API Building",
+        "Placement Assistance",
+        "Live Case Studies",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "bottomImage": "/course/net.png",
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning .NET Fullstack Development?",
+          "answer": "This .NET Fullstack Development course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the .NET Fullstack Development training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the .NET Fullstack Development course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the .NET Fullstack Development course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in .NET Fullstack Development."
+        },
+        {
+          "question": "Do you provide placement assistance for .NET Fullstack Development roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to .NET Fullstack Development, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "C#",
+        ".NET Core",
+        "Entity Framework",
+        "SQL Server",
+        "Azure"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Java Fullstack\n Development",
+    "slug": "java-fullstack",
+    "category": "DEVELOPMENT",
+    "rating": "4.9",
+    "reviews": "128 reviews",
+    "duration": "3 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become a complete full stack developer by mastering frontend, backend, databases, and real-world project development using Java technologies.",
+      "coreCurriculum": [
+        "HTML, CSS, JavaScript, Bootstrap",
+        "React js",
+        "Core Java & OOP Concepts",
+        "JVM, Exception Handling, Multithreading",
+        "Spring Boot, Hibernate, REST APIs",
+        "Microservices & Design Patterns",
+        "JDBC, Servlets, JSP",
+        "Spring Security & JWT Authentication",
+        "MySQL, SQL, PL/SQL",
+        "Docker, AWS & CI/CD Deployment"
+      ],
+      "keyHighlights": [
+        "100+ Hours Training",
+        "Live Projects & Internship",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "Real-world Case Studies",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "bottomImage": "/course/java.png",
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Java Fullstack Development?",
+          "answer": "This Java Fullstack Development course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Java Fullstack Development training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Java Fullstack Development course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Java Fullstack Development course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Java Fullstack Development."
+        },
+        {
+          "question": "Do you provide placement assistance for Java Fullstack Development roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Java Fullstack Development, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "React",
+        "MySQL",
+        "AWS"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Python Fullstack\n with Django",
+    "slug": "python-fullstack",
+    "category": "DEVELOPMENT",
+    "rating": "4.8",
+    "reviews": "95 reviews",
+    "duration": "3 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become a complete full stack developer using Python by mastering backend development, frontend technologies, and building real-world scalable web applications.",
+      "coreCurriculum": [
+        "HTML, CSS, JavaScript, Bootstrap",
+        "Python Programming Fundamentals",
+        "OOP Concepts in Python",
+        "Django Framework",
+        "REST APIs with Django REST Framework",
+        "Advanced Topic 9 in Python Fullstack with Django",
+        "Advanced Topic 10 in Python Fullstack with Django",
+        "Authentication & Authorization",
+        "Database (MySQL / PostgreSQL)",
+        "Deployment & Hosting"
+      ],
+      "keyHighlights": [
+        "Hands-on Projects",
+        "Live Application Development",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "Real-world Case Studies",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "bottomImage": "/course/python.png",
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Python Fullstack with Django?",
+          "answer": "This Python Fullstack with Django course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Python Fullstack with Django training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Python Fullstack with Django course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Python Fullstack with Django course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Python Fullstack with Django."
+        },
+        {
+          "question": "Do you provide placement assistance for Python Fullstack with Django roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Python Fullstack with Django, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Python",
+        "Django",
+        "REST APIs",
+        "PostgreSQL",
+        "Docker"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1932&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "title": "Full Stack MEAN\n Development",
+    "slug": "fullstack-mean",
+    "category": "DEVELOPMENT",
+    "isHidden": true,
+    "rating": "4.8",
+    "reviews": "105 reviews",
+    "duration": "3 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Master the MEAN stack (MongoDB, Express.js, Angular, Node.js) and build dynamic, robust web applications from end to end.",
+      "coreCurriculum": [
+        "Angular Components & Services",
+        "JavaScript & TypeScript Advanced Concepts",
+        "Express.js Framework",
+        "Node.js Runtime",
+        "RESTful API Development",
+        "Advanced Topic 9 in Full Stack MEAN Development",
+        "Advanced Topic 10 in Full Stack MEAN Development",
+        "Authentication & Security",
+        "MongoDB & Mongoose",
+        "Deployment & Best Practices"
+      ],
+      "keyHighlights": [
+        "Real-time Project Development",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "Live Case Studies",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "bottomImage": "/course/mean.png",
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Full Stack MEAN Development?",
+          "answer": "This Full Stack MEAN Development course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Full Stack MEAN Development training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Full Stack MEAN Development course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Full Stack MEAN Development course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Full Stack MEAN Development."
+        },
+        {
+          "question": "Do you provide placement assistance for Full Stack MEAN Development roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Full Stack MEAN Development, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "MongoDB",
+        "Express.js",
+        "Angular",
+        "Node.js",
+        "TypeScript"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1627398240309-089a14426d82?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 6,
+    "title": "Full Stack MERN\n Development",
+    "slug": "fullstack-mern",
+    "category": "DEVELOPMENT",
+    "isHidden": true,
+    "rating": "4.9",
+    "reviews": "150 reviews",
+    "duration": "3 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become a proficient MERN stack developer (MongoDB, Express.js, React, Node.js). Build scalable single-page applications and powerful APIs.",
+      "coreCurriculum": [
+        "React Hooks & Context API",
+        "Modern JavaScript (ES6+)",
+        "Node.js & Express.js",
+        "Redux State Management",
+        "REST APIs & GraphQL",
+        "Advanced Topic 9 in Full Stack MERN Development",
+        "Advanced Topic 10 in Full Stack MERN Development",
+        "Authentication with JWT",
+        "MongoDB Database Management",
+        "Application Deployment"
+      ],
+      "keyHighlights": [
+        "100+ Hours Training",
+        "Live Projects",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "bottomImage": "/course/mern.png",
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Full Stack MERN Development?",
+          "answer": "This Full Stack MERN Development course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Full Stack MERN Development training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Full Stack MERN Development course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Full Stack MERN Development course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Full Stack MERN Development."
+        },
+        {
+          "question": "Do you provide placement assistance for Full Stack MERN Development roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Full Stack MERN Development, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 7,
+    "title": "DA & POWER BI",
+    "slug": "data-analytics-power-bi",
+    "category": "DATA SCIENCE",
+    "rating": "4.9",
+    "reviews": "140 reviews",
+    "duration": "3 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Learn data analytics and visualization using Power BI. Transform raw data into meaningful insights and interactive dashboards for business decision-making.",
+      "coreCurriculum": [
+        "Power BI Interface & Tools",
+        "Interactive Dashboards",
+        "Charts, Graphs, Visualizations",
+        "Publishing Reports",
+        "Advanced Topic 10 in DA & POWER BI",
+        "Introduction to Data Analytics",
+        "Data Cleaning & Transformation",
+        "DAX (Data Analysis Expressions)",
+        "Connecting Multiple Data Sources",
+        "Data Modeling"
+      ],
+      "keyHighlights": [
+        "Real-time Business Case Studies",
+        "Dashboard Projects",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "Hands-on Data Analysis",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning DA & POWER BI?",
+          "answer": "This DA & POWER BI course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the DA & POWER BI training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the DA & POWER BI course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the DA & POWER BI course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in DA & POWER BI."
+        },
+        {
+          "question": "Do you provide placement assistance for DA & POWER BI roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to DA & POWER BI, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 8,
+    "title": "Gen AI & Agentic AI",
+    "slug": "gen-ai",
+    "category": "AI",
+    "rating": "4.9",
+    "reviews": "180 reviews",
+    "duration": "45 days",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Dive deep into the world of Generative AI and Agentic AI. Learn to build, fine-tune, and deploy state-of-the-art LLMs, autonomous agents, RAG systems, and advanced AI applications.",
+      "coreCurriculum": [
+        "Building Autonomous AI Agents",
+        "Introduction to Generative AI & Agentic Systems",
+        "Large Language Models (LLMs) & Prompt Engineering",
+        "LangChain, LlamaIndex & AutoGPT",
+        "RAG (Retrieval-Augmented Generation)",
+        "Multi-Agent Frameworks (CrewAI, LangGraph)",
+        "Real-world Agentic Applications",
+        "Advanced Topic 9 in Gen AI & Agentic AI",
+        "Advanced Topic 10 in Gen AI & Agentic AI",
+        "Fine-tuning & Deploying Models"
+      ],
+      "keyHighlights": [
+        "Hands-on Agentic AI Projects",
+        "Build Autonomous Workflows",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "Expert-Led Sessions",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Gen AI & Agentic AI?",
+          "answer": "This Gen AI & Agentic AI course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Gen AI & Agentic AI training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Gen AI & Agentic AI course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Gen AI & Agentic AI course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Gen AI & Agentic AI."
+        },
+        {
+          "question": "Do you provide placement assistance for Gen AI & Agentic AI roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Gen AI & Agentic AI, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 9,
+    "title": "React.js\n Framework",
+    "slug": "reactjs",
+    "category": "FRONTEND",
+    "rating": "4.9",
+    "reviews": "210 reviews",
+    "duration": "2 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Master React.js to build fast, interactive, and modern single-page web applications from scratch.",
+      "coreCurriculum": [
+        "React Fundamentals & JSX",
+        "React Hooks (useState, useEffect, etc.)",
+        "React Router & Navigation",
+        "Advanced Topic 7 in React.js Framework",
+        "Advanced Topic 8 in React.js Framework",
+        "Advanced Topic 9 in React.js Framework",
+        "Advanced Topic 10 in React.js Framework",
+        "State & Props Management",
+        "State Management with Redux/Zustand",
+        "API Integration & Asynchronous Data"
+      ],
+      "keyHighlights": [
+        "Component-driven Development",
+        "Live Projects",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning React.js Framework?",
+          "answer": "This React.js Framework course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the React.js Framework training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the React.js Framework course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the React.js Framework course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in React.js Framework."
+        },
+        {
+          "question": "Do you provide placement assistance for React.js Framework roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to React.js Framework, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 10,
+    "title": "Angular\n Framework",
+    "slug": "angular",
+    "category": "FRONTEND",
+    "rating": "4.8",
+    "reviews": "160 reviews",
+    "duration": "2 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Learn Angular to build scalable enterprise-level single-page applications using TypeScript and component-based architecture.",
+      "coreCurriculum": [
+        "TypeScript Fundamentals",
+        "Angular Components & Templates",
+        "Advanced Topic 7 in Angular Framework",
+        "Advanced Topic 8 in Angular Framework",
+        "Advanced Topic 9 in Angular Framework",
+        "Advanced Topic 10 in Angular Framework",
+        "Directives & Pipes",
+        "Services & Dependency Injection",
+        "RxJS & Observables",
+        "Routing & Forms"
+      ],
+      "keyHighlights": [
+        "Enterprise App Development",
+        "Live Projects",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Angular Framework?",
+          "answer": "This Angular Framework course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Angular Framework training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Angular Framework course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Angular Framework course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Angular Framework."
+        },
+        {
+          "question": "Do you provide placement assistance for Angular Framework roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Angular Framework, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 11,
+    "title": "Azure DevOps",
+    "slug": "azure-devops",
+    "category": "CLOUD",
+    "rating": "4.9",
+    "reviews": "145 reviews",
+    "duration": "2 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Master CI/CD pipelines, version control, and cloud infrastructure management using Microsoft Azure DevOps tools.",
+      "coreCurriculum": [
+        "Infrastructure as Code (ARM/Bicep)",
+        "Azure Fundamentals",
+        "Azure Repos & Git",
+        "CI/CD with Azure Pipelines",
+        "Azure Artifacts & Test Plans",
+        "Monitoring & Security",
+        "Advanced Topic 7 in Azure DevOps",
+        "Advanced Topic 8 in Azure DevOps",
+        "Advanced Topic 9 in Azure DevOps",
+        "Advanced Topic 10 in Azure DevOps"
+      ],
+      "keyHighlights": [
+        "Hands-on Cloud Projects",
+        "Live CI/CD Pipeline Building",
+        "Certification Guidance",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Azure DevOps?",
+          "answer": "This Azure DevOps course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Azure DevOps training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Azure DevOps course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Azure DevOps course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Azure DevOps."
+        },
+        {
+          "question": "Do you provide placement assistance for Azure DevOps roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Azure DevOps, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 12,
+    "title": "PostgreSQL\n Database",
+    "slug": "postgresql",
+    "category": "DATABASE",
+    "rating": "4.8",
+    "reviews": "90 reviews",
+    "duration": "1.5 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become an expert in PostgreSQL. Learn database design, complex querying, optimization, and administration.",
+      "coreCurriculum": [
+        "Stored Procedures & Functions",
+        "Indexing & Performance Tuning",
+        "Backup & Recovery",
+        "Relational Database Concepts",
+        "Advanced SQL Queries & Joins",
+        "Database Administration & Security",
+        "Advanced Topic 7 in PostgreSQL Database",
+        "Advanced Topic 8 in PostgreSQL Database",
+        "Advanced Topic 9 in PostgreSQL Database",
+        "Advanced Topic 10 in PostgreSQL Database"
+      ],
+      "keyHighlights": [
+        "Real-world Scenarios",
+        "Hands-on Querying",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning PostgreSQL Database?",
+          "answer": "This PostgreSQL Database course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the PostgreSQL Database training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the PostgreSQL Database course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the PostgreSQL Database course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in PostgreSQL Database."
+        },
+        {
+          "question": "Do you provide placement assistance for PostgreSQL Database roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to PostgreSQL Database, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Data Analysis",
+        "SQL",
+        "Tableau"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2021&auto=format&fit=crop"
+  },
+  {
+    "id": 13,
+    "title": "Selenium\n Automation",
+    "slug": "selenium-automation",
+    "category": "TESTING",
+    "rating": "4.8",
+    "reviews": "130 reviews",
+    "duration": "2 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Learn to automate web applications using Selenium WebDriver, Java, and TestNG framework.",
+      "coreCurriculum": [
+        "Locators & Xpaths",
+        "TestNG Framework",
+        "Page Object Model (POM)",
+        "Java for Automation",
+        "Selenium WebDriver API",
+        "CI/CD Integration",
+        "Advanced Topic 7 in Selenium Automation",
+        "Advanced Topic 8 in Selenium Automation",
+        "Advanced Topic 9 in Selenium Automation",
+        "Advanced Topic 10 in Selenium Automation"
+      ],
+      "keyHighlights": [
+        "Live Testing Frameworks",
+        "Hands-on Automation",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Selenium Automation?",
+          "answer": "This Selenium Automation course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Selenium Automation training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Selenium Automation course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Selenium Automation course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Selenium Automation."
+        },
+        {
+          "question": "Do you provide placement assistance for Selenium Automation roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Selenium Automation, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=2128&auto=format&fit=crop"
+  },
+  {
+    "id": 14,
+    "title": "Playwright\n Automation",
+    "slug": "playwright-automation",
+    "category": "TESTING",
+    "rating": "4.9",
+    "reviews": "175 reviews",
+    "duration": "2 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Master end-to-end modern web testing using Playwright with JavaScript/TypeScript for fast and reliable automation.",
+      "coreCurriculum": [
+        "JavaScript/TypeScript Basics",
+        "Locators & Actions",
+        "Assertions & Auto-waiting",
+        "Network Interception",
+        "Playwright Setup & Configuration",
+        "Continuous Integration with Playwright",
+        "Advanced Topic 7 in Playwright Automation",
+        "Advanced Topic 8 in Playwright Automation",
+        "Advanced Topic 9 in Playwright Automation",
+        "Advanced Topic 10 in Playwright Automation"
+      ],
+      "keyHighlights": [
+        "Modern Testing Approach",
+        "Live Projects",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Playwright Automation?",
+          "answer": "This Playwright Automation course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Playwright Automation training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Playwright Automation course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Playwright Automation course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Playwright Automation."
+        },
+        {
+          "question": "Do you provide placement assistance for Playwright Automation roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Playwright Automation, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 15,
+    "title": "SQL\n Database",
+    "slug": "sql-database",
+    "category": "DATABASE",
+    "rating": "4.8",
+    "reviews": "150 reviews",
+    "duration": "1.5 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Learn SQL from scratch to manage, query, and analyze relational databases efficiently. Essential for backend developers and data analysts.",
+      "coreCurriculum": [
+        "Joins, Subqueries & Views",
+        "Performance Optimization",
+        "Relational Database Basics",
+        "Writing Complex SQL Queries",
+        "Database Design & Normalization",
+        "Data Analysis with SQL",
+        "Advanced Topic 7 in SQL Database",
+        "Advanced Topic 8 in SQL Database",
+        "Advanced Topic 9 in SQL Database",
+        "Advanced Topic 10 in SQL Database"
+      ],
+      "keyHighlights": [
+        "Interactive Query Practice",
+        "Real-world Datasets",
+        "Industry-Level Training",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning SQL Database?",
+          "answer": "This SQL Database course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the SQL Database training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the SQL Database course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the SQL Database course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in SQL Database."
+        },
+        {
+          "question": "Do you provide placement assistance for SQL Database roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to SQL Database, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Data Analysis",
+        "SQL",
+        "Tableau"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076&auto=format&fit=crop"
+  },
+  {
+    "id": 16,
+    "title": "MongoDB\n Mastery",
+    "slug": "mongodb-mastery",
+    "category": "DATABASE",
+    "rating": "4.9",
+    "reviews": "110 reviews",
+    "duration": "1 Month",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Master NoSQL database concepts and MongoDB. Learn document-oriented data modeling, aggregation framework, and scaling.",
+      "coreCurriculum": [
+        "Aggregation Framework",
+        "Indexing & Performance",
+        "Replication & Sharding",
+        "NoSQL vs SQL Concepts",
+        "MongoDB CRUD Operations",
+        "Data Modeling & Schema Design",
+        "Advanced Topic 7 in MongoDB Mastery",
+        "Advanced Topic 8 in MongoDB Mastery",
+        "Advanced Topic 9 in MongoDB Mastery",
+        "Advanced Topic 10 in MongoDB Mastery"
+      ],
+      "keyHighlights": [
+        "Hands-on NoSQL Projects",
+        "Live Application Database Design",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning MongoDB Mastery?",
+          "answer": "This MongoDB Mastery course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the MongoDB Mastery training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the MongoDB Mastery course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the MongoDB Mastery course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in MongoDB Mastery."
+        },
+        {
+          "question": "Do you provide placement assistance for MongoDB Mastery roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to MongoDB Mastery, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Deployment",
+        "Problem Solving"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2088&auto=format&fit=crop"
+  },
+  {
+    "id": 19,
+    "title": "Data Structures\n & Algorithms (DSA)",
+    "slug": "dsa",
+    "category": "DSA",
+    "rating": "4.9",
+    "reviews": "200 reviews",
+    "duration": "1 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Master Data Structures and Algorithms from scratch to advanced level. Ace coding interviews of top tech companies by building strong problem-solving skills.",
+      "coreCurriculum": [
+        "Time and Space Complexity Analysis",
+        "Arrays, Strings & Pointers",
+        "Recursion & Backtracking",
+        "Linked Lists, Stacks & Queues",
+        "Trees, Tries & Heaps",
+        "Graphs & Graph Algorithms",
+        "Dynamic Programming",
+        "Greedy Algorithms",
+        "Advanced Topic 9 in Data Structures & Algorithms (DSA)",
+        "Advanced Topic 10 in Data Structures & Algorithms (DSA)"
+      ],
+      "keyHighlights": [
+        "500+ Coding Problems Solved",
+        "Interview Preparation for MAANG",
+        "Mock Interviews",
+        "Placement Assistance",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Data Structures & Algorithms (DSA)?",
+          "answer": "This Data Structures & Algorithms (DSA) course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Data Structures & Algorithms (DSA) training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Data Structures & Algorithms (DSA) course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Data Structures & Algorithms (DSA) course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Data Structures & Algorithms (DSA)."
+        },
+        {
+          "question": "Do you provide placement assistance for Data Structures & Algorithms (DSA) roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Data Structures & Algorithms (DSA), and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Data Analysis",
+        "SQL",
+        "Tableau"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 17,
+    "title": ".NET Fullstack\n with\n Real Time Project",
+    "slug": "dotnet-fullstack",
+    "category": "REAL TIME PROJECT",
+    "rating": "4.8",
+    "reviews": "110 reviews",
+    "duration": "5 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become a professional full stack developer using Microsoft technologies. Learn to build scalable web applications using .NET, C#, and modern frontend tools.",
+      "coreCurriculum": [
+        "Frontend Development",
+        "Advanced Frontend with React",
+        "C# Programming Fundamentals",
+        "Object-Oriented Programming (OOP)",
+        "ASP.NET Core Fundamentals",
+        "Web APIs Development",
+        "Advanced Topic 10 in .NET Fullstack with\n Real Time Project",
+        "Authentication & Authorization",
+        "Data Access with EF Core",
+        "Deployment & Hosting"
+      ],
+      "keyHighlights": [
+        "Real-time Project Development",
+        "Industry-Level Training",
+        "Hands-on API Building",
+        "Placement Assistance",
+        "Live Case Studies",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning .NET Fullstack with\n Real Time Project?",
+          "answer": "This .NET Fullstack with\n Real Time Project course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the .NET Fullstack with\n Real Time Project training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the .NET Fullstack with\n Real Time Project course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the .NET Fullstack with\n Real Time Project course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in .NET Fullstack with\n Real Time Project."
+        },
+        {
+          "question": "Do you provide placement assistance for .NET Fullstack with\n Real Time Project roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to .NET Fullstack with\n Real Time Project, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "C#",
+        ".NET Core",
+        "Entity Framework",
+        "SQL Server",
+        "Azure"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Java Fullstack\nwith\n Real Time Project",
+    "slug": "java-fullstack",
+    "category": "REAL TIME PROJECT",
+    "rating": "4.9",
+    "reviews": "128 reviews",
+    "duration": "4 Months",
+    "lessons": "Lessons",
+    "details": {
+      "description": "Become a complete full stack developer by mastering frontend, backend, databases, and real-world project development using Java technologies.",
+      "coreCurriculum": [
+        "HTML, CSS, JavaScript, Bootstrap",
+        "React js",
+        "Core Java & OOP Concepts",
+        "JVM, Exception Handling, Multithreading",
+        "Spring Boot, Hibernate, REST APIs",
+        "Microservices & Design Patterns",
+        "JDBC, Servlets, JSP",
+        "Spring Security & JWT Authentication",
+        "MySQL, SQL, PL/SQL",
+        "Docker, AWS & CI/CD Deployment"
+      ],
+      "keyHighlights": [
+        "100+ Hours Training",
+        "Live Projects & Internship",
+        "Industry Expert Trainers",
+        "Placement Assistance",
+        "Real-world Case Studies",
+        "100% Placement Support",
+        "Interview Preparation"
+      ],
+      "bottomImage": "/course/java.png",
+      "faqs": [
+        {
+          "question": "What are the prerequisites for learning Java Fullstackwith\n Real Time Project?",
+          "answer": "This Java Fullstackwith\n Real Time Project course is designed to accommodate both beginners and individuals with some prior knowledge. We start with the fundamentals before moving on to advanced concepts."
+        },
+        {
+          "question": "Will we work on real-world projects during the Java Fullstackwith\n Real Time Project training?",
+          "answer": "Absolutely! Hands-on learning is a core part of our curriculum. You will build industry-standard projects using the exact tools and technologies covered in the Java Fullstackwith\n Real Time Project course."
+        },
+        {
+          "question": "Will I receive a certificate after completing the Java Fullstackwith\n Real Time Project course?",
+          "answer": "Yes, upon successful completion of all modules and projects, you will receive an industry-recognized certificate validating your skills in Java Fullstackwith\n Real Time Project."
+        },
+        {
+          "question": "Do you provide placement assistance for Java Fullstackwith\n Real Time Project roles?",
+          "answer": "Yes, we offer comprehensive 100% placement support. This includes resume building, mock interviews specific to Java Fullstackwith\n Real Time Project, and direct referrals to our hiring partners."
+        }
+      ],
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "React",
+        "MySQL",
+        "AWS"
+      ]
+    },
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+  }
+]

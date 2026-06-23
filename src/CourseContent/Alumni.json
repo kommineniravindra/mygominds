@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "AMAN SINGH",
+    "experience": "3 Years",
+    "companyPlaced":"MAIVIN PVT LTD",
+    "image": "/Alumni/aman.png",
+    "package": "6 LPA"
+  },
+  {
+    "id": 2,
+    "name": "GONNURI HEMALATHA",
+    "experience": "3.2 Years",
+    "companyPlaced": "INTEL SOFTECH",
+    "image": "/Alumni/hemalatha.png",
+    "package": "8 LPA"
+  },
+  {
+    "id": 3,
+    "name": "M.JANANI",
+    "experience": "10 Year",
+    "companyPlaced": "HCL TECHNOLOGIES",
+    "image": "/Alumni/janani.png",
+    "package": "13 LPA"
+  },
+  {
+    "id": 4,
+    "name": "Karthik",
+    "experience": "2.5 Years",
+    "companyPlaced": "INFOSYS",
+    "image": "/Alumni/karthik.png",
+    "package": "11 LPA"
+  },
+  {
+    "id": 5,
+    "name": "MANISH KUMAR",
+    "experience": "4 Years",
+    "companyPlaced": "EXPEDIENE SOLUTION",
+    "image": "/Alumni/manish.png",
+    "package": "6 LPA"
+  },
+  {
+    "id": 6,
+    "name": "PAVAN",
+    "experience": "3.3 Years",
+    "companyPlaced": "WIPRO LT",
+    "image": "/Alumni/pavan.png",
+    "package": "6 LPA"
+  },
+  {
+    "id": 7,
+    "name": "RAGASUDHA",
+    "experience": "12 Years",
+    "companyPlaced": "INDUSTRIAL IT SOLUTION",
+    "image": "/Alumni/ragasudha.png",
+    "package": "20 LPA"
+  },
+  {
+    "id": 8,
+    "name": "K.SRINIVAS",
+    "experience": "8 Years",
+    "companyPlaced": "GLOBAL LOGIC",
+    "image": "/Alumni/srinivas.png",
+    "package": "24 LPA"
+  },
+  {
+    "id": 9,
+    "name": "VIJAYA",
+    "experience": "5 Years",
+    "companyPlaced": "SELECTSYS",
+    "image": "/Alumni/vijaya.png",
+    "package": "14 LPA"
+  },
+  {
+    "id": 10,
+    "name": "VIKRAM",
+    "experience": "2 Years",
+    "companyPlaced": "DECOS SOFTWARE",
+    "image": "/Alumni/vikram.png",
+    "package": "6 LPA"
+  },
+  {
+    "id": 11,
+    "name": "ADITYA RANJAN",
+    "experience": "4 years",
+    "companyPlaced": "ESSPL",
+    "image": "/Alumni/aditya.png",
+    "package": "6 LPA"
+  },
+  {
+    "id": 12,
+    "name": "RITESH",
+    "experience": "8 years",
+    "companyPlaced": "LEGALIS PRIVATE LIMTED",
+    "image": "/Alumni/ritesh.png",
+    "package": "14 LPA"
+  },
+  {
+    "id": 13,
+    "name": "KIRAN KUMAR",
+    "experience": "2.5 years",
+    "companyPlaced": "TEKGENESIS",
+    "image": "/Alumni/kiran.png",
+    "package": "4.4 LPA"
+  },
+  {
+    "id": 14,
+    "name": "MOHIT KUMAR",
+    "experience": "8 years",
+    "companyPlaced": "TCS",
+    "image": "/Alumni/mohit.png",
+    "package": "11 LPA"
+  },
+  {
+    "id": 15,
+    "name": "RAGHUNATH",
+    "experience": "12 years",
+    "companyPlaced": "HALMA INDIA PVT LTD",
+    "image": "/Alumni/raghunath.png",
+    "package": "10 LPA"
+  },
+  {
+    "id": 16,
+    "name": "BISWAJIT KUMAR",
+    "experience": "6.6 years",
+    "companyPlaced": "EMBEE SOFTWARE PVT LTD",
+    "image": "/Alumni/biswajit.png",
+    "package": "8.5 LPA"
+  },
+  {
+    "id": 17,
+    "name": "RADHIKA UMESH",
+    "experience": "2.4 years",
+    "companyPlaced": "NEXELIS LLP PRIVATE LIMITED",
+    "image": "/Alumni/radhika.png",
+    "package": "3 LPA"
+  },
+  {
+    "id": 18,
+    "name": "MUKUNDREDDY",
+    "experience": "1 year",
+    "companyPlaced": "STR",
+    "image": "/Alumni/mukundha.png",
+    "package": "3 LPA"
+  },
+  {
+    "id": 19,
+    "name": "RENUKA NARAYANAN",
+    "experience": "10.5 years",
+    "companyPlaced": "SIEMENS HEALTHCARE",
+    "image": "/Alumni/renuka.png",
+    "package": "12 LPA"
+  },
+  {
+    "id": 20,
+    "name": "RUDURASAMY R",
+    "experience": "2 years",
+    "companyPlaced": "TECH Mahindra",
+    "image": "/Alumni/rudra.png",
+    "package": "4.2 LPA"
+  },
+  {
+    "id": 21,
+    "name": "RISHIKESH GUPTA",
+    "experience": "5 Years",
+    "companyPlaced": "ACCENTURE",
+    "image": "/Alumni/rishikesh.png",
+    "package": "15 LPA"
+  },
+  {
+    "id": 22,
+    "name": "NAVANEETH KUMAR",
+    "experience": "6 Years",
+    "companyPlaced": "IBM",
+    "image": "/Alumni/navaneeth.png",
+    "package": "8 LPA"
+  },
+  {
+    "id": 23,
+    "name": "PAVAN KUMAR",
+    "experience": "4.5 Years",
+    "companyPlaced": "APT ONLINE",
+    "image": "/Alumni/pavan_kumar.png",
+    "package": "6.5 LPA"
+  },
+  {
+    "id": 24,
+    "name": "ANIMESH KHARE",
+    "experience": "4.5 Years",
+    "companyPlaced": "CODING BRAINS SOFTWARE SOLUTIONS",
+    "image": "/Alumni/animesh.png",
+    "package": "4.44 LPA"
+  },
+  {
+    "id": 25,
+    "name": "C DINESH REDDY",
+    "experience": "5.5 Years",
+    "companyPlaced": "PALLE CONSULTING SERVICES",
+    "image": "/Alumni/dinesh.png",
+    "package": "8 LPA"
+  }
+]

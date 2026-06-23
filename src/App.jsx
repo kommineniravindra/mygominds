@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Courses from './components/Courses'
@@ -12,13 +12,23 @@ import Footer from './components/Footer'
 import Whatsapp from './components/Whatsapp'
 import AboutUs from './components/AboutUs'
 import Exam from './components/Exam/Exam'
+import Alumni from './components/Alumni'
+import PdfViewer from './components/PdfViewer'
+
+const MainLayout = () => (
+  <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <Navbar />
+    <Outlet />
+    <Whatsapp />
+    <Footer />
+  </div>
+);
 
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Navbar />
-        <Routes>
+      <Routes>
+        <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/course/:slug" element={<CourseDetails />} />
@@ -26,12 +36,12 @@ function App() {
           <Route path="/online-batches" element={<OnlineBatches />} />
           <Route path="/offline-batches" element={<OfflineBatches />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/alumni" element={<Alumni />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/exam" element={<Exam />} />
-        </Routes>
-        <Whatsapp />
-        <Footer />
-      </div>
+        </Route>
+        <Route path="/pdf/:title" element={<PdfViewer />} />
+      </Routes>
     </BrowserRouter>
   )
 }

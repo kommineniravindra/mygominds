@@ -18,7 +18,7 @@
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #e2e8f0;
 }
 
@@ -246,7 +246,7 @@
 .ob-table-header,
 .ob-table-row {
   display: grid;
-  grid-template-columns: 2fr 1.5fr 1fr 1fr 1.2fr 1fr 0.8fr;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1.2fr 0.8fr;
   align-items: center;
   gap: 24px;
 }
@@ -449,7 +449,8 @@
 
 /* Action Button */
 .col-action {
-  justify-content: flex-end;
+  display: flex;
+  justify-content: center;
 }
 
 .ob-zoom-btn {

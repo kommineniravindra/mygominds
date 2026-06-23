@@ -1,0 +1,344 @@
+.pf-section {
+  padding: 10px 20px;
+  background-color: #fffaf8;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.pf-header-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pf-header-container h2 {
+  font-size: 2.8rem;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.pf-header-container h2 span {
+  color: #f97316;
+}
+
+.pf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pf-left-col, .pf-right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pf-center-col {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pf-center-circle {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pf-center-circle::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  border: 5px dashed #cbd5e1;
+  animation: spin-clockwise 30s linear infinite;
+}
+
+.pf-center-svg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+@keyframes spin-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-counterclockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+.spin-slow {
+  transform-origin: 140px 140px;
+  animation: spin-clockwise 20s linear infinite;
+}
+
+.spin-reverse {
+  transform-origin: 140px 140px;
+  animation: spin-counterclockwise 15s linear infinite;
+}
+
+.pf-center-text {
+  z-index: 10;
+  background: white;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  position: relative;
+}
+
+.pf-center-text h3 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.pf-center-image {
+  position: absolute;
+  top: 47%;
+  left: 48%;
+  transform: translate(-48%, -42%) scale(2.5);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Cards */
+.pf-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  position: relative;
+  border: 1px solid #f8fafc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 5;
+}
+
+.pf-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.pf-left {
+  flex-direction: row;
+}
+
+.pf-right {
+  flex-direction: row-reverse;
+}
+
+.pf-card-number {
+  font-size: 2.8rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #0f172a;
+  font-weight: 800;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Custom organic swoosh backgrounds */
+.pf-left .pf-card-number::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  bottom: -16px;
+  left: -26px;
+  right: -5px;
+  background-color: var(--bg-color);
+  border-radius: 50px 20px 40px 50px;
+  z-index: -1;
+}
+
+.pf-right .pf-card-number::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  bottom: -16px;
+  left: -5px;
+  right: -26px;
+  background-color: var(--bg-color);
+  border-radius: 20px 50px 50px 40px;
+  z-index: -1;
+}
+
+/* Vertical Divider Lines */
+.pf-left .pf-card-number::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 15%;
+  height: 70%;
+  width: 2px;
+  background-color: var(--theme-color);
+  opacity: 0.3;
+}
+
+.pf-right .pf-card-number::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 15%;
+  height: 70%;
+  width: 2px;
+  background-color: var(--theme-color);
+  opacity: 0.3;
+}
+
+.pf-left .pf-card-number {
+  margin-right: 35px;
+}
+
+.pf-right .pf-card-number {
+  margin-left: 35px;
+}
+
+.pf-card-content {
+  flex: 1;
+}
+
+.pf-left .pf-card-content {
+  text-align: left;
+}
+
+.pf-right .pf-card-content {
+  text-align: right;
+}
+
+.pf-card-content h4 {
+  color: #1e293b;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.pf-card-content p {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pf-card-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: var(--theme-color);
+  background: transparent;
+  border: 2px solid var(--bg-color);
+  flex-shrink: 0;
+}
+
+.pf-left .pf-card-icon {
+  margin-left: 20px;
+}
+
+.pf-right .pf-card-icon {
+  margin-right: 20px;
+}
+
+/* Connecting Lines */
+.pf-card.pf-left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(-1 * var(--line-width));
+  width: var(--line-width);
+  height: 2px;
+  background: var(--bg-color);
+  z-index: 1;
+}
+
+.pf-card.pf-left::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(-1 * var(--line-width));
+  transform: translate(50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--theme-color);
+  z-index: 2;
+  box-shadow: 0 0 0 3px white;
+}
+
+.pf-card.pf-right::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * var(--line-width));
+  width: var(--line-width);
+  height: 2px;
+  background: var(--bg-color);
+  z-index: 1;
+}
+
+.pf-card.pf-right::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * var(--line-width));
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--theme-color);
+  z-index: 2;
+  box-shadow: 0 0 0 3px white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pf-container {
+    flex-direction: column;
+  }
+  .pf-center-col {
+    margin: 40px 0;
+  }
+  .pf-card.pf-left::after, .pf-card.pf-left::before,
+  .pf-card.pf-right::after, .pf-card.pf-right::before {
+    display: none;
+  }
+  .pf-card.pf-right {
+    flex-direction: row; /* reset direction for mobile */
+  }
+  .pf-right .pf-card-number {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .pf-right .pf-card-icon {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .pf-right .pf-card-content {
+    text-align: left;
+  }
+}

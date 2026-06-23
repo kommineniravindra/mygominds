@@ -4,7 +4,7 @@
   padding: 20px 20px 20px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+  /* font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif; */
   background-color: #f8fafc;
   min-height: calc(100vh - 70px);
   box-sizing: border-box;
@@ -18,7 +18,7 @@
   padding: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #e2e8f0;
 }
 
@@ -246,7 +246,7 @@
 .ob-table-header,
 .ob-table-row {
   display: grid;
-  grid-template-columns: 2fr 1.5fr 1fr 1fr 1.2fr 1fr 0.8fr;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1.2fr 0.8fr;
   align-items: center;
   gap: 24px;
 }
@@ -302,8 +302,9 @@
 }
 
 .ob-course-name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
-  font-size: 16px;
+  font-size: 15px !important;
   font-weight: 600;
   color: #111827;
 }
@@ -341,6 +342,7 @@
 }
 
 .ob-faculty-name {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #111827;
@@ -449,7 +451,8 @@
 
 /* Action Button */
 .col-action {
-  justify-content: flex-end;
+  display: flex;
+  justify-content: center;
 }
 
 .ob-zoom-btn {

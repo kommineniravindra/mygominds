@@ -373,3 +373,149 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Course Bottom Image Section */
+.course-bottom-image-container {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.course-bottom-image-title {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.course-bottom-image {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .course-bottom-image-container {
+    padding: 0 10px;
+  }
+  .course-bottom-image-title {
+    font-size: 1.5rem;
+  }
+  .course-bottom-image {
+    border-radius: 10px;
+  }
+}
+
+/* FAQ Section Styling */
+.section-title {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  border-radius: 2px;
+}
+
+.faq-section-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq-title {
+  display: inline-block;
+}
+
+.faq-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left; /* Keep FAQ items text left-aligned */
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+  border-left: 4px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.faq-item.open {
+  border-left-color: #f97316;
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.08);
+  background: #fffaf7;
+}
+
+.faq-question {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.faq-icon {
+  color: #94a3b8;
+  font-size: 1.4rem;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 24px;
+}
+
+.faq-item:hover .faq-icon {
+  color: #f97316;
+}
+
+.faq-item.open .faq-icon {
+  color: #f97316;
+  transform: rotate(180deg);
+}
+
+.faq-answer-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item.open .faq-answer-wrapper {
+  max-height: 250px;
+}
+
+.faq-answer {
+  padding: 0 24px 24px 24px;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.7;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 5px;
+  padding-top: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
