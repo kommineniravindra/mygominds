@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import '../UIcss/Carousel.css';
 
-const Carousel = ({ images = ['/banners/net.png','/banners/java.png','/banners/python.png','/banners/industry.png', '/banners/intern.png', '/banners/projects.png', '/banners/bootcamp.png', '/banners/hackton.png'], autoPlay = true, autoPlayInterval = 3000 }) => {
+const Carousel = ({ images = ['/banners/banner1.png','/banners/net.png','/banners/java.png','/banners/banner2.png','/banners/python.png','/banners/industry.png', '/banners/intern.png', '/banners/projects.png', '/banners/bootcamp.png', '/banners/hackton.png'], autoPlay = true, autoPlayInterval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(1); // Start at 1 because 0 is the cloned last slide
   const [isTransitioning, setIsTransitioning] = useState(true);
 

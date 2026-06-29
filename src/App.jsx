@@ -14,6 +14,7 @@ import AboutUs from './components/AboutUs'
 import Exam from './components/Exam/Exam'
 import Alumni from './components/Alumni'
 import PdfViewer from './components/PdfViewer'
+import ServicesPage from './Services/ServicesPage'
 
 const MainLayout = () => (
   <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -39,6 +40,7 @@ function App() {
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/exam" element={<Exam />} />
+          <Route path="/services" element={<ServicesPage />} />
         </Route>
         <Route path="/pdf/:title" element={<PdfViewer />} />
       </Routes>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiCode, FiMonitor, FiUser, FiLayers, FiBriefcase, FiAward } from 'react-icons/fi';
+import { FiCode, FiMonitor, FiUser, FiRefreshCw, FiDatabase, FiCheckCircle } from 'react-icons/fi';
 import '../UIcss/ProcessFlow.css';
 
 const leftCards = [
@@ -10,9 +10,9 @@ const leftCards = [
 ];
 
 const rightCards = [
-  { id: '04', title: 'Classroom Based Coaching', desc: 'Individual-focused training approach for every learner.', icon: <FiLayers />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' },
-  { id: '05', title: 'Industry-Relevant Curriculum', desc: 'Continuously updated programs that deliver market-ready skills.', icon: <FiBriefcase />, lineWidth: '35px', themeColor: '#312e81', bgColor: '#e0e7ff' },
-  { id: '06', title: 'Career Launch', desc: 'Job placement support, resume building, and interview prep.', icon: <FiAward />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' }
+  { id: '04', title: 'Agile Methodology', desc: 'Iterative development to ensure flexible and fast software delivery.', icon: <FiRefreshCw />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' },
+  { id: '05', title: 'Custom Architecture', desc: 'Robust, scalable infrastructure tailored to your business needs.', icon: <FiDatabase />, lineWidth: '35px', themeColor: '#312e81', bgColor: '#e0e7ff' },
+  { id: '06', title: 'End-to-End Delivery', desc: 'From requirements gathering to final deployment and maintenance.', icon: <FiCheckCircle />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' }
 ];
 
 const ProcessFlow = () => {

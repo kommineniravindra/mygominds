@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+.learning-paths-section {
+  padding: 10px 20px;
+  background-color: #fffaf8; /* Overall page background slightly darker to pop the light card */
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.learning-paths-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.learning-paths-header h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.learning-paths-header h2 span {
+  color: #ea580c;
+}
+
+.learning-paths-header p {
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Outer container stacked horizontally */
+.learning-paths-container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Forces both cards to be the same height */
+  gap: 30px;
+}
+
+/* Inner container side-by-side */
+.lp-row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Allows children to stretch to full card height */
+  justify-content: space-between;
+  gap: 30px;
+  flex: 1;
+  border-radius: 24px;
+  padding: 35px 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+  overflow: hidden; /* Prevents the image from spilling out of the card bounds */
+}
+
+/* Dark Theme Card */
+.lp-dark-card {
+  background-color: #0b0f19; /* Very dark navy/black */
+  color: #ffffff;
+}
+
+/* Light Theme Card */
+.lp-light-card {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Column setup */
+.lp-content-col {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; /* Pushes stats bar to the bottom */
+}
+
+.lp-content-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.lp-badge .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Badges */
+.purple-badge {
+  background-color: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+}
+.purple-badge .dot { background-color: #a78bfa; }
+
+.orange-badge {
+  background-color: #fff7ed;
+  color: #ea580c;
+}
+.orange-badge .dot { background-color: #ea580c; }
+
+/* Titles */
+.lp-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(20px, 1.8vw, 28px); /* Responsive font size ensures it fits on one line */
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.lp-dark-card .lp-title { color: #ffffff; }
+.lp-light-card .lp-title { color: #0f172a; }
+
+.purple-text { color: #a855f7; }
+.orange-text { color: #ea580c; }
+.blue-text { color: #2563eb; }
+
+/* Description */
+.lp-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 95%;
+}
+
+.lp-dark-card .lp-desc { color: #94a3b8; }
+.lp-light-card .lp-desc { color: #475569; }
+
+/* Lists */
+.lp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lp-list li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.lp-dark-card .lp-list li { color: #cbd5e1; }
+.lp-light-card .lp-list li { color: #334155; }
+
+.check-icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.purple-list .check-icon { color: #a855f7; }
+.orange-list .check-icon { color: #ea580c; }
+.blue-list .check-icon { color: #2563eb; }
+
+/* Buttons */
+.lp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.lp-btn-primary:hover .btn-icon {
+  transform: translateX(4px);
+}
+
+.purple-btn {
+  background: linear-gradient(135deg, #8b5cf6, #d946ef);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.purple-btn:hover {
+  background: linear-gradient(135deg, #7c3aed, #c026d3);
+}
+
+.blue-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.blue-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.orange-btn {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+}
+
+.orange-btn:hover {
+  background: linear-gradient(135deg, #c2410c, #ea580c);
+}
+
+/* Stats Bar */
+.lp-stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 12px 10px;
+  width: 100%;
+  margin-top: auto; /* Ensures it pushes to bottom if needed */
+  gap: 5px; /* Ensures minimum spacing between items */
+}
+
+.lp-dark-stats {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.lp-light-stats {
+  background: rgba(241, 245, 249, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 1;
+}
+
+.stat-item span {
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: nowrap; /* Prevents text from breaking badly */
+}
+
+.lp-dark-stats .stat-item span { color: #cbd5e1; }
+.lp-light-stats .stat-item span { color: #475569; }
+
+.stat-divider {
+  width: 1px;
+  height: 25px;
+  background-color: #cbd5e1;
+  flex-shrink: 0; /* Prevents divider from disappearing when squished */
+}
+
+.dark-divider {
+  background-color: #334155;
+}
+
+/* Image Column */
+.lp-image-col {
+  flex: 0 0 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center image vertically in its column */
+  position: relative;
+  right: 70px; /* Shifts the entire image column further to the left */
+}
+
+.lp-illustration {
+  width: 100%;
+  max-width: 450px;
+  height: 320px; /* Fixed height constraint ensures perfect matching */
+  object-fit: contain; /* Scales image beautifully inside the fixed box */
+  animation: floatImg 6s ease-in-out infinite;
+}
+
+@keyframes floatImg {
+  0% { transform: translateY(0px) scale(1.25); }
+  50% { transform: translateY(-12px) scale(1.25); }
+  100% { transform: translateY(0px) scale(1.25); }
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .learning-paths-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+  }
+  .lp-row-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .lp-row-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 25px 15px;
+  }
+  
+  .lp-content-col {
+    align-items: center;
+  }
+
+  .lp-content-top {
+    align-items: center;
+  }
+  
+  .lp-title {
+    font-size: 24px;
+    white-space: normal;
+  }
+  
+  .lp-desc {
+    max-width: 100%;
+  }
+
+  .lp-list {
+    display: inline-flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .lp-list li {
+    justify-content: flex-start;
+  }
+  
+  .lp-image-col {
+    right: 0;
+    width: 100%;
+  }
+
+  .lp-illustration {
+    transform: scale(1);
+    transform-origin: center;
+    height: auto;
+    max-height: 250px;
+  }
+
+  @keyframes floatImg {
+    0% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-10px) scale(1); }
+    100% { transform: translateY(0px) scale(1); }
+  }
+  
+  .lp-stats-bar {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item {
+    flex: 1 1 40%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .learning-paths-header h2 {
+    font-size: 26px;
+  }
+  
+  .learning-paths-header p {
+    font-size: 14px;
+  }
+
+  .lp-title {
+    font-size: 22px;
+  }
+  
+  .lp-btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stat-item {
+    flex: 1 1 100%;
+  }
+}

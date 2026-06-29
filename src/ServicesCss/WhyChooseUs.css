@@ -1,0 +1,138 @@
+.why-choose-us-section {
+  padding: 60px 20px 80px;
+  background-color: #fffaf8;
+  /* Grid pattern */
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  z-index: 1;
+}
+
+.wcu-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wcu-subtitle {
+  color: #ea580c;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.wcu-header h2 {
+  font-family: 'Outfit', sans-serif;
+  color: #0f172a;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.wcu-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.wcu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+
+.wcu-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  flex-shrink: 0;
+}
+
+.wcu-icon-wrapper.orange {
+  color: #ea580c;
+}
+
+.wcu-icon-wrapper.blue {
+  color: #0f172a;
+}
+
+.wcu-text h3 {
+  font-family: 'Outfit', sans-serif;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.wcu-text p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.wcu-divider {
+  width: 1px;
+  min-height: 90px;
+  background-color: rgba(0,0,0,0.06);
+  margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+  .wcu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wcu-divider {
+    width: 100%;
+    min-height: 1px;
+    height: 1px;
+    margin: 25px 0;
+  }
+  .wcu-item {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-us-section { padding: 40px 15px; }
+  .wcu-header { margin-bottom: 40px; }
+  .wcu-header h2 { font-size: 30px; }
+  .wcu-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .wcu-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wcu-header h2 { font-size: 26px; }
+  .wcu-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
