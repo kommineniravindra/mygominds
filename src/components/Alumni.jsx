@@ -32,7 +32,7 @@ const Alumni = () => {
 
           <div className="alumni-badge-top"><FaTrophy className="trophy-icon" /> OUR ALUMNI</div>
           <h2 className="alumni-title">Meet Our <span className="text-orange">Alumni</span></h2>
-          <p className="alumni-subtitle">Our students, now working in top companies.</p>
+          {/* <p className="alumni-subtitle">Our students, now working in top companies.</p> */}
           <div className="header-underline-wrapper">
             <div className="header-underline"></div>
           </div>

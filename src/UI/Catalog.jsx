@@ -86,9 +86,8 @@ const Catalog = () => {
     >
       <div className="catalog-container">
         <div className="mg-catalog-grid-wrapper">
-          <div className="mg-catalog-grid-animated">
-            {/* Render the list twice for seamless infinite scrolling */}
-            {[...courses.filter(course => (course.category === 'DEVELOPMENT' || course.category === 'AI' || course.category === 'DSA' || course.title.includes('DSA') || course.title.includes('Agentic AI')) && !course.isHidden), ...courses.filter(course => (course.category === 'DEVELOPMENT' || course.category === 'AI' || course.category === 'DSA' || course.title.includes('DSA') || course.title.includes('Agentic AI')) && !course.isHidden)].map((course, index) => (
+          <div className="mg-catalog-grid">
+            {courses.filter(course => (course.category === 'DEVELOPMENT' || course.category === 'AI' || course.category === 'DSA' || course.title.includes('DSA') || course.title.includes('Agentic AI')) && !course.isHidden).map((course, index) => (
               <Link 
                 to={`/course/${course.slug}`} 
                 className={`mg-catalog-card theme-${course.id}`} 

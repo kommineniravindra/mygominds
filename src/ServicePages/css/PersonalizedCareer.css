@@ -1,0 +1,288 @@
+/* PersonalizedCareer.css */
+
+.pcm-page {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+/* --- Hero Section --- */
+.pcm-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8% 180px; /* Large bottom padding for the overlapping bar */
+  background: white;
+  overflow: hidden;
+  min-height: 650px;
+}
+
+/* The curved background */
+.pcm-hero-bg-curve {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #fff7ed;
+  border-bottom-left-radius: 100% 100%;
+  z-index: 1;
+}
+
+/* The dark orange border highlight on the curve */
+.pcm-hero-bg-curve::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 100% 100%;
+  box-shadow: inset 0 -10px 0 0 #ea580c;
+  pointer-events: none;
+}
+
+/* Dotted pattern */
+.pcm-hero-dots {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(#fb923c 2px, transparent 2px);
+  background-size: 15px 15px;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* --- Left Content --- */
+.pcm-hero-content {
+  flex: 1;
+  max-width: 550px;
+  position: relative;
+  z-index: 10;
+}
+
+.pcm-badge {
+  display: inline-block;
+  background: #ffedd5;
+  color: #ea580c;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.pcm-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+}
+
+.pcm-title-highlight {
+  color: #ea580c;
+  white-space: nowrap;
+}
+
+.pcm-desc {
+  font-size: 1.15rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+.pcm-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pcm-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0f172a;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pcm-btn-primary:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+.pcm-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #0f172a;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid #fdba74;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pcm-btn-outline:hover {
+  background: #fff7ed;
+  border-color: #ea580c;
+}
+
+.pcm-btn-outline .play-icon-small {
+  color: #ea580c;
+  font-size: 1.2rem;
+}
+
+/* --- Right Visual --- */
+.pcm-hero-visual {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  height: 500px;
+}
+
+.pcm-hero-img-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pcm-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom-left-radius: 100px;
+}
+
+/* --- Bottom Feature Bar --- */
+.pcm-bottom-bar-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  z-index: 20;
+}
+
+.pcm-bottom-bar {
+  background: #0f172a;
+  border-radius: 16px 16px 0 0;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pcm-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.pcm-feature-icon {
+  font-size: 32px;
+  color: #ea580c;
+}
+
+.pcm-feature-text {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.pcm-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 20px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1200px) {
+  .pcm-title { font-size: 3rem; }
+  .pcm-bottom-bar { padding: 25px 20px; }
+  .pcm-feature-text { font-size: 0.9rem; }
+  .pcm-feature-icon { font-size: 24px; }
+}
+
+@media (max-width: 992px) {
+  .pcm-hero {
+    flex-direction: column;
+    padding: 100px 5% 0;
+    min-height: auto;
+  }
+  .pcm-hero-bg-curve {
+    width: 100%;
+    height: 60%;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+  }
+  .pcm-hero-bg-curve::after {
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+  }
+  .pcm-hero-content {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .pcm-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pcm-actions {
+    justify-content: center;
+  }
+  .pcm-hero-visual {
+    width: 100%;
+    justify-content: center;
+  }
+  .pcm-bottom-bar-wrapper {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .pcm-bottom-bar {
+    flex-direction: column;
+    border-radius: 0;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  .pcm-feature-item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .pcm-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .pcm-title { font-size: 2.5rem; }
+  .pcm-actions { flex-direction: column; }
+  .pcm-btn-primary, .pcm-btn-outline { width: 100%; justify-content: center; }
+}

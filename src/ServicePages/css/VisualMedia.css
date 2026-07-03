@@ -1,0 +1,193 @@
+/* VisualMedia.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap');
+
+.vm-page {
+  font-family: 'Outfit', sans-serif;
+  background-color: #fdf2f8; /* very light pink */
+  overflow-x: hidden;
+}
+
+.vm-hero {
+  position: relative;
+  padding: 100px 5%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(circle at top right, #fce7f3 0%, #fdf2f8 100%);
+  overflow: hidden;
+}
+
+.vm-hero-content {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  z-index: 10;
+}
+
+.vm-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+.vm-title span {
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vm-desc {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.vm-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  color: white;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vm-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(236, 72, 153, 0.4);
+}
+
+.vm-hero-visual {
+  flex: 1;
+  position: relative;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vm-floating-element {
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+  animation: vm-float 6s ease-in-out infinite;
+}
+
+.vm-float-1 { width: 300px; height: 420px; top: 5%; right: 5%; z-index: 2; animation-delay: 0s; }
+.vm-float-2 { width: 250px; height: 250px; bottom: 5%; left: 5%; z-index: 3; animation-delay: 2s; border-radius: 50%; }
+.vm-float-3 { width: 200px; height: 180px; top: 15%; left: -5%; z-index: 1; animation-delay: 4s; }
+
+.vm-floating-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes vm-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Skills Masonry */
+.vm-skills-section {
+  padding: 100px 5%;
+  background: white;
+}
+
+.vm-section-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 70px;
+  color: #111827;
+}
+
+.vm-section-title span {
+  color: #ec4899;
+}
+
+.vm-masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vm-skill-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  transition: all 0.3s;
+  border: 1px solid #fdf2f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.vm-skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.1);
+  border-color: #fbcfe8;
+}
+
+.vm-card-icon {
+  width: 70px;
+  height: 70px;
+  background: #fce7f3;
+  color: #ec4899;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+
+.vm-skill-card:hover .vm-card-icon {
+  background: #ec4899;
+  color: white;
+  transform: rotate(10deg);
+}
+
+.vm-skill-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.vm-skill-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .vm-hero { padding: 120px 5% 80px; }
+  .vm-title { font-size: 3.5rem; }
+  .vm-masonry-grid { grid-template-columns: repeat(2, 1fr); }
+  .vm-float-1 { width: 250px; height: 350px; }
+  .vm-float-2 { width: 200px; height: 200px; }
+  .vm-float-3 { display: none; } /* Hide 3rd image on tablet */
+}
+
+@media (max-width: 768px) {
+  .vm-hero { flex-direction: column; text-align: center; }
+  .vm-hero-content { margin-bottom: 60px; max-width: 100%; }
+  .vm-hero-visual { width: 100%; height: 400px; }
+  .vm-masonry-grid { grid-template-columns: 1fr; }
+  .vm-section-title { font-size: 2.5rem; }
+  .vm-float-1 { width: 220px; height: 300px; right: 10%; }
+  .vm-float-2 { width: 180px; height: 180px; left: 10%; }
+}

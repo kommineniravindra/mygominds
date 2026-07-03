@@ -1,0 +1,197 @@
+/* ModernTools.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.mt-page {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #030712; /* very dark gray/black */
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+.mt-hero {
+  position: relative;
+  padding: 150px 5% 120px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #1e1b4b 0%, #030712 70%);
+}
+
+.mt-grid-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 1;
+  perspective: 1000px;
+  transform: rotateX(60deg) scale(2.5) translateY(-20%);
+  transform-origin: top center;
+  opacity: 0.5;
+}
+
+.mt-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.mt-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.1);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.mt-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #f8fafc;
+}
+
+.mt-title span {
+  background: linear-gradient(135deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+.mt-desc {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.mt-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.mt-cta-btn::before {
+  content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.mt-cta-btn:hover::before { left: 100%; }
+.mt-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(79, 70, 229, 0.6); }
+
+/* Tools Grid */
+.mt-tools-section {
+  padding: 100px 5%;
+  position: relative;
+  z-index: 5;
+}
+
+.mt-section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.mt-section-title span {
+  color: #a78bfa;
+}
+
+.mt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mt-card {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px 30px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mt-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.1), transparent 70%);
+  opacity: 0; transition: opacity 0.4s;
+}
+
+.mt-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(139, 92, 246, 0.1);
+}
+
+.mt-card:hover::before { opacity: 1; }
+
+.mt-card-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(99, 102, 241, 0.1);
+  color: #a78bfa;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.mt-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #f8fafc;
+  position: relative; z-index: 2;
+}
+
+.mt-card p {
+  color: #94a3b8;
+  line-height: 1.6;
+  position: relative; z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .mt-title { font-size: 3.5rem; }
+  .mt-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .mt-title { font-size: 2.5rem; }
+  .mt-grid { grid-template-columns: 1fr; }
+  .mt-hero { padding: 100px 5% 60px; }
+}

@@ -3,6 +3,7 @@ import Softwarelanding from './Softwarelanding';
 import DigitalSolutions from './DigitalSolutions';
 import WhyChooseUs from './WhyChooseUs';
 import TechnologyPartners from './TechnologyPartners';
+import CourseCategories from '../UI/CourseCategories';
 import Carousel from '../UI/Carousel';
 import Catalog from '../UI/Catalog';
 import ProcessFlow from '../UI/ProcessFlow';
@@ -14,22 +15,11 @@ import PopupAdModal from '../components/PopupAdModal';
 const ServicesPage = () => {
   return (
     <div className="services-page-wrapper">
-      {/* <Softwarelanding />
+      <Softwarelanding />
+      <CourseCategories title="Services" />
       <TechnologyPartners />
       <DigitalSolutions />
-      <WhyChooseUs /> */}
-      <Carousel />
-      {/* <Landing /> */}
-      <Catalog/>
-      {/* <ITServices /> */}
-      <ProcessFlow />
-      <StudentPortal />
-      {/* <Roadmap/> */}
-      <Features />
-      {/* <GoogleReviews /> */}
-      <Certificate />
-      <PopupAdModal />
-      {/* Additional homepage sections can be added here in the future */}
+      <WhyChooseUs />
     </div>
   );
 };

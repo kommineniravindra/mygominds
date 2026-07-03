@@ -52,7 +52,7 @@ const Footer = () => {
               <div className="contact-icon-wrapper color-pink"><FiMapPin /></div>
               <div className="contact-text">
                 <span className="contact-label">LOCATION</span>
-                <span className="contact-value">Sai Ram Towers, <br/>Above Vijetha Super Market,<br/>Near JNTU Circle, <br/>KPHB, Hyderabad.</span>
+                <span className="contact-value">Sai Ram Towers, 4th Floor,<br/>Near JNTU Circle, KPHB,<br/>Hyderabad, Telangana.</span>
               </div>
             </li>
           </ul>

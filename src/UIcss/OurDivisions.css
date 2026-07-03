@@ -32,27 +32,34 @@
 
 /* Outer container stacked horizontally */
 .learning-paths-container {
-  max-width: 1350px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: stretch; /* Forces both cards to be the same height */
-  gap: 30px;
+  flex-direction: row; /* Force 3 cards in the same row */
+  align-items: stretch;
+  gap: 10px;
 }
 
-/* Inner container side-by-side */
+/* Inner container */
 .lp-row-container {
   display: flex;
-  flex-direction: row;
-  align-items: stretch; /* Allows children to stretch to full card height */
+  flex-direction: column; /* Stack main content and footer */
+  align-items: stretch; 
   justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
   flex: 1;
-  border-radius: 24px;
-  padding: 35px 30px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+  border-radius: 20px;
+  padding: 20px 15px;
   overflow: hidden; /* Prevents the image from spilling out of the card bounds */
+}
+
+.lp-main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
 }
 
 /* Dark Theme Card */
@@ -63,17 +70,18 @@
 
 /* Light Theme Card */
 .lp-light-card {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  border:2px solid wheat;
   color: #0f172a;
 }
 
 /* Column setup */
 .lp-content-col {
-  flex: 0 0 60%;
+  flex: 0 0 65%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between; /* Pushes stats bar to the bottom */
+  justify-content: space-between; 
 }
 
 .lp-content-top {
@@ -112,15 +120,52 @@
 }
 .orange-badge .dot { background-color: #ea580c; }
 
+/* Title container with icon */
+.lp-title-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.lp-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.lp-title-icon {
+  font-size: 24px;
+}
+
+/* Box Colors */
+.blue-box {
+  background-color: #eff6ff; 
+  color: #2563eb;
+}
+
+.orange-box {
+  background-color: #fff7ed; 
+  color: #ea580c;
+}
+
+.purple-box {
+  background-color: #faf5ff; 
+  color: #9333ea;
+}
+
 /* Titles */
 .lp-title {
   font-family: 'Outfit', sans-serif;
-  font-size: clamp(20px, 1.8vw, 28px); /* Responsive font size ensures it fits on one line */
+  font-size: 18px; 
   line-height: 1.2;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 0px; /* Moved to container */
   letter-spacing: -0.5px;
-  white-space: nowrap;
 }
 
 .lp-dark-card .lp-title { color: #ffffff; }
@@ -132,9 +177,9 @@
 
 /* Description */
 .lp-desc {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 12px;
   max-width: 95%;
 }
 
@@ -145,16 +190,16 @@
 .lp-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .lp-list li {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -162,8 +207,8 @@
 .lp-light-card .lp-list li { color: #334155; }
 
 .check-icon {
-  margin-right: 10px;
-  font-size: 16px;
+  margin-right: 6px;
+  font-size: 12px;
 }
 
 .purple-list .check-icon { color: #a855f7; }
@@ -174,16 +219,16 @@
 .lp-btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
+  gap: 6px;
+  padding: 8px 18px;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: white;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .btn-icon {
@@ -226,12 +271,13 @@
 .lp-stats-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 12px;
-  padding: 12px 10px;
+  justify-content: space-evenly; /* Spread out nicely across the full width */
+  flex-wrap: nowrap;
+  border-radius: 16px; /* Soft round corners */
+  padding: 14px 15px; /* Generous padding */
   width: 100%;
-  margin-top: auto; /* Ensures it pushes to bottom if needed */
-  gap: 5px; /* Ensures minimum spacing between items */
+  margin-top: 5px; /* Separation from top content */
+  gap: 10px; 
 }
 
 .lp-dark-stats {
@@ -253,15 +299,20 @@
 .stat-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px; /* Breathing room between icon and text */
   flex-shrink: 1;
 }
 
+.stat-icon {
+  font-size: 18px; /* Slightly larger icon */
+}
+
 .stat-item span {
-  font-size: 11px;
+  font-size: 11px; /* Highly readable font size */
   line-height: 1.3;
   font-weight: 600;
-  white-space: nowrap; /* Prevents text from breaking badly */
+  white-space: nowrap; 
+  text-align: left;
 }
 
 .lp-dark-stats .stat-item span { color: #cbd5e1; }
@@ -280,19 +331,20 @@
 
 /* Image Column */
 .lp-image-col {
-  flex: 0 0 36%;
+  flex: 0 0 30%;
   display: flex;
-  justify-content: center;
-  align-items: center; /* Center image vertically in its column */
+  justify-content: flex-end;
+  align-items: center; 
   position: relative;
-  right: 70px; /* Shifts the entire image column further to the left */
+  right: 0px; 
+  margin-top: 0;
 }
 
 .lp-illustration {
   width: 100%;
-  max-width: 450px;
-  height: 320px; /* Fixed height constraint ensures perfect matching */
-  object-fit: contain; /* Scales image beautifully inside the fixed box */
+  max-width: 200px; 
+  height: auto; 
+  object-fit: contain; 
   animation: floatImg 6s ease-in-out infinite;
 }
 
@@ -316,14 +368,15 @@
 
 @media (max-width: 768px) {
   .lp-row-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
-    gap: 30px;
-    padding: 25px 15px;
+    gap: 0px;
+    padding: 0px 10px;
   }
   
   .lp-content-col {
     align-items: center;
+    margin-top: -60px; /* Pull text up to remove gap caused by image transparency/spacing */
   }
 
   .lp-content-top {
@@ -333,6 +386,7 @@
   .lp-title {
     font-size: 24px;
     white-space: normal;
+    margin-top: 0;
   }
   
   .lp-desc {
@@ -380,7 +434,8 @@
 
   .stat-item {
     flex: 1 1 40%;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 10px; /* added a little padding so they don't hug the edge completely */
   }
 }
 
@@ -403,6 +458,6 @@
   }
 
   .stat-item {
-    flex: 1 1 100%;
+    flex: 1 1 45%;
   }
 }

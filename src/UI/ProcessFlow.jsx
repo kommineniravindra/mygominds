@@ -1,18 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiCode, FiMonitor, FiUser, FiRefreshCw, FiDatabase, FiCheckCircle } from 'react-icons/fi';
+import { FiBriefcase, FiAward, FiTrendingUp, FiStar, FiSmartphone, FiCalendar } from 'react-icons/fi';
 import '../UIcss/ProcessFlow.css';
 
 const leftCards = [
-  { id: '01', title: 'Practical Learning', desc: 'Gain practical skills with project-based, hands-on learning.', icon: <FiCode />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' },
-  { id: '02', title: 'Expert-Led Training', desc: 'Learn from experts with real-world industry experience.', icon: <FiMonitor />, lineWidth: '35px', themeColor: '#312e81', bgColor: '#e0e7ff' },
-  { id: '03', title: 'Career-Oriented Approach', desc: 'Placement assistance, resume support, and interview prep.', icon: <FiUser />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' }
+  { id: '01', title: 'Corporate Training', desc: 'Customized skill-building programs for corporate teams to drive business success.', icon: <FiBriefcase />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' },
+  { id: '02', title: 'Faculty Dev (FDP)', desc: 'Empowering educators with modern methodologies and advanced technical knowledge.', icon: <FiAward />, lineWidth: '35px', themeColor: '#312e81', bgColor: '#e0e7ff' },
+  { id: '03', title: 'Student Dev (SDP)', desc: 'Bridging the gap between academics and industry with hands-on learning.', icon: <FiTrendingUp />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' }
 ];
 
 const rightCards = [
-  { id: '04', title: 'Agile Methodology', desc: 'Iterative development to ensure flexible and fast software delivery.', icon: <FiRefreshCw />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' },
-  { id: '05', title: 'Custom Architecture', desc: 'Robust, scalable infrastructure tailored to your business needs.', icon: <FiDatabase />, lineWidth: '35px', themeColor: '#312e81', bgColor: '#e0e7ff' },
-  { id: '06', title: 'End-to-End Delivery', desc: 'From requirements gathering to final deployment and maintenance.', icon: <FiCheckCircle />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' }
+  { id: '04', title: 'Personality Dev (PDP)', desc: 'Enhancing soft skills, communication, and leadership for overall growth.', icon: <FiStar />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' },
+  { id: '05', title: 'Mobile Development', desc: 'Building high-performance, user-friendly mobile applications for iOS and Android.', icon: <FiSmartphone />, lineWidth: '35px', themeColor: '#312e81', bgColor: '#e0e7ff' },
+  { id: '06', title: 'Conferences & Events', desc: 'Organizing impactful seminars, hackathons, and industry networking events.', icon: <FiCalendar />, lineWidth: '70px', themeColor: '#f97316', bgColor: '#ffedd5' }
 ];
 
 const ProcessFlow = () => {

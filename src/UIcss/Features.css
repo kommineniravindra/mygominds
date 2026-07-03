@@ -107,13 +107,13 @@
 
 .mg-features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
 }
 
 .mg-feature-card {
   background: #ffffff;
-  padding: 24px 16px 20px;
+  padding: 18px 12px 14px;
   border-radius: 16px;
   text-align: center;
   border: 1px solid #f1f5f9;
@@ -144,32 +144,32 @@
 }
 
 .mg-feature-icon-wrapper {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 15px;
-  font-size: 1.6rem;
+  margin: 0 auto 10px;
+  font-size: 1.3rem;
   color: var(--theme-color);
   background-color: var(--theme-bg);
 }
 
 .mg-feature-card h3 {
-  font-size: 1.05rem;
+  font-size: 0.92rem;
   color: #1e293b;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: 700;
 }
 
 .mg-feature-card p {
   color: #64748b;
-  line-height: 1.4;
-  font-size: 0.85rem;
+  line-height: 1.35;
+  font-size: 0.78rem;
   margin: 0;
   font-weight: 500;
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 .mg-card-line {

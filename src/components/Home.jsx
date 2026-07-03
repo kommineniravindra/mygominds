@@ -10,21 +10,39 @@ import GoogleReviews from '../UI/GoogleReviews';
 import PopupAdModal from './PopupAdModal';
 import ProcessFlow from '../UI/ProcessFlow';
 import OurDivisions from '../UI/OurDivisions';
+import ProposedServices from '../UI/ProposedServices';
+import Clients from '../UI/Clients';
 import Softwarelanding from '../Services/Softwarelanding';
 import TechnologyPartners from '../Services/TechnologyPartners';
 import DigitalSolutions from '../Services/DigitalSolutions';
 import WhyChooseUs from '../Services/WhyChooseUs';
+import CourseCategories from '../UI/CourseCategories';
 
 const Home = () => {
   return (
     <div className="home-page">
-      <Softwarelanding />
+
+      <Carousel />
+      <ProcessFlow />
+      {/* <Catalog/> */}
       <OurDivisions />
-      <TechnologyPartners />
-      <DigitalSolutions />
-      <WhyChooseUs />
+      {/* <ProposedServices /> */}
+      <Clients />
+      {/* <ProcessFlow /> */}
+      <Features />
+      <PopupAdModal />
+
+
+      {/* <Landing /> */}
+      {/* <CourseCategories /> */}
+      {/* <StudentPortal /> */}
+      {/* <GoogleReviews /> */}
+      {/* <Roadmap/> */}
+      {/* <Certificate /> */}
+
+
     </div>
   );
 };
 
-export default Home;
+export default Home; 

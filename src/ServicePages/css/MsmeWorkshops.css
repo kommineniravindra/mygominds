@@ -1,0 +1,206 @@
+/* MsmeWorkshops.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+.msme-page {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fdf8; /* Very light green */
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+.msme-hero {
+  position: relative;
+  padding: 120px 5% 100px;
+  background: #064e3b; /* Dark Green */
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.msme-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -10%;
+  width: 60%; height: 200%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.msme-hero-content {
+  flex: 1;
+  max-width: 650px;
+  position: relative;
+  z-index: 10;
+}
+
+.msme-badge {
+  display: inline-block;
+  background: rgba(217, 119, 6, 0.2); /* Gold/Amber background */
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.msme-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.msme-title span {
+  color: #f59e0b; /* Amber/Gold */
+}
+
+.msme-desc {
+  font-size: 1.2rem;
+  color: #a7f3d0; /* Light green text */
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.msme-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #f59e0b; /* Gold */
+  color: #064e3b; /* Dark green text */
+  padding: 15px 35px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.msme-cta-btn:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+}
+
+.msme-hero-visual {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.msme-image-wrapper {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+.msme-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 20px 20px 0 -5px #064e3b, 20px 20px 0 0 #f59e0b;
+}
+
+/* Topics Section - Horizontal List */
+.msme-topics-section {
+  padding: 100px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.msme-section-title {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #064e3b;
+  margin-bottom: 60px;
+}
+
+.msme-section-title span {
+  color: #d97706;
+}
+
+.msme-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.msme-list-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border-left: 6px solid #10b981; /* Emerald green border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: all 0.3s;
+}
+
+.msme-list-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  border-left-color: #f59e0b; /* Turns gold on hover */
+}
+
+.msme-icon-box {
+  width: 80px;
+  height: 80px;
+  background: #ecfdf5; /* Light emerald */
+  color: #059669; /* Emerald */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.msme-list-item:hover .msme-icon-box {
+  background: #fffbeb;
+  color: #d97706;
+}
+
+.msme-item-content {
+  flex: 1;
+}
+
+.msme-item-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #064e3b;
+  margin-bottom: 10px;
+}
+
+.msme-item-content p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 992px) {
+  .msme-hero { flex-direction: column; text-align: center; padding: 120px 5% 80px; }
+  .msme-hero-content { margin-bottom: 60px; }
+  .msme-hero-visual { justify-content: center; width: 100%; }
+  .msme-image-wrapper { width: 100%; max-width: 500px; }
+  .msme-title { font-size: 3.5rem; }
+}
+
+@media (max-width: 768px) {
+  .msme-list-item { flex-direction: column; text-align: center; padding: 30px 20px; border-left: none; border-top: 6px solid #10b981; }
+  .msme-list-item:hover { transform: translateY(-5px); border-left-color: transparent; border-top-color: #f59e0b; }
+  .msme-title { font-size: 2.5rem; }
+}

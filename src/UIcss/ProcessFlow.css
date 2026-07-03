@@ -340,4 +340,69 @@
   .pf-right .pf-card-content {
     text-align: left;
   }
+  /* Fix shape of the background swoosh when changing flex direction */
+  .pf-right .pf-card-number::before {
+    display: block;
+    left: -26px;
+    right: -5px;
+    border-radius: 50px 20px 40px 50px;
+  }
+  /* Fix vertical divider line position for right cards since flex direction changed to row */
+  .pf-right .pf-card-number::after {
+    left: auto;
+    right: -10px; /* middle of 20px margin-right */
+  }
+}
+
+@media (max-width: 768px) {
+  .pf-container {
+    gap: 20px;
+  }
+  .pf-center-col {
+    margin: 10px 0;
+  }
+  .pf-header-container h2 {
+    font-size: 2.2rem;
+  }
+  .pf-card {
+    padding: 10px 12px;
+    border-radius: 24px;
+  }
+  .pf-card-number {
+    font-size: 1.4rem;
+    width: 35px;
+  }
+  .pf-left .pf-card-number,
+  .pf-right .pf-card-number {
+    margin-right: 10px;
+  }
+  .pf-left .pf-card-number::before,
+  .pf-right .pf-card-number::before {
+    top: -6px;
+    bottom: -6px;
+    left: -10px;
+    right: -2px;
+  }
+  /* Center the vertical divider line inside the new 10px margin */
+  .pf-left .pf-card-number::after,
+  .pf-right .pf-card-number::after {
+    left: auto;
+    right: -5px;
+  }
+  .pf-card-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .pf-left .pf-card-icon,
+  .pf-right .pf-card-icon {
+    margin-left: 10px;
+  }
+  .pf-card-content h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+  .pf-card-content p {
+    font-size: 0.8rem;
+  }
 }

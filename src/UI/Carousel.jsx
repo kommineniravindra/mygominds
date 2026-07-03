@@ -1,111 +1,178 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FiCheckCircle, FiArrowRight, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import '../UIcss/Carousel.css';
 
-const Carousel = ({ images = ['/banners/banner1.png','/banners/net.png','/banners/java.png','/banners/banner2.png','/banners/python.png','/banners/industry.png', '/banners/intern.png', '/banners/projects.png', '/banners/bootcamp.png', '/banners/hackton.png'], autoPlay = true, autoPlayInterval = 3000 }) => {
-  const [currentIndex, setCurrentIndex] = useState(1); // Start at 1 because 0 is the cloned last slide
-  const [isTransitioning, setIsTransitioning] = useState(true);
+const slidesData = [
+  {
+    id: 1,
+    tag: "TRAINING & SOFTWARE DEVELOPMENT",
+    title: (
+      <>
+        <span className="text-dark">Empowering Minds.</span><br/>
+        <span className="text-blue" style={{ fontSize: "1.2em" }}>Building Futures.</span>
+      </>
+    ),
+    description: "We provide industry-focused training and custom software development services that empower individuals and businesses to grow, innovate, and succeed in the digital era.",
+    features: [
+      "Industry-aligned Training Programs",
+      "Hands-on Projects & Real-world Skills",
+      "Career Support & Placement Assistance"
+    ],
+    primaryBtn: { text: "Explore IT Programs", link: "/courses" },
+    secondaryBtn: { text: "Our Services", link: "/services" },
+    image: "/banners/landing1.png",
+    imageStyle: { transform: "scaleY(1.15)", transformOrigin: "right center" },
+  },
+  {
+    id: 2,
+    tag: "TRAINING & SOFTWARE DEVELOPMENT",
+    title: (
+      <>
+        <span className="text-dark">FULL STACK</span><br/>
+        <span className="text-blue" style={{ fontSize: "1.4em", lineHeight: "1" }}>DEVELOPMENT</span><br/>
+      </>
+    ),
+    description: "Master front-end, back-end, databases, and modern frameworks to build powerful, scalable web applications and enterprise-grade software solutions.",
+    features: [
+      "Industry-aligned Training Programs",
+      "Hands-on Projects & Real-world Skills",
+      "Career Support & Placement Assistance"
+    ],
+    primaryBtn: { text: "Full Stack Programs", link: "/courses" },
+    secondaryBtn: { text: "View Curriculum", link: "/courses" },
+    image: "/banners/java1.png",
+    imageStyle: { 
+      transform: "scale(1.3)", 
+      transformOrigin: "center",
+      objectFit: "contain",
+      maxHeight: "500px"
+    },
+    bgColor: "#f3f7fb"
+  },
+  {
+    id: 4,
+    tag: "NI-MSME ALIGNED WORKSHOPS",
+    tagStyle: { backgroundColor: "rgba(245, 158, 11, 0.15)", color: "#fcd34d", border: "1px solid rgba(245, 158, 11, 0.3)", letterSpacing: "1px" },
+    dotStyle: { backgroundColor: "#fcd34d", boxShadow: "0 0 8px rgba(252, 211, 77, 0.8)" },
+    title: (
+      <>
+        <span style={{ color: '#ffffff', fontWeight: '800', letterSpacing: '-1px' }}>NI-MSME-Focused</span><br/>
+        <span style={{ color: '#f59e0b', fontSize: '1.1em', display: 'inline-block', marginTop: '10px' }}>Workshops</span><br/>
+      </>
+    ),
+    description: "Tailored, practical workshops designed to accelerate digital transformation and sustainable growth for MSMEs. Empowering your business with the skills to compete globally.",
+    descStyle: { color: "#d1fae5", fontSize: "1.15rem", lineHeight: "1.7" },
+    features: [
+      "Government & NI-MSME Certified Programs",
+      "Intensive Summer Bootcamps",
+      "Hands-on Workshops & Skill Development"
+    ],
+    primaryBtn: { text: "Join a Workshop", link: "/service/msme-focused-workshops" },
+    primaryBtnStyle: { backgroundColor: "#f59e0b", color: "#064e3b", boxShadow: "0 10px 25px rgba(245, 158, 11, 0.4)", border: "none", padding: "1rem 2rem", fontSize: "1.1rem" },
+    secondaryBtn: null,
+    image: "/clients/msme.png",
+    imageStyle: { 
+      height: "520px",
+      width: "100%",
+      objectFit: "contain",
+      marginRight: "20px",
+      marginTop: "10px",
+      filter: "brightness(0) invert(1)",
+      transform: "scale(1.3) translateX(-40px)"
+    },
+    bgColor: "#064e3b",
+  }
+];
 
-  // Clone first and last images for the infinite loop effect
-  const extendedImages = images.length > 1 
-    ? [images[images.length - 1], ...images, images[0]] 
-    : images;
+const Carousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slidesData.length);
+  const prevSlide = () => setCurrentSlide((prev) => (prev === 0 ? slidesData.length - 1 : prev - 1));
 
   useEffect(() => {
-    if (!autoPlay || images.length <= 1) return;
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slidesData.length);
+    }, 500000); // Auto-scroll every 5 seconds
 
-    const interval = setInterval(() => {
-      handleNext();
-    }, autoPlayInterval);
+    return () => clearInterval(timer);
+  }, []);
 
-    return () => clearInterval(interval);
-  }, [currentIndex, autoPlay, autoPlayInterval, images.length]);
-
-  const handleNext = () => {
-    if (currentIndex >= extendedImages.length - 1) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => prevIndex + 1);
-  };
-
-  const handlePrev = () => {
-    if (currentIndex <= 0) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => prevIndex - 1);
-  };
-
-  const goToSlide = (index) => {
-    setIsTransitioning(true);
-    setCurrentIndex(index + 1); // +1 because the first element is a clone
-  };
-
-  // When the CSS transition finishes, quietly jump back if we're on a cloned slide
-  const handleTransitionEnd = () => {
-    if (currentIndex === 0) {
-      setIsTransitioning(false);
-      setCurrentIndex(images.length);
-    } else if (currentIndex === extendedImages.length - 1) {
-      setIsTransitioning(false);
-      setCurrentIndex(1);
-    }
-  };
-
-  if (!images || images.length === 0) {
-    return <div className="mg-carousel-empty">No images to display</div>;
-  }
+  const slide = slidesData[currentSlide];
 
   return (
-    <motion.div 
-      className="mg-carousel-container"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 0.6 }}
-    >
-      <div 
-        className="mg-carousel-track" 
-        style={{ 
-          transform: `translateX(-${currentIndex * 100}%)`,
-          transition: isTransitioning ? 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)' : 'none'
-        }}
-        onTransitionEnd={handleTransitionEnd}
-      >
-        {extendedImages.map((imgSrc, index) => (
-          <div className="mg-carousel-slide" key={index}>
-            <img src={imgSrc} alt={`Slide ${index}`} className="mg-carousel-image" />
+    <div className="mg-hero-section" style={{ backgroundColor: slide.bgColor || '#fcfdfe', transition: 'background-color 0.5s ease' }}>
+      {/* Navigation Arrows */}
+      <button className="carousel-nav-btn prev-btn" onClick={prevSlide}>
+        <FiChevronLeft />
+      </button>
+      <button className="carousel-nav-btn next-btn" onClick={nextSlide}>
+        <FiChevronRight />
+      </button>
+
+      <AnimatePresence mode="wait">
+        <motion.div 
+          key={slide.id}
+          className="mg-hero-container"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.5 }}
+        >
+          {/* Left Content */}
+          <div className="mg-hero-content">
+            <div className="mg-hero-tag" style={slide.tagStyle || {}}>
+              <span className="mg-hero-dot" style={slide.dotStyle || {}}></span>
+              {slide.tag}
+            </div>
+            
+            <h1 className="mg-hero-title">
+              {slide.title}
+            </h1>
+            
+            <div className="mg-hero-divider">
+              <span className="line-dark" style={slide.dividerDarkStyle || {}}></span>
+              <span className="line-orange" style={slide.dividerOrangeStyle || {}}></span>
+            </div>
+            
+            <p className="mg-hero-description" style={slide.descStyle || {}}>
+              {slide.description}
+            </p>
+            
+            {slide.features && slide.features.length > 0 && (
+              <ul className="mg-hero-features">
+                {slide.features.map((feature, idx) => (
+                  <li key={idx} style={slide.descStyle ? { color: slide.descStyle.color } : {}}>
+                    <FiCheckCircle className="feature-icon" style={slide.dotStyle ? { color: slide.dotStyle.backgroundColor } : {}} />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            
+            <div className="mg-hero-buttons">
+              {slide.primaryBtn && (
+                <Link to={slide.primaryBtn.link} className="btn-primary" style={slide.primaryBtnStyle || {}}>
+                  {slide.primaryBtn.text} <FiArrowRight className="btn-icon" />
+                </Link>
+              )}
+              {slide.secondaryBtn && (
+                <Link to={slide.secondaryBtn.link} className="btn-secondary" style={slide.secondaryBtnStyle || {}}>
+                  {slide.secondaryBtn.text} <FiArrowRight className="btn-icon" />
+                </Link>
+              )}
+            </div>
           </div>
-        ))}
-      </div>
-
-      {images.length > 1 && (
-        <>
-          <button className="mg-carousel-btn prev" onClick={handlePrev} aria-label="Previous Slide">
-            <FiChevronLeft />
-          </button>
-          <button className="mg-carousel-btn next" onClick={handleNext} aria-label="Next Slide">
-            <FiChevronRight />
-          </button>
-
-          <div className="mg-carousel-indicators">
-            {images.map((_, index) => {
-              // Calculate real active index for the dots
-              let activeIndex = currentIndex - 1;
-              if (activeIndex === -1) activeIndex = images.length - 1;
-              if (activeIndex === images.length) activeIndex = 0;
-
-              return (
-                <button
-                  key={index}
-                  className={`mg-carousel-dot ${activeIndex === index ? 'active' : ''}`}
-                  onClick={() => goToSlide(index)}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              );
-            })}
+          
+          {/* Right Image */}
+          <div className="mg-hero-image-wrapper">
+            <img src={slide.image} alt="Hero banner" className="mg-hero-main-img" style={slide.imageStyle || {}} />
           </div>
-        </>
-      )}
-    </motion.div>
+        </motion.div>
+      </AnimatePresence>
+    </div>
   );
 };
 
