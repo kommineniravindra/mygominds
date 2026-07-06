@@ -16,7 +16,6 @@ import Softwarelanding from '../Services/Softwarelanding';
 import TechnologyPartners from '../Services/TechnologyPartners';
 import DigitalSolutions from '../Services/DigitalSolutions';
 import WhyChooseUs from '../Services/WhyChooseUs';
-import CourseCategories from '../UI/CourseCategories';
 
 const Home = () => {
   return (
@@ -28,17 +27,15 @@ const Home = () => {
       <OurDivisions />
       {/* <ProposedServices /> */}
       <Clients />
-      {/* <ProcessFlow /> */}
       <Features />
       <PopupAdModal />
 
 
       {/* <Landing /> */}
-      {/* <CourseCategories /> */}
       {/* <StudentPortal /> */}
       {/* <GoogleReviews /> */}
       {/* <Roadmap/> */}
-      {/* <Certificate /> */}
+      <Certificate />
 
 
     </div>

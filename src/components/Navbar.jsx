@@ -6,6 +6,7 @@ import '../css/Navbar.css';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
 
   // Match navbar background to each page's background color
@@ -21,8 +22,16 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const toggleDropdown = (e, dropdownName) => {
+    if (window.innerWidth <= 968) {
+      e.preventDefault();
+      setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+    }
+  };
+
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setActiveDropdown(null);
   };
 
   return (
@@ -86,8 +95,8 @@ const Navbar = () => {
           {/* Links Section */}
           <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
             <li><Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMobileMenu}><FiHome className="nav-icon" /> Home</Link></li>
-            <li className="dropdown services-dropdown">
-              <a href="#services" className="dropbtn">
+            <li className={`dropdown services-dropdown ${activeDropdown === 'services' ? 'open' : ''}`}>
+              <a href="#services" className="dropbtn" onClick={(e) => toggleDropdown(e, 'services')}>
                 <span className="dropbtn-content"><FiBriefcase className="nav-icon" /> Services</span>
                 <FiChevronDown className="dropdown-arrow-icon" />
               </a>
@@ -98,6 +107,15 @@ const Navbar = () => {
                     <div>
                       <span className="dropdown-title">All Services</span>
                       <p className="dropdown-desc">View all our services</p>
+                    </div>
+                  </div>
+                </Link>
+                <Link to="/service/msme-focused-workshops" className="dropdown-item" onClick={closeMobileMenu}>
+                  <div className="dropdown-item-content">
+                    <FaBuilding className="dropdown-icon svc-icon" style={{ color: '#9333ea', background: '#faf5ff' }} />
+                    <div>
+                      <span className="dropdown-title">NI-MSME Workshops</span>
+                      <p className="dropdown-desc">Digital growth for MSMEs</p>
                     </div>
                   </div>
                 </Link>
@@ -116,6 +134,15 @@ const Navbar = () => {
                     <div>
                       <span className="dropdown-title">Women Empowerment</span>
                       <p className="dropdown-desc">Leadership & tech for women</p>
+                    </div>
+                  </div>
+                </Link>
+                <Link to="/service/mobile-apps-web-development" className="dropdown-item" onClick={closeMobileMenu}>
+                  <div className="dropdown-item-content">
+                    <FaMobileAlt className="dropdown-icon svc-icon" style={{ color: '#ea580c', background: '#fff7ed' }} />
+                    <div>
+                      <span className="dropdown-title">Mobile & Web Dev</span>
+                      <p className="dropdown-desc">App development services</p>
                     </div>
                   </div>
                 </Link>
@@ -164,15 +191,6 @@ const Navbar = () => {
                     </div>
                   </div>
                 </Link>
-                <Link to="/service/msme-focused-workshops" className="dropdown-item" onClick={closeMobileMenu}>
-                  <div className="dropdown-item-content">
-                    <FaBuilding className="dropdown-icon svc-icon" style={{ color: '#9333ea', background: '#faf5ff' }} />
-                    <div>
-                      <span className="dropdown-title">MSME Workshops</span>
-                      <p className="dropdown-desc">Digital growth for MSMEs</p>
-                    </div>
-                  </div>
-                </Link>
                 <Link to="/service/placement-assistance" className="dropdown-item" onClick={closeMobileMenu}>
                   <div className="dropdown-item-content">
                     <FaBriefcase className="dropdown-icon svc-icon" style={{ color: '#0d9488', background: '#f0fdfa' }} />
@@ -200,22 +218,13 @@ const Navbar = () => {
                     </div>
                   </div>
                 </Link>
-                <Link to="/service/mobile-apps-web-development" className="dropdown-item" onClick={closeMobileMenu}>
-                  <div className="dropdown-item-content">
-                    <FaMobileAlt className="dropdown-icon svc-icon" style={{ color: '#ea580c', background: '#fff7ed' }} />
-                    <div>
-                      <span className="dropdown-title">Mobile & Web Dev</span>
-                      <p className="dropdown-desc">App development services</p>
-                    </div>
-                  </div>
-                </Link>
               </div>
             </li>
             <li><Link to="/courses" className={location.pathname === '/courses' ? 'active' : ''} onClick={closeMobileMenu}><FiBookOpen className="nav-icon" /> Courses</Link></li>
             <li><Link to="/gallery" className={location.pathname === '/gallery' ? 'active' : ''} onClick={closeMobileMenu}><FiImage className="nav-icon" /> Gallery</Link></li>
             <li><Link to="/alumni" className={location.pathname === '/alumni' ? 'active' : ''} onClick={closeMobileMenu}><FiAward className="nav-icon" /> Alumni</Link></li>
-            <li className="dropdown">
-              <a href="#new-batches" className="dropbtn">
+            <li className={`dropdown ${activeDropdown === 'batches' ? 'open' : ''}`}>
+              <a href="#new-batches" className="dropbtn" onClick={(e) => toggleDropdown(e, 'batches')}>
                 <span className="dropbtn-content"><FiLayers className="nav-icon" /> New Batches</span>
                 <FiChevronDown className="dropdown-arrow-icon" />
               </a>
@@ -242,6 +251,11 @@ const Navbar = () => {
             </li>
             <li><Link to="/exam" className={location.pathname === '/exam' ? 'active' : ''} onClick={closeMobileMenu}><FiFileText className="nav-icon" /> Exam</Link></li>
             <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMobileMenu}><FiInfo className="nav-icon" /> About Us</Link></li>
+            
+            {/* Mobile CTA */}
+            <li className="mobile-cta-item">
+              <Link to="/contact" className="enroll-btn mobile-enroll-btn" onClick={closeMobileMenu}>Get In Touch</Link>
+            </li>
           </ul>
 
           {/* CTA Section */}

@@ -107,7 +107,7 @@
 
 .mg-features-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
 }
 
@@ -201,7 +201,12 @@
 
 @media (max-width: 768px) {
   .mg-features-section {
-    padding: 60px 20px;
+    padding: 20px 10px;
+  }
+
+  .mg-features-section::before,
+  .mg-features-section::after {
+    display: none;
   }
   
   .mg-features-header h2 {

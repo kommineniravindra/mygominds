@@ -3,18 +3,28 @@
 
 .maw-page {
   font-family: 'Outfit', sans-serif;
-  background-color: #0b0f19; /* Very dark blue/black */
-  color: #e2e8f0;
+  background-color: #fefce8; /* Light yellow background */
+  color: #1e293b;
   overflow-x: hidden;
 }
 
 .maw-hero {
   position: relative;
-  padding: 140px 5% 120px;
-  background: radial-gradient(circle at top left, #2e1065 0%, #0b0f19 60%);
+  padding: 60px 5% 120px;
+  background: #fefce8;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+.maw-hero::before {
+  content: '';
+  position: absolute;
+  top: -20%; left: -10%;
+  width: 60%; height: 80%;
+  background: radial-gradient(circle, rgba(234, 179, 8, 0.15) 0%, transparent 70%);
+  z-index: 1;
 }
 
 .maw-hero-content {
@@ -26,59 +36,64 @@
 
 .maw-badge {
   display: inline-block;
-  background: rgba(217, 70, 239, 0.15); /* Fuchsia tinted */
-  color: #f0abfc;
-  border: 1px solid rgba(217, 70, 239, 0.4);
+  background: rgba(234, 179, 8, 0.15); 
+  color: #ca8a04;
+  border: 1px solid rgba(234, 179, 8, 0.3);
   padding: 8px 24px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  box-shadow: 0 0 20px rgba(217, 70, 239, 0.2);
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
+  backdrop-filter: blur(4px);
 }
 
 .maw-title {
-  font-size: 4.5rem;
+  font-size: 4.8rem;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.05;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: #0f172a;
+  letter-spacing: -1px;
 }
 
 .maw-title span {
-  background: linear-gradient(135deg, #d946ef, #8b5cf6); /* Fuchsia to Purple */
+  background: linear-gradient(to right, #ca8a04, #d97706); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 40px rgba(217, 70, 239, 0.3);
+  white-space: nowrap;
 }
 
 .maw-desc {
   font-size: 1.25rem;
-  color: #94a3b8;
+  color: #475569;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+  font-weight: 400;
 }
 
 .maw-cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(135deg, #d946ef, #8b5cf6);
+  background: linear-gradient(135deg, #eab308, #d97706);
   color: white;
-  padding: 16px 40px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1rem;
+  padding: 16px 42px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.15rem;
   text-decoration: none;
-  transition: all 0.3s;
-  box-shadow: 0 10px 30px rgba(217, 70, 239, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(217, 119, 6, 0.3);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .maw-cta-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(217, 70, 239, 0.6);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(217, 119, 6, 0.4);
+  background: linear-gradient(135deg, #ca8a04, #b45309);
 }
 
 .maw-hero-visual {
@@ -89,28 +104,36 @@
   z-index: 10;
 }
 
-.maw-phone-mockup {
-  width: 300px;
-  height: 600px;
-  background: #0f172a;
-  border: 14px solid #1e293b;
-  border-radius: 40px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: -20px 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(217, 70, 239, 0.2);
-  transform: rotate(-10deg) translateY(-20px);
+@keyframes floatDevice {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
-.maw-phone-mockup::before {
-  content: '';
+.maw-composite-visual {
+  position: relative;
+  width: 550px;
+  height: 450px;
+}
+
+.maw-laptop-img {
   position: absolute;
-  top: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 120px; height: 25px;
-  background: #1e293b;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  z-index: 10;
+  top: 20px; right: 40px;
+  width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0,0,0,0.05);
+  animation: floatDevice 7s ease-in-out infinite;
+}
+
+.maw-mobile-img {
+  position: absolute;
+  bottom: 0px; left: 0px;
+  width: 160px;
+  border-radius: 24px;
+  box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.2);
+  border: 6px solid #ffffff;
+  animation: floatDevice 6s ease-in-out infinite reverse;
 }
 
 .maw-phone-img {
@@ -121,20 +144,30 @@
 
 /* Services Grid */
 .maw-services-section {
-  padding: 100px 5%;
-  background: #0f172a; /* Slightly lighter dark */
+  padding: 10px 2%;
+  background: #fefce8;
+  position: relative;
+}
+
+.maw-services-section::before {
+  content: '';
+  position: absolute;
+  top: -50px; right: -50px;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(234, 179, 8, 0.1) 0%, transparent 70%);
+  z-index: 1;
 }
 
 .maw-section-title {
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: white;
-  margin-bottom: 70px;
+  color: #0f172a;
+  margin-bottom: 20px;
 }
 
 .maw-section-title span {
-  color: #d946ef;
+  color: #ca8a04; /* Premium amber/yellow */
 }
 
 .maw-grid {
@@ -146,28 +179,29 @@
 }
 
 .maw-card {
-  background: #1e293b;
+  background: #ffffff;
   border-radius: 16px;
   padding: 40px 30px;
   transition: all 0.4s;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(202, 138, 4, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .maw-card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(135deg, rgba(217, 70, 239, 0.1), transparent);
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.08), transparent);
   opacity: 0;
   transition: opacity 0.4s;
 }
 
 .maw-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(217, 70, 239, 0.3);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: rgba(202, 138, 4, 0.4);
+  box-shadow: 0 20px 40px rgba(202, 138, 4, 0.15);
 }
 
 .maw-card:hover::before { opacity: 1; }
@@ -175,8 +209,8 @@
 .maw-card-icon {
   width: 70px;
   height: 70px;
-  background: rgba(217, 70, 239, 0.1);
-  color: #f0abfc;
+  background: rgba(234, 179, 8, 0.15);
+  color: #ca8a04;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -185,19 +219,19 @@
   margin-bottom: 25px;
   position: relative;
   z-index: 2;
-  border: 1px solid rgba(217, 70, 239, 0.2);
+  border: 1px solid rgba(234, 179, 8, 0.2);
 }
 
 .maw-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: white;
+  color: #0f172a;
   position: relative; z-index: 2;
 }
 
 .maw-card p {
-  color: #94a3b8;
+  color: #475569;
   line-height: 1.6;
   position: relative; z-index: 2;
 }
@@ -206,12 +240,64 @@
   .maw-hero { flex-direction: column; text-align: center; }
   .maw-hero-content { margin-bottom: 80px; }
   .maw-hero-visual { justify-content: center; width: 100%; }
-  .maw-phone-mockup { transform: rotate(0); }
+  
+  .maw-composite-visual {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+  }
+  
+  .maw-laptop-img {
+    width: 80%;
+    right: 0; top: 0;
+  }
+  
+  .maw-mobile-img {
+    width: 30%;
+    bottom: -20px; left: 10%;
+  }
+
   .maw-grid { grid-template-columns: repeat(2, 1fr); }
   .maw-title { font-size: 3.5rem; }
 }
 
 @media (max-width: 768px) {
+  .maw-hero { padding: 40px 5% 60px; }
+  .maw-hero-content { margin-bottom: 50px; }
+  
+  .maw-title { font-size: 2.2rem; }
+  .maw-title span { 
+    white-space: normal; 
+    display: inline-block;
+  }
+  
+  .maw-composite-visual {
+    height: 250px;
+  }
+  
+  .maw-laptop-img {
+    width: 85%;
+    right: 0;
+  }
+  
+  .maw-mobile-img {
+    width: 40%;
+    bottom: -10px;
+    left: -5%;
+  }
+
   .maw-grid { grid-template-columns: 1fr; }
-  .maw-title { font-size: 2.8rem; }
+}
+
+@media (max-width: 480px) {
+  .maw-title { font-size: 1.8rem; }
+  
+  .maw-composite-visual {
+    height: 200px;
+  }
+  
+  .maw-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

@@ -84,22 +84,6 @@ const featuresData = [
     title: "Faculty Development (FDP)",
     description: "Empowering educators with latest teaching methodologies and technical expertise.",
     themeClass: "theme-3"
-  },
-  {
-    id: 11,
-    number: "11",
-    icon: <FiUsers />,
-    title: "Student Development (SDP)",
-    description: "Comprehensive programs to enhance student skills, confidence, and career readiness.",
-    themeClass: "theme-5"
-  },
-  {
-    id: 12,
-    number: "12",
-    icon: <FiUser />,
-    title: "Personality Development (PDP)",
-    description: "Build communication, leadership, and soft skills for personal and professional success.",
-    themeClass: "theme-7"
   }
 ];
 

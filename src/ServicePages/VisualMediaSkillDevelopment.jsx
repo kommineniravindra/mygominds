@@ -26,15 +26,24 @@ const VisualMediaSkillDevelopment = () => {
         </motion.div>
 
         <div className="vm-hero-visual">
-          <motion.div className="vm-floating-element vm-float-1" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}>
-            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Design" />
-          </motion.div>
-          <motion.div className="vm-floating-element vm-float-2" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.4 }}>
-            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80" alt="Video" />
-          </motion.div>
-          <motion.div className="vm-floating-element vm-float-3" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.6 }}>
-            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=400&q=80" alt="Photography" />
-          </motion.div>
+          <div className="vm-hero-img-container">
+            <motion.div className="vm-img-bg-shape" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.2 }}></motion.div>
+            <motion.img 
+              src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" 
+              alt="Visual Media & Design" 
+              className="vm-main-img" 
+              initial={{ y: 30, opacity: 0 }} 
+              animate={{ y: 0, opacity: 1 }} 
+              transition={{ delay: 0.4 }}
+            />
+            <motion.div className="vm-floating-badge" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6 }}>
+              <div className="vm-badge-icon"><FaPalette /></div>
+              <div className="vm-badge-text">
+                <strong>Creative Arts</strong>
+                <span>Masterclass</span>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

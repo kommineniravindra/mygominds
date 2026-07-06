@@ -89,6 +89,10 @@ const Alumni = () => {
             </motion.div>
           ))}
         </div>
+        
+        <div className="alumni-bottom-image-wrapper">
+          <img src="/Alumni/img1.png" alt="Alumni Image" className="alumni-bottom-image" />
+        </div>
       </div>
     </section>
   );

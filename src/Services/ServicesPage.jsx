@@ -3,7 +3,7 @@ import Softwarelanding from './Softwarelanding';
 import DigitalSolutions from './DigitalSolutions';
 import WhyChooseUs from './WhyChooseUs';
 import TechnologyPartners from './TechnologyPartners';
-import CourseCategories from '../UI/CourseCategories';
+import ServiceOfferings from './ServiceOfferings';
 import Carousel from '../UI/Carousel';
 import Catalog from '../UI/Catalog';
 import ProcessFlow from '../UI/ProcessFlow';
@@ -16,7 +16,7 @@ const ServicesPage = () => {
   return (
     <div className="services-page-wrapper">
       <Softwarelanding />
-      <CourseCategories title="Services" />
+      <ServiceOfferings />
       <TechnologyPartners />
       <DigitalSolutions />
       <WhyChooseUs />

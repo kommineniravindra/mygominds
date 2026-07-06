@@ -30,8 +30,6 @@ const galleryImages = [
     "https://res.cloudinary.com/dslbwf2g9/image/upload/v1775220667/IMG_1637_qvj93b.jpg",
     "https://res.cloudinary.com/dslbwf2g9/image/upload/v1776493784/IMG_1736_vooiit.webp",
     "https://res.cloudinary.com/dslbwf2g9/image/upload/v1775198970/IMG_3252_wjtvra.jpg",
-
-    
 ];
 
 const Gallery = () => {

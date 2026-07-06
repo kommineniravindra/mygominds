@@ -328,6 +328,20 @@
     padding-right: 0;
     border-bottom: 1px solid #f1f5f9;
     padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+    align-items: center;
+  }
+
+  .cert-feature-icon {
+    grid-row: 1 / span 2;
+    margin-bottom: 0;
+  }
+
+  .cert-feature h4 {
+    margin-bottom: 0;
   }
   
   .cert-feature:last-child {

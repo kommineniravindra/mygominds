@@ -10,8 +10,8 @@ const slidesData = [
     tag: "TRAINING & SOFTWARE DEVELOPMENT",
     title: (
       <>
-        <span className="text-dark">Empowering Minds.</span><br/>
-        <span className="text-blue" style={{ fontSize: "1.2em" }}>Building Futures.</span>
+        <span className="text-dark nowrap-desktop">Empowering Minds.</span><br/>
+        <span className="text-blue nowrap-desktop title-highlight">Building Futures.</span>
       </>
     ),
     description: "We provide industry-focused training and custom software development services that empower individuals and businesses to grow, innovate, and succeed in the digital era.",
@@ -30,8 +30,8 @@ const slidesData = [
     tag: "TRAINING & SOFTWARE DEVELOPMENT",
     title: (
       <>
-        <span className="text-dark">FULL STACK</span><br/>
-        <span className="text-blue" style={{ fontSize: "1.4em", lineHeight: "1" }}>DEVELOPMENT</span><br/>
+        <span className="text-dark nowrap-desktop">FULL STACK</span><br/>
+        <span className="text-blue nowrap-desktop title-large">DEVELOPMENT</span><br/>
       </>
     ),
     description: "Master front-end, back-end, databases, and modern frameworks to build powerful, scalable web applications and enterprise-grade software solutions.",
@@ -58,8 +58,8 @@ const slidesData = [
     dotStyle: { backgroundColor: "#fcd34d", boxShadow: "0 0 8px rgba(252, 211, 77, 0.8)" },
     title: (
       <>
-        <span style={{ color: '#ffffff', fontWeight: '800', letterSpacing: '-1px' }}>NI-MSME-Focused</span><br/>
-        <span style={{ color: '#f59e0b', fontSize: '1.1em', display: 'inline-block', marginTop: '10px' }}>Workshops</span><br/>
+        <span className="nowrap-desktop" style={{ color: '#ffffff', fontWeight: '800', letterSpacing: '-1px' }}>NI-MSME-Focused</span><br/>
+        <span className="nowrap-desktop" style={{ color: '#f59e0b', fontSize: '1.1em', display: 'inline-block', marginTop: '10px' }}>Workshops</span><br/>
       </>
     ),
     description: "Tailored, practical workshops designed to accelerate digital transformation and sustainable growth for MSMEs. Empowering your business with the skills to compete globally.",
@@ -69,7 +69,7 @@ const slidesData = [
       "Intensive Summer Bootcamps",
       "Hands-on Workshops & Skill Development"
     ],
-    primaryBtn: { text: "Join a Workshop", link: "/service/msme-focused-workshops" },
+    primaryBtn: { text: "Explore Programs", link: "/service/msme-focused-workshops" },
     primaryBtnStyle: { backgroundColor: "#f59e0b", color: "#064e3b", boxShadow: "0 10px 25px rgba(245, 158, 11, 0.4)", border: "none", padding: "1rem 2rem", fontSize: "1.1rem" },
     secondaryBtn: null,
     image: "/clients/msme.png",

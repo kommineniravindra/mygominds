@@ -9,8 +9,6 @@ const PersonalizedCareerMentoring = () => {
   return (
     <div className="pcm-page">
       <section className="pcm-hero">
-        <div className="pcm-hero-bg-curve"></div>
-        <div className="pcm-hero-dots"></div>
 
         <motion.div className="pcm-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
           <div className="pcm-badge">ONE-TO-ONE GUIDANCE. REAL CAREER GROWTH.</div>
@@ -64,15 +62,15 @@ const PersonalizedCareerMentoring = () => {
       </section>
 
       <section className="sp-learn">
-        <h2 className="sp-section-title">Mentoring <span style={{ color: '#9333ea' }}>Areas</span></h2>
+        <h2 className="sp-section-title">Mentoring <span style={{ color: '#ea580c' }}>Areas</span></h2>
         <div className="sp-learn-grid">
           {[
-            { icon: <FaCompass style={{ color: '#9333ea' }} />, title: 'Career Path Mapping', desc: 'Identify the right career direction based on your strengths and goals.' },
-            { icon: <FaFileAlt style={{ color: '#9333ea' }} />, title: 'Resume & Portfolio', desc: 'Build standout resumes and portfolios that get noticed by recruiters.' },
-            { icon: <FaComments style={{ color: '#9333ea' }} />, title: 'Interview Preparation', desc: 'Mock interviews, body language coaching, and confidence building.' },
-            { icon: <FaChessKing style={{ color: '#9333ea' }} />, title: 'Leadership Skills', desc: 'Develop management and leadership capabilities for career growth.' },
-            { icon: <FaBrain style={{ color: '#9333ea' }} />, title: 'Skill Gap Analysis', desc: 'Identify and bridge skill gaps to stay competitive in the market.' },
-            { icon: <FaUserTie style={{ color: '#9333ea' }} />, title: 'Personal Branding', desc: 'Build your professional brand on LinkedIn and industry platforms.' },
+            { icon: <FaCompass style={{ color: '#ea580c' }} />, title: 'Career Path Mapping', desc: 'Identify the right career direction based on your strengths and goals.' },
+            { icon: <FaFileAlt style={{ color: '#ea580c' }} />, title: 'Resume & Portfolio', desc: 'Build standout resumes and portfolios that get noticed by recruiters.' },
+            { icon: <FaComments style={{ color: '#ea580c' }} />, title: 'Interview Preparation', desc: 'Mock interviews, body language coaching, and confidence building.' },
+            { icon: <FaChessKing style={{ color: '#ea580c' }} />, title: 'Leadership Skills', desc: 'Develop management and leadership capabilities for career growth.' },
+            { icon: <FaBrain style={{ color: '#ea580c' }} />, title: 'Skill Gap Analysis', desc: 'Identify and bridge skill gaps to stay competitive in the market.' },
+            { icon: <FaUserTie style={{ color: '#ea580c' }} />, title: 'Personal Branding', desc: 'Build your professional brand on LinkedIn and industry platforms.' },
           ].map((item, i) => (
             <motion.div key={i} className="sp-learn-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
               <div className="sp-learn-card-icon">{item.icon}</div>
@@ -83,10 +81,10 @@ const PersonalizedCareerMentoring = () => {
         </div>
       </section>
 
-      <section className="sp-cta" style={{ background: 'linear-gradient(135deg, #9333ea, #7e22ce)' }}>
+      <section className="sp-cta" style={{ background: 'linear-gradient(135deg, #ea580c, #c2410c)' }}>
         <h2>Shape Your Career with Expert Guidance</h2>
         <p>Book a free mentoring consultation and start building your dream career.</p>
-        <a href="/contact" className="sp-cta-btn" style={{ color: '#9333ea' }}>Book Now <FiArrowRight /></a>
+        <a href="/contact" className="sp-cta-btn" style={{ color: '#ea580c' }}>Book Now <FiArrowRight /></a>
       </section>
     </div>
   );

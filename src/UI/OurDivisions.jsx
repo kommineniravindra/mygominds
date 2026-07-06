@@ -135,68 +135,6 @@ const OurDivisions = () => {
             </div>
           </div>
         </div>
-
-        {/* IT Services & Consulting (03) - LIGHT THEME */}
-        <div className="lp-row-container lp-light-card">
-          <div className="lp-main-content">
-            <div className="lp-content-col">
-              <div className="lp-content-top">
-                <div className="lp-title-container">
-                  <div className="lp-icon-box purple-box">
-                    <FaHandshake className="lp-title-icon" />
-                  </div>
-                  <h3 className="lp-title">
-                    IT & Consulting <br/> <span className="purple-text">Services</span>
-                  </h3>
-                </div>
-                
-                <p className="lp-desc">
-                  Empowering organizations and individuals with top-tier professional services and events.
-                </p>
-                
-                <ul className="lp-list purple-list">
-                  <li><BsCheckCircleFill className="check-icon" /> Corporate Training</li>
-                  <li><BsCheckCircleFill className="check-icon" /> Faculty Development (FDP)</li>
-                  <li><BsCheckCircleFill className="check-icon" /> Student Development (SDP)</li>
-                  <li><BsCheckCircleFill className="check-icon" /> Personality Development (PDP)</li>
-                  <li><BsCheckCircleFill className="check-icon" /> Entrepreneurship</li>
-                  <li><BsCheckCircleFill className="check-icon" /> Conferences & Events</li>
-                </ul>
-
-                <button className="lp-btn-primary purple-btn" onClick={() => window.location.href = '/services'}>
-                  Explore Our Services <FiArrowRight className="btn-icon" />
-                </button>
-              </div>
-            </div>
-            
-            <div className="lp-image-col">
-              <img src="/banners/img3.png" alt="IT Services" className="lp-illustration" />
-            </div>
-          </div>
-
-          <div className="lp-stats-bar lp-light-stats">
-            <div className="stat-item">
-              <FaHandshake className="stat-icon purple-text" />
-              <span>B2B <br/> Partnerships</span>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <FaChalkboardTeacher className="stat-icon purple-text" />
-              <span>Expert <br/> Trainers</span>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <FaUserFriends className="stat-icon purple-text" />
-              <span>Networking <br/> Events</span>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <FaTrophy className="stat-icon purple-text" />
-              <span>Industry <br/> Recognition</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );

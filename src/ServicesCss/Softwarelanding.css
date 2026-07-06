@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
 
 .software-landing-container {
   min-height: 80vh;
@@ -7,33 +7,37 @@
   justify-content: center;
   background-color: #fffaf8;
   /* Grid pattern */
-  background-image: 
-    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
   position: relative;
   overflow: hidden;
-  font-family: 'Inter', sans-serif;
-  padding: 40px 20px 80px 20px;
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px 80px 20px;
   z-index: 1;
 }
 
 /* Orange Glow in center */
 .software-landing-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(234, 88, 12, 0.12) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   z-index: -1;
   pointer-events: none;
 }
 
 .sl-content-wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -46,7 +50,7 @@
 
 /* Left Column - Text */
 .sl-text-col {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
 }
 
 .sl-badge {
@@ -137,153 +141,33 @@
 
 /* Right Column - Visual */
 .sl-visual-col {
-  flex: 0 0 45%;
+  flex: 0 0 60%;
   position: relative;
 }
 
-.sl-code-window {
-  background: white;
+.sl-banner-img {
+  width: 115%;
+  max-width: 1000px;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.06);
-  width: 100%;
-  position: relative;
-  overflow: visible;
+  object-fit: contain;
+  animation: floatBanner 6s ease-in-out infinite;
+  margin-left: -10%;
 }
 
-.sl-window-header {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.sl-mac-dots {
-  display: flex;
-  gap: 8px;
-}
-
-.sl-mac-dots span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot-red { background-color: #ff5f56; }
-.dot-yellow { background-color: #ffbd2e; }
-.dot-green { background-color: #27c93f; }
-
-.sl-window-title {
-  flex: 1;
-  text-align: center;
-  font-size: 12px;
-  color: #94a3b8;
-  font-family: monospace;
-  margin-right: 40px; /* offset for exact centering */
-}
-
-.sl-code-body {
-  padding: 25px 20px;
-  font-family: 'Fira Code', monospace;
-  font-size: 14px;
-  line-height: 1.8;
-  display: flex;
-  min-height: 250px;
-}
-
-.sl-line-numbers {
-  display: flex;
-  flex-direction: column;
-  color: #cbd5e1;
-  padding-right: 25px;
-  user-select: none;
-  text-align: right;
-}
-
-.sl-code-content {
-  flex: 1;
-  color: #334155;
-  white-space: pre;
-}
-
-.code-keyword { color: #ea580c; }
-.code-variable { color: #3b82f6; }
-.code-string { color: #22c55e; }
-.code-comment { color: #94a3b8; font-style: italic; }
-.code-cursor {
-  display: inline-block;
-  width: 8px;
-  height: 18px;
-  background-color: #ea580c;
-  vertical-align: middle;
-  margin-left: 2px;
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.sl-window-footer {
-  padding: 10px 20px;
-  border-top: 1px solid rgba(0,0,0,0.05);
-  display: flex;
-  justify-content: flex-end;
-  font-size: 12px;
-  color: #94a3b8;
-}
-
-/* Floating Badge */
-.sl-floating-badge {
-  position: absolute;
-  bottom: -25px;
-  left: -40px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  display: flex;
-  align-items: center;
-  padding: 15px 20px;
-  gap: 15px;
-  border: 1px solid rgba(0,0,0,0.05);
-  z-index: 10;
-  animation: floatBadge 4s ease-in-out infinite;
-}
-
-@keyframes floatBadge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.sl-float-icon {
-  width: 42px;
-  height: 42px;
-  background: #ea580c;
-  color: white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-
-.sl-float-text h4 {
-  margin: 0 0 2px 0;
-  font-size: 14px;
-  color: #0f172a;
-  font-weight: 700;
-}
-
-.sl-float-text p {
-  margin: 0;
-  font-size: 12px;
-  color: #64748b;
+@keyframes floatBanner {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 @media (max-width: 992px) {
   .sl-content-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
   .sl-desc {
@@ -292,9 +176,12 @@
   .sl-btn-group {
     justify-content: center;
   }
-  .sl-floating-badge {
-    left: 20px;
-    bottom: -20px;
+  .sl-banner-img {
+    width: 130%;
+    margin-left: -15%;
+    max-width: none;
+    margin-bottom: -40px;
+    margin-top: 10px;
   }
 }
 
@@ -309,33 +196,19 @@
     font-size: 16px;
     max-width: 100%;
   }
-  .sl-code-body {
-    padding: 15px 10px;
-    font-size: 12px;
-    overflow-x: auto;
-  }
   .sl-btn-group {
     flex-direction: row;
     width: 100%;
     justify-content: center;
     gap: 15px;
   }
-  .sl-btn-primary, .sl-btn-secondary {
+
+  .sl-btn-primary,
+  .sl-btn-secondary {
     width: auto;
     padding: 12px 20px;
     font-size: 15px;
     justify-content: center;
-  }
-  .sl-floating-badge {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    margin: 30px auto 0 auto;
-    animation: none;
-    transform: none;
-    width: 100%;
-    justify-content: center;
-    box-sizing: border-box;
   }
 }
 
@@ -343,11 +216,14 @@
   .sl-heading {
     font-size: clamp(28px, 8vw, 32px);
   }
-  .sl-code-body {
-    font-size: 11px;
-    min-height: 200px;
+  .sl-btn-group {
+    flex-direction: column;
   }
-  .sl-window-header {
-    padding: 10px;
+  .sl-btn-primary,
+  .sl-btn-secondary {
+    width: 100%;
+  }
+  .sl-banner-img {
+    margin-bottom: -40px;
   }
 }

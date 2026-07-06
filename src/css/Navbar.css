@@ -405,6 +405,11 @@
   cursor: pointer;
 }
 
+/* Mobile CTA Hidden by Default on Desktop */
+.mobile-cta-item {
+  display: none;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 968px) {
   .top-navbar {
@@ -417,7 +422,7 @@
 
   .navbar-links {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: -100%;
     flex-direction: column;
     background-color: #ffffff;
@@ -426,6 +431,8 @@
     padding: 20px 0;
     transition: left 0.3s ease;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 70px);
+    overflow-y: auto;
   }
 
   .navbar-links.active {
@@ -447,7 +454,13 @@
     justify-content: space-between;
   }
 
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content,
+  .services-dropdown:hover .services-dropdown-content.dropdown-content {
+    display: none; 
+  }
+
+  .dropdown.open .dropdown-content,
+  .dropdown.open .services-dropdown-content.dropdown-content {
     display: flex;
     flex-direction: column;
     position: static;
@@ -457,11 +470,59 @@
     margin-top: 10px;
   }
 
+  .dropdown.open .dropdown-arrow-icon {
+    transform: rotate(180deg);
+  }
+
   .dropdown-content a {
     padding: 10px 16px;
   }
   
   .navbar-cta {
     display: none;
+  }
+
+  .services-dropdown-content.dropdown-content {
+    flex-wrap: nowrap;
+  }
+
+  .services-dropdown-content .dropdown-item {
+    flex: none;
+    width: 100%;
+    border-bottom: 1px solid #f1f5f9;
+    border-radius: 0;
+    padding: 10px 5px;
+  }
+
+  .services-dropdown-content .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-cta-item {
+    display: block;
+    margin-top: 20px;
+    padding: 0 24px 20px 24px !important;
+  }
+
+  .mobile-enroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f97316;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(249, 115, 22, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .mobile-enroll-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
   }
 }

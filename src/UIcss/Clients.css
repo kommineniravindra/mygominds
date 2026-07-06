@@ -134,14 +134,18 @@
     font-size: 32px;
   }
   .client-grid-box {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
     height: 90px;
   }
 }
 
 @media (max-width: 480px) {
+  .clients-grid {
+    gap: 10px;
+  }
   .client-grid-box {
-    width: 100%;
-    height: 100px;
+    width: calc(50% - 5px);
+    height: 80px;
+    padding: 10px;
   }
 }

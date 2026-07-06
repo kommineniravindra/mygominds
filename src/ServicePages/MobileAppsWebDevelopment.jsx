@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMobileAlt, FaReact, FaApple, FaAndroid, FaCode, FaServer } from 'react-icons/fa';
+import { FaMobileAlt, FaReact, FaApple, FaAndroid, FaCode, FaServer, FaCloud, FaDatabase, FaLock } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
 import './css/MobileAppsWeb.css';
 
@@ -12,6 +12,9 @@ const MobileAppsWebDevelopment = () => {
     { icon: <FaCode />, title: 'Web Applications', desc: 'Deploy robust full-stack web applications utilizing React, Node.js, and modern tech stacks.' },
     { icon: <FaServer />, title: 'Backend & APIs', desc: 'Architect scalable backends, secure RESTful APIs, and efficient microservices.' },
     { icon: <FaMobileAlt />, title: 'UI/UX Design', desc: 'Design beautiful, intuitive, and highly engaging interfaces focused on user experience.' },
+    { icon: <FaCloud />, title: 'Cloud Architecture', desc: 'Deploy on AWS, Azure, and Google Cloud with auto-scaling and high availability.' },
+    { icon: <FaDatabase />, title: 'Database Management', desc: 'Optimize data storage with SQL, NoSQL, and real-time database solutions.' },
+    { icon: <FaLock />, title: 'Security & Compliance', desc: 'Implement enterprise-grade security, data encryption, and compliance protocols.' }
   ];
 
   return (
@@ -27,8 +30,9 @@ const MobileAppsWebDevelopment = () => {
         </motion.div>
 
         <motion.div className="maw-hero-visual" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
-          <div className="maw-phone-mockup">
-            <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=400&q=80" alt="App UI" className="maw-phone-img" />
+          <div className="maw-composite-visual">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Laptop Development" className="maw-laptop-img" />
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=300&q=80" alt="Mobile UI" className="maw-mobile-img" />
           </div>
         </motion.div>
       </section>
