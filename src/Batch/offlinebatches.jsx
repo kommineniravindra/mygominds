@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import api from '../api';
 import { 
   FiSearch, FiFilter, FiCalendar, FiClock, FiFileText, 
   FiMoreHorizontal, FiChevronLeft, FiChevronRight,
@@ -41,10 +42,9 @@ const OfflineBatches = () => {
   useEffect(() => {
     const fetchBatches = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/offline-batches');
-        if (response.ok) {
-          const data = await response.json();
-          setBatchesData(data);
+        const response = await api.get('/api/offline-batches');
+        if (response.status === 200) {
+          setBatchesData(response.data);
         }
       } catch (error) {
         console.error('Error fetching offline batches:', error);

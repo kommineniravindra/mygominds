@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import api from '../api';
 import '../css/courseLeadModal.css'; // Reusing the same CSS
 
 const DemoModal = ({ isOpen, onClose, batchName, courseName, batchType, actionLink }) => {
@@ -27,21 +28,15 @@ const DemoModal = ({ isOpen, onClose, batchName, courseName, batchType, actionLi
 
     try {
       // Save to database
-      const response = await fetch('http://localhost:3000/api/demo-leads', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          mobileNumber: mobile,
-          courseName: courseName || batchName,
-          batchType: batchType || 'Offline'
-        }),
+      const response = await api.post('/api/demo-leads', {
+        name,
+        email,
+        mobileNumber: mobile,
+        courseName: courseName || batchName,
+        batchType: batchType || 'Offline'
       });
 
-      if (!response.ok) {
+      if (response.status !== 200 && response.status !== 201) {
         throw new Error('Failed to save demo request');
       }
 

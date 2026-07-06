@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import api from '../api';
 import { 
   FiSearch, FiFilter, FiCalendar, FiClock, FiFileText, 
   FiMoreHorizontal, FiChevronLeft, FiChevronRight,
@@ -32,10 +33,9 @@ const OnlineBatches = () => {
   useEffect(() => {
     const fetchBatches = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/online-batches');
-        if (response.ok) {
-          const data = await response.json();
-          setBatchesData(data);
+        const response = await api.get('/api/online-batches');
+        if (response.status === 200) {
+          setBatchesData(response.data);
         }
       } catch (error) {
         console.error('Error fetching online batches:', error);
@@ -56,19 +56,15 @@ const OnlineBatches = () => {
     e.preventDefault();
     setIsZoomSubmitting(true);
     try {
-      const response = await fetch('http://localhost:3000/api/zoom-leads', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: zoomFormData.name,
-          mobile: zoomFormData.mobile,
-          email: zoomFormData.email,
-          courseName: selectedBatchForZoom.courseName,
-          batchDate: selectedBatchForZoom.date
-        })
+      const response = await api.post('/api/zoom-leads', {
+        name: zoomFormData.name,
+        mobile: zoomFormData.mobile,
+        email: zoomFormData.email,
+        courseName: selectedBatchForZoom.courseName,
+        batchDate: selectedBatchForZoom.date
       });
 
-      if (response.ok) {
+      if (response.status === 200 || response.status === 201) {
         window.open(selectedBatchForZoom.actionLink, '_blank');
         setIsZoomModalOpen(false);
         setZoomFormData({ name: '', mobile: '', email: '' });

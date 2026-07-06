@@ -3,7 +3,7 @@
     "id": 1,
     "name": "AMAN SINGH",
     "experience": "3 Years",
-    "companyPlaced":"MAIVIN PVT LTD",
+    "companyPlaced": "MAIVIN PVT LTD",
     "image": "/Alumni/aman.png",
     "package": "6 LPA"
   },
@@ -198,5 +198,197 @@
     "companyPlaced": "PALLE CONSULTING SERVICES",
     "image": "/Alumni/dinesh.png",
     "package": "8 LPA"
+  },
+  {
+    "id": 26,
+    "name": "CHARITHA",
+    "experience": "Fresher",
+    "companyPlaced": "NEUOTICS SOFTWARE",
+    "image": "/Alumni/id_26.png",
+    "package": "3.6 LPA"
+  },
+  {
+    "id": 27,
+    "name": "VISWANATH",
+    "experience": "Fresher",
+    "companyPlaced": "ADP",
+    "image": "/Alumni/id_27.png",
+    "package": "6.5 LPA"
+  },
+  {
+    "id": 28,
+    "name": "JASMITHA",
+    "experience": "Fresher",
+    "companyPlaced": "EPITOME",
+    "image": "/Alumni/id_28.png",
+    "package": "5.6 LPA"
+  },
+  {
+    "id": 29,
+    "name": "PAVAN KALYAN",
+    "experience": "Fresher",
+    "companyPlaced": "SALOHI",
+    "image": "/Alumni/id_29.png",
+    "package": "3.6 LPA"
+  },
+  {
+    "id": 30,
+    "name": "DEEPIKA",
+    "experience": "Fresher",
+    "companyPlaced": "ACCENTURE",
+    "image": "/Alumni/id_30.png",
+    "package": "4.5 LPA"
+  },
+  {
+    "id": 31,
+    "name": "SRIRAM",
+    "experience": "Fresher",
+    "companyPlaced": "TCS",
+    "image": "/Alumni/id_31.png",
+    "package": "3.4 LPA"
+  },
+  {
+    "id": 32,
+    "name": "SRIHARI",
+    "experience": "Fresher",
+    "companyPlaced": "TCS",
+    "image": "/Alumni/id_32.png",
+    "package": "3.5 LPA"
+  },
+  {
+    "id": 33,
+    "name": "PRAVILLIKA",
+    "experience": "Fresher",
+    "companyPlaced": "EXCEL SOFT",
+    "image": "/Alumni/id_33.png",
+    "package": "2.4 LPA"
+  },
+  {
+    "id": 34,
+    "name": "RAMGOPAL",
+    "experience": "Fresher",
+    "companyPlaced": "CARLEN GOBAL SOLUTION",
+    "image": "/Alumni/id_34.png",
+    "package": "-"
+  },
+  {
+    "id": 35,
+    "name": "SWARNA",
+    "experience": "Fresher",
+    "companyPlaced": "TCS",
+    "image": "/Alumni/id_35.png",
+    "package": "3.6 LPA"
+  },
+  {
+    "id": 36,
+    "name": "MAHESH",
+    "experience": "Fresher",
+    "companyPlaced": "-",
+    "image": "/Alumni/id_36.png",
+    "package": "3.5 LPA"
+  },
+  {
+    "id": 37,
+    "name": "DILEEP",
+    "experience": "Fresher",
+    "companyPlaced": "TCS",
+    "image": "/Alumni/id_37.png",
+    "package": "4.0 LPA"
+  },
+  {
+    "id": 38,
+    "name": "ROHIT",
+    "experience": "Fresher",
+    "companyPlaced": "CARLEN GOBAL SOLUTIONS",
+    "image": "/Alumni/id_38.png",
+    "package": "-"
+  },
+  {
+    "id": 39,
+    "name": "HARISTH",
+    "experience": "Fresher",
+    "companyPlaced": "ADP",
+    "image": "/Alumni/id_39.png",
+    "package": "-"
+  },
+  {
+    "id": 40,
+    "name": "SANJIV",
+    "experience": "Fresher",
+    "companyPlaced": "-",
+    "image": "/Alumni/id_40.png",
+    "package": "4.5 LPA"
+  },
+  {
+    "id": 41,
+    "name": "SIVA TEJA",
+    "experience": "Fresher",
+    "companyPlaced": "NEUOTICS SOFT WARE",
+    "image": "/Alumni/id_41.png",
+    "package": "3.3 LPA"
+  },
+  {
+    "id": 42,
+    "name": "RAJESH",
+    "experience": "Fresher",
+    "companyPlaced": "SWS",
+    "image": "/Alumni/id_42.png",
+    "package": "2.4 LPA"
+  },
+  {
+    "id": 43,
+    "name": "PAVAN KALYAN",
+    "experience": "Fresher",
+    "companyPlaced": "AE",
+    "image": "/Alumni/id_43.png",
+    "package": "3 LPA"
+  },
+  {
+    "id": 44,
+    "name": "JAGADESH",
+    "experience": "Fresher",
+    "companyPlaced": "EVOKE TECHNOLOGIES",
+    "image": "/Alumni/id_44.png",
+    "package": "-"
+  },
+  {
+    "id": 45,
+    "name": "AVADHANI",
+    "experience": "Fresher",
+    "companyPlaced": "AKS",
+    "image": "/Alumni/id_45.png",
+    "package": "3.7 LPA"
+  },
+  {
+    "id": 46,
+    "name": "SAILUJA",
+    "experience": "Fresher",
+    "companyPlaced": "NEUOTICS SOFT WARE",
+    "image": "/Alumni/id_46.png",
+    "package": "3.6 LPA"
+  },
+  {
+    "id": 47,
+    "name": "GANESH",
+    "experience": "Fresher",
+    "companyPlaced": "NEUOTICS SOFT WARE",
+    "image": "/Alumni/id_47.png",
+    "package": "3.6 LPA"
+  },
+  {
+    "id": 48,
+    "name": "POOJA",
+    "experience": "Fresher",
+    "companyPlaced": "IBM",
+    "image": "/Alumni/id_48.png",
+    "package": "4.5 LPA"
+  },
+  {
+    "id": 49,
+    "name": "PRIYA",
+    "experience": "Fresher",
+    "companyPlaced": "ACCENTURE",
+    "image": "/Alumni/id_49.png",
+    "package": "4.5 LPA"
   }
 ]
