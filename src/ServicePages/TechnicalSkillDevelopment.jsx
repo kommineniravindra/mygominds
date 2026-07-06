@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaLaptop, FaVolumeUp, FaCloud, FaShieldAlt, FaCode, FaChartBar, FaMobileAlt, FaMedal, FaBookOpen, FaRocket } from 'react-icons/fa';
 import { FiArrowRight, FiUsers, FiClock, FiCheckCircle, FiStar, FiBriefcase, FiTrendingUp, FiZap, FiSmartphone, FiBarChart2, FiCloud as FiCloudLine, FiCode as FiCodeLine, FiShield as FiShieldLine, FiRadio, FiPenTool } from 'react-icons/fi';
@@ -9,6 +10,11 @@ import './css/TechnicalSkill.css';
 const TechnicalSkillDevelopment = () => {
   return (
     <div className="tsd-page">
+      <SEO 
+        title="Technical Skill Development | MyGoMinds Services"
+        description="Learn more about Technical Skill Development offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/technical-skill-development"
+      />
       {/* Hero Section */}
       <section className="tsd-hero">
         <div className="tsd-hero-bg-dots"></div>

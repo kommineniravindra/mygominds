@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import api from '../api';
 import { FiPhone, FiMail, FiMapPin, FiClock, FiShield, FiChevronRight, FiCalendar, FiArrowRight, FiSend } from 'react-icons/fi';
 import { BsSend } from 'react-icons/bs';
+import SEO from './SEO';
 import '../css/ContactUs.css';
 
 const ContactUs = () => {
@@ -24,32 +26,28 @@ const ContactUs = () => {
     e.preventDefault();
     setStatus('Submitting...');
     try {
-      const response = await fetch('http://localhost:3000/api/contacts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await api.post('/api/contacts', formData);
 
-      if (response.ok) {
+      if (response.status === 200 || response.status === 201) {
         alert('Thank you for your message! We will get back to you shortly.');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-        setStatus('');
-      } else {
-        const errorData = await response.json();
-        alert(`Error: ${errorData.message || 'Failed to send message'}`);
         setStatus('');
       }
     } catch (error) {
       console.error('Submit error:', error);
-      alert('Error connecting to the server. Please try again later.');
+      const errorMessage = error.response?.data?.message || 'Error connecting to the server. Please try again later.';
+      alert(`Error: ${errorMessage}`);
       setStatus('');
     }
   };
 
   return (
     <div className="contact-page-wrapper">
+      <SEO 
+        title="Contact Us | MyGoMinds - KPHB Hyderabad"
+        description="Get in touch with MyGoMinds. Visit us at Sai Ram Towers, KPHB or call +91 88853 84111. Startup India recognized IT training institute."
+        path="/contact"
+      />
       <div className="contact-content-grid">
         
         {/* Left Column: Contact Info */}

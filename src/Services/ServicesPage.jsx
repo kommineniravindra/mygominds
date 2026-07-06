@@ -11,10 +11,16 @@ import StudentPortal from '../UI/StudentPortal';
 import Features from '../UI/Features';
 import Certificate from '../UI/Certificate';
 import PopupAdModal from '../components/PopupAdModal';
+import SEO from '../components/SEO';
 
 const ServicesPage = () => {
   return (
     <div className="services-page-wrapper">
+      <SEO 
+        title="Our Services | MyGoMinds Pvt Ltd"
+        description="Technical skill development, placement assistance, women empowerment workshops, summer bootcamps & more."
+        path="/services"
+      />
       <Softwarelanding />
       <ServiceOfferings />
       <TechnologyPartners />

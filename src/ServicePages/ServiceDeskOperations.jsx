@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaHeadset, FaTicketAlt, FaCogs, FaClipboardCheck, FaNetworkWired, FaUserShield } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -16,6 +17,11 @@ const ServiceDeskOperations = () => {
 
   return (
     <div className="sd-page">
+      <SEO 
+        title="Service Desk Operations | MyGoMinds Services"
+        description="Learn more about Service Desk Operations offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/service-desk-operations"
+      />
       <section className="sd-hero">
         <div className="sd-hero-grid"></div>
         <motion.div className="sd-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>

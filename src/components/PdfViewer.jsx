@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import api from '../api';
 
 const PdfViewer = () => {
   const { title } = useParams();
@@ -10,13 +11,14 @@ const PdfViewer = () => {
   useEffect(() => {
     const fetchBrochure = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/brochures/${title}`);
-        if (!response.ok) {
+        const response = await api.get(`/api/brochures/${title}`);
+        if (response.status !== 200) {
           throw new Error('Brochure not found');
         }
-        const data = await response.json();
-        // Construct the full URL to the backend uploads directory
-        setPdfUrl(`http://localhost:3000${data.pdfPath}`);
+        
+        // Since proxy handles /uploads locally and api handles it in production
+        const baseUrl = import.meta.env.MODE === 'production' ? 'https://api.mygominds.com' : '';
+        setPdfUrl(`${baseUrl}${response.data.pdfPath}`);
       } catch (err) {
         console.error(err);
         setError(err.message);

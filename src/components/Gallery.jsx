@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FiX } from 'react-icons/fi';
+import { FiX, FiZoomIn, FiImage } from 'react-icons/fi';
+import SEO from './SEO';
 import '../css/Gallery.css';
 
 const galleryImages = [
@@ -41,7 +42,12 @@ const Gallery = () => {
 
   return (
     <div className="gallery-page">
-      <div className="gallery-content">
+      <SEO 
+        title="Gallery | MyGoMinds - Training Events & Workshops"
+        description="Photos from our training sessions, bootcamps, hackathons, workshops & student events at MyGoMinds Hyderabad."
+        path="/gallery"
+      />
+      <div className="gallery-header-section">
         <div className="gallery-header-wrapper">
           <h1 className="gallery-title">Our Memories</h1>
           <p className="gallery-subtitle">A glimpse into our training sessions, events, and community moments.</p>

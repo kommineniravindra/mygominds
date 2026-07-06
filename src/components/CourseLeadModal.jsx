@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import api from '../api';
 import '../css/courseLeadModal.css';
 
 const CourseLeadModal = ({ isOpen, onClose, course }) => {
@@ -18,18 +19,12 @@ const CourseLeadModal = ({ isOpen, onClose, course }) => {
     
     try {
       // Save to database
-      const response = await fetch('http://localhost:3000/api/course-leads', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          courseName: course.title,
-          mobileNumber: mobile
-        }),
+      const response = await api.post('/api/course-leads', {
+        courseName: course.title,
+        mobileNumber: mobile
       });
 
-      if (!response.ok) {
+      if (response.status !== 200 && response.status !== 201) {
         console.error('Failed to save lead to database');
       }
     } catch (err) {

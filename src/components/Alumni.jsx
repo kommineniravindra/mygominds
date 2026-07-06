@@ -4,12 +4,18 @@ import alumniData from '../CourseContent/Alumni.json';
 import '../css/Alumni.css';
 import { FiBriefcase, FiCheckCircle } from 'react-icons/fi';
 import { FaMoneyBillWave, FaTrophy, FaBuilding } from 'react-icons/fa';
+import SEO from './SEO';
 
 
 
 const Alumni = () => {
   return (
     <section className="alumni-section">
+      <SEO 
+        title="Alumni | MyGoMinds - Student Success Stories"
+        description="Meet our successful alumni placed in top IT companies. 98% placement record."
+        path="/alumni"
+      />
       <div className="alumni-container">
         <div className="alumni-header">
           {/* Background Decorators */}

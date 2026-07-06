@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaUserTie, FaCompass, FaFileAlt, FaComments, FaChessKing, FaBrain, FaPlayCircle, FaUserAlt, FaChartBar } from 'react-icons/fa';
 import { FiArrowRight, FiCheckCircle, FiUsers, FiAward, FiTarget } from 'react-icons/fi';
@@ -8,6 +9,11 @@ import './css/PersonalizedCareer.css';
 const PersonalizedCareerMentoring = () => {
   return (
     <div className="pcm-page">
+      <SEO 
+        title="Personalized Career Mentoring | MyGoMinds Services"
+        description="Learn more about Personalized Career Mentoring offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/personalized-career-mentoring"
+      />
       <section className="pcm-hero">
 
         <motion.div className="pcm-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>

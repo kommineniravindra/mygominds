@@ -1,3 +1,4 @@
+import SEO from '../components/SEO';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBuilding, FaIndustry, FaDigitalTachograph, FaHandshake, FaChartPie, FaStore } from 'react-icons/fa';
@@ -30,6 +31,11 @@ const MsmeFocusedWorkshops = () => {
 
   return (
     <div className="msme-page">
+      <SEO 
+        title="Msme Focused Workshops | MyGoMinds Services"
+        description="Learn more about Msme Focused Workshops offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/msme-focused-workshops"
+      />
       <section className="msme-hero">
         <motion.div className="msme-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
           <div className="msme-badge">Ni-MSME Aligned Workshops</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
@@ -11,6 +12,11 @@ import './css/WomenEmpowerment.css';
 const WomenEmpowermentWorkshops = () => {
   return (
     <div className="wew-page">
+      <SEO 
+        title="Women Empowerment Workshops | MyGoMinds Services"
+        description="Learn more about Women Empowerment Workshops offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/women-empowerment-workshops"
+      />
       {/* Hero Section */}
       <section className="wew-hero">
         <motion.div className="wew-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>

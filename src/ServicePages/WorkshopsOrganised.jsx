@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaChalkboardTeacher, FaLaptop, FaUsers, FaCertificate, FaCalendarAlt, FaMicroscope } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -16,6 +17,11 @@ const WorkshopsOrganised = () => {
 
   return (
     <div className="wo-page">
+      <SEO 
+        title="Workshops Organised | MyGoMinds Services"
+        description="Learn more about Workshops Organised offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/workshops-organised"
+      />
       <section className="wo-hero">
         <div className="wo-hero-content">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>

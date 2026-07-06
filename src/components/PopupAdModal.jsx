@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiX, FiPhone, FiCheckCircle } from 'react-icons/fi';
+import api from '../api';
 import '../css/PopupAdModal.css';
 
 const PopupAdModal = () => {
@@ -15,9 +16,9 @@ const PopupAdModal = () => {
   useEffect(() => {
     const fetchSettingsAndShow = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/popup-settings/active');
-        if (response.ok) {
-          const settings = await response.json();
+        const response = await api.get('/api/popup-settings/active');
+        if (response.status === 200) {
+          const settings = response.data;
           setAdConfig(settings);
           setIsConfigLoaded(true);
 
@@ -54,18 +55,12 @@ const PopupAdModal = () => {
 
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:3000/api/popup-leads', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: adConfig?.adTitle || "Special Offer: Full Stack Masterclass",
-          mobileNumber: mobileNumber
-        }),
+      const response = await api.post('/api/popup-leads', {
+        title: adConfig?.adTitle || "Special Offer: Full Stack Masterclass",
+        mobileNumber: mobileNumber
       });
 
-      if (!response.ok) {
+      if (response.status !== 200 && response.status !== 201) {
         throw new Error('Failed to register');
       }
 
@@ -93,7 +88,11 @@ const PopupAdModal = () => {
         
         <div className="popup-image-container">
           <img 
-            src={adConfig?.adImage || "/aboutus.png"} 
+            src={adConfig?.adImage ? 
+              (adConfig.adImage.startsWith('/uploads') ? 
+                `${import.meta.env.MODE === 'production' ? 'https://api.mygominds.com' : ''}${adConfig.adImage}` 
+                : adConfig.adImage) 
+              : "/aboutus.png"} 
             alt="Special Offer" 
             className="popup-image" 
           />

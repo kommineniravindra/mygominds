@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaBriefcase, FaFileAlt, FaUserCheck, FaHandshake, FaLinkedin, FaClipboardList } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -16,6 +17,11 @@ const PlacementAssistance = () => {
 
   return (
     <div className="pa-page">
+      <SEO 
+        title="Placement Assistance | MyGoMinds Services"
+        description="Learn more about Placement Assistance offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/placement-assistance"
+      />
       <section className="pa-hero">
         <div className="pa-hero-container">
           <motion.div className="pa-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>

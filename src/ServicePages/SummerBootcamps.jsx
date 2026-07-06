@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaSun, FaCode, FaRobot, FaMobileAlt, FaDatabase, FaGamepad } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -16,6 +17,11 @@ const SummerBootcamps = () => {
 
   return (
     <div className="sb-page">
+      <SEO 
+        title="Summer Bootcamps | MyGoMinds Services"
+        description="Learn more about Summer Bootcamps offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/summer-bootcamps"
+      />
       <section className="sb-hero">
         <motion.div className="sb-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
           <div className="sb-badge">Intensive Summer Programs</div>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /exam
+
+Sitemap: https://www.mygominds.com/sitemap.xml

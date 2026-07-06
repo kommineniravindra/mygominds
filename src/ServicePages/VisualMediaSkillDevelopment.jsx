@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaPaintBrush, FaCamera, FaVideo, FaFilm, FaPalette, FaPenFancy } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -16,6 +17,11 @@ const VisualMediaSkillDevelopment = () => {
 
   return (
     <div className="vm-page">
+      <SEO 
+        title="Visual Media Skill Development | MyGoMinds Services"
+        description="Learn more about Visual Media Skill Development offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/visual-media-skill-development"
+      />
       <section className="vm-hero">
         <motion.div className="vm-hero-content" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <h1 className="vm-title">Visual Media<br/><span>Skill Development</span></h1>

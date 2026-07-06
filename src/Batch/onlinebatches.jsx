@@ -7,6 +7,7 @@ import {
 } from 'react-icons/fi';
 import { BsStopwatch } from 'react-icons/bs';
 import { FaUserTie } from 'react-icons/fa';
+import SEO from '../components/SEO';
 import '../Batchcss/onlinebatches.css';
 
 const iconMap = [
@@ -127,8 +128,14 @@ const OnlineBatches = () => {
   });
 
   return (
-    <div className="online-batches-page">
-      {/* Header Section */}
+    <div className="ob-page-wrapper">
+      <SEO 
+        title="Online Batches | MyGoMinds - Live Online Training"
+        description="Join live online training batches for Java, .NET, Python, React and more. Learn from expert trainers with 10+ years experience."
+        path="/online-batches"
+      />
+      
+      {/* 1. Hero Section */}
       <div className="ob-header-wrapper">
         <div className="ob-header-dots"></div>
         <div className="ob-header-dots-right"></div>

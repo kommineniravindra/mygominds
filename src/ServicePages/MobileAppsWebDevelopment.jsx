@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaMobileAlt, FaReact, FaApple, FaAndroid, FaCode, FaServer, FaCloud, FaDatabase, FaLock } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -19,6 +20,11 @@ const MobileAppsWebDevelopment = () => {
 
   return (
     <div className="maw-page">
+      <SEO 
+        title="Mobile Apps Web Development | MyGoMinds Services"
+        description="Learn more about Mobile Apps Web Development offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/mobile-apps-web-development"
+      />
       <section className="maw-hero">
         <motion.div className="maw-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
           <div className="maw-badge">Next-Gen Development</div>

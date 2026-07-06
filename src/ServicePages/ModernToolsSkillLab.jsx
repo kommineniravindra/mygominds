@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaTools, FaGitAlt, FaDocker, FaJira, FaSlack, FaFigma } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
@@ -16,6 +17,11 @@ const ModernToolsSkillLab = () => {
 
   return (
     <div className="mt-page">
+      <SEO 
+        title="Modern Tools Skill Lab | MyGoMinds Services"
+        description="Learn more about Modern Tools Skill Lab offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/modern-tools-skill-lab"
+      />
       <section className="mt-hero">
         <div className="mt-grid-overlay"></div>
         <motion.div className="mt-hero-content" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>

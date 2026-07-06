@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { FaChartLine, FaRocket, FaBullseye, FaHandshake, FaLightbulb, FaSeedling, FaPlay, FaUsers, FaChalkboardTeacher, FaFileAlt, FaSearch, FaGraduationCap, FaStore, FaUserTie } from 'react-icons/fa';
 import { FiArrowRight, FiCheckCircle, FiUsers as FiUsersAlt, FiAward, FiTrendingUp } from 'react-icons/fi';
@@ -8,6 +9,11 @@ import './css/Entrepreneurship.css';
 const EntrepreneurshipBusinessDev = () => {
   return (
     <div className="ent-page">
+      <SEO 
+        title="Entrepreneurship Business Dev | MyGoMinds Services"
+        description="Learn more about Entrepreneurship Business Dev offered by MyGoMinds Pvt Ltd. Expert training and services in Hyderabad."
+        path="/service/entrepreneurship-business-dev"
+      />
       <section className="ent-hero">
         <motion.div className="ent-hero-content" initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
           <div className="ent-hero-badge">ENTREPRENEURSHIP & BUSINESS DEVELOPMENT</div>

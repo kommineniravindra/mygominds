@@ -2,12 +2,18 @@ import React from 'react';
 import { FiUsers, FiAward, FiBookOpen, FiStar, FiBriefcase, FiCheckCircle, FiArrowRight, FiPlayCircle, FiUser, FiShield } from 'react-icons/fi';
 import { FaUserTie, FaBuilding, FaRegBuilding, FaRegLightbulb, FaGraduationCap } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
+import SEO from './SEO';
 import '../css/AboutUs.css';
 
 const AboutUs = () => {
   const navigate = useNavigate();
   return (
     <div className="aboutus-page">
+      <SEO 
+        title="About Us | MyGoMinds Pvt Ltd - Startup India Certified"
+        description="Learn about MyGoMinds Pvt Ltd, a Startup India certified software training institute in Hyderabad with 1000+ trained students and 600+ hiring partners."
+        path="/about"
+      />
       {/* 1. Hero Section */}
       <section className="about-hero">
         <div className="about-hero-content">

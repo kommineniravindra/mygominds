@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { courses } from '../UI/Catalog';
 import { FiArrowLeft, FiClock, FiBookOpen, FiAward, FiVideo, FiMonitor, FiCheckCircle, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { FaCheckCircle as FaCheckSolid } from 'react-icons/fa';
+import SEO from './SEO';
 import '../css/CourseDetails.css';
 
 const CourseDetails = () => {
@@ -25,9 +26,37 @@ const CourseDetails = () => {
   }
 
   const { details } = course;
+  const courseDescription = details?.description || `Master the skills needed to excel in ${course.title} with our comprehensive, industry-led curriculum.`;
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": course.title,
+    "description": courseDescription,
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "MyGoMinds Pvt Ltd",
+      "url": "https://www.mygominds.com"
+    },
+    "educationalLevel": "Beginner to Advanced",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": ["Online", "Blended"],
+      "instructor": {
+        "@type": "Person",
+        "name": "Expert Trainer"
+      }
+    }
+  };
 
   return (
     <div className="course-details-wrapper">
+      <SEO 
+        title={`${course.title} Course | MyGoMinds Hyderabad`}
+        description={courseDescription}
+        path={`/course/${course.slug}`}
+        schemaData={courseSchema}
+      />
       
       <style>{`
         .course-hero-dynamic-bg {

@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fi';
 import { BsStopwatch } from 'react-icons/bs';
 import { FaUserTie } from 'react-icons/fa';
+import SEO from '../components/SEO';
 import '../Batchcss/offlinebatches.css';
 import DemoModal from '../components/DemoModal';
 
@@ -103,8 +104,14 @@ const OfflineBatches = () => {
   });
 
   return (
-    <div className="offline-batches-page">
-      {/* Header Section */}
+    <div className="ob-page-wrapper">
+      <SEO 
+        title="Offline Batches | MyGoMinds - Classroom Training KPHB Hyderabad"
+        description="Classroom training near JNTU Circle, KPHB Hyderabad. Hands-on learning with expert instructors."
+        path="/offline-batches"
+      />
+      
+      {/* 1. Hero Section */}
       <div className="ob-header-wrapper">
         <div className="ob-header-dots"></div>
         <div className="ob-header-dots-right"></div>

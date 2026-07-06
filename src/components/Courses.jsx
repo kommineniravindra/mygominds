@@ -6,6 +6,7 @@ import { SiMongodb, SiPostgresql, SiOpenai, SiSelenium, SiExpress } from 'react-
 import { VscAzureDevops } from 'react-icons/vsc';
 import { courses } from '../UI/Catalog';
 import CourseLeadModal from './CourseLeadModal';
+import SEO from './SEO';
 import '../css/courses.css';
 
 const getThemeColor = (id) => {
@@ -147,6 +148,11 @@ const Courses = () => {
 
   return (
     <div className="courses-page">
+      <SEO 
+        title="All Courses | MyGoMinds - Software Training Hyderabad"
+        description="Browse 30+ industry-leading tech courses. Java Full Stack, .NET, Python, MERN, Data Science, Cloud, Testing & more. Online & offline batches available."
+        path="/courses"
+      />
       
       {/* Hero Section */}
       <div className="courses-hero-section">

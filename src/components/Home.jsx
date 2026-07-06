@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from './SEO';
 import Landing from '../UI/Landing';
 import Catalog from '../UI/Catalog';
 import Carousel from '../UI/Carousel';
@@ -20,6 +21,11 @@ import WhyChooseUs from '../Services/WhyChooseUs';
 const Home = () => {
   return (
     <div className="home-page">
+      <SEO 
+        title="MyGoMinds - Best Software Training Institute in Hyderabad | KPHB"
+        description="Startup India recognized IT training institute near JNTU, KPHB Hyderabad. 30+ courses in Java, .NET, Python, React, MERN. 98% placement assistance. 1000+ students trained."
+        path="/"
+      />
 
       <Carousel />
       <ProcessFlow />

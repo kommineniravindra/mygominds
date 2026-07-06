@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaStar, FaStarHalfAlt, FaExternalLinkAlt } from 'react-icons/fa';
+import api from '../api';
 import '../UIcss/GoogleReviews.css';
 
 const GoogleReviews = () => {
@@ -13,15 +14,15 @@ const GoogleReviews = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/google-reviews');
-        const data = await response.json();
+        const response = await api.get('/api/google-reviews');
         
-        if (data.success) {
+        if (response.status === 200 && response.data.success) {
+          const data = response.data;
           setReviewsData(data.reviews);
           setOverallRating(data.overallRating);
           setTotalReviews(data.totalReviews);
         } else {
-          setError(data.message || 'Failed to fetch reviews');
+          setError(response.data?.message || 'Failed to fetch reviews');
           // Fallback data if API fails or keys aren't set
           useFallbackData();
         }
