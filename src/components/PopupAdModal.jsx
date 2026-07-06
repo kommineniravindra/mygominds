@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiX, FiPhone, FiCheckCircle } from 'react-icons/fi';
-import api from '../api';
+import api, { getImageUrl } from '../api';
 import '../css/PopupAdModal.css';
 
 const PopupAdModal = () => {
@@ -88,11 +88,7 @@ const PopupAdModal = () => {
         
         <div className="popup-image-container">
           <img 
-            src={adConfig?.adImage ? 
-              (adConfig.adImage.startsWith('/uploads') ? 
-                `${import.meta.env.MODE === 'production' ? 'https://api.mygominds.com' : ''}${adConfig.adImage}` 
-                : adConfig.adImage) 
-              : "/aboutus.png"} 
+            src={adConfig?.adImage ? getImageUrl(adConfig.adImage) : "/aboutus.png"} 
             alt="Special Offer" 
             className="popup-image" 
           />
