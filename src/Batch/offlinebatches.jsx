@@ -5,7 +5,8 @@ import {
   FiMoreHorizontal, FiChevronLeft, FiChevronRight,
   FiTrendingUp, FiCode, FiEdit3, FiMonitor, FiSpeaker, FiMapPin,
   FiVideo,
-  FiPlay
+  FiPlay,
+  FiBookOpen
 } from 'react-icons/fi';
 import { BsStopwatch } from 'react-icons/bs';
 import { FaUserTie } from 'react-icons/fa';
@@ -241,7 +242,7 @@ const OfflineBatches = () => {
                 {/* Action */}
                 <div className="ob-td col-action">
                   <button className="ob-zoom-btn" onClick={() => openDemoModal(batch)}>
-                    <FiPlay /> Demo
+                    <FiBookOpen /> Book Demo
                   </button>
                 </div>
               </div>

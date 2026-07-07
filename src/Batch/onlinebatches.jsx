@@ -3,7 +3,7 @@ import api from '../api';
 import { 
   FiSearch, FiFilter, FiCalendar, FiClock, FiFileText, 
   FiMoreHorizontal, FiChevronLeft, FiChevronRight,
-  FiTrendingUp, FiCode, FiEdit3, FiMonitor, FiSpeaker, FiVideo, FiX
+  FiTrendingUp, FiCode, FiEdit3, FiMonitor, FiSpeaker, FiVideo, FiX, FiLink
 } from 'react-icons/fi';
 import { BsStopwatch } from 'react-icons/bs';
 import { FaUserTie } from 'react-icons/fa';
@@ -30,6 +30,7 @@ const OnlineBatches = () => {
   const [selectedBatchForZoom, setSelectedBatchForZoom] = useState(null);
   const [zoomFormData, setZoomFormData] = useState({ name: '', mobile: '', email: '' });
   const [isZoomSubmitting, setIsZoomSubmitting] = useState(false);
+  const [zoomSuccess, setZoomSuccess] = useState(false);
 
   useEffect(() => {
     const fetchBatches = async () => {
@@ -48,7 +49,6 @@ const OnlineBatches = () => {
   }, []);
 
   const handleZoomClick = (batch) => {
-    if (!batch.actionLink) return;
     setSelectedBatchForZoom(batch);
     setIsZoomModalOpen(true);
   };
@@ -66,9 +66,12 @@ const OnlineBatches = () => {
       });
 
       if (response.status === 200 || response.status === 201) {
-        window.open(selectedBatchForZoom.actionLink, '_blank');
-        setIsZoomModalOpen(false);
+        setZoomSuccess(true);
         setZoomFormData({ name: '', mobile: '', email: '' });
+        setTimeout(() => {
+          setZoomSuccess(false);
+          setIsZoomModalOpen(false);
+        }, 3000);
       } else {
         alert('Failed to submit form. Please try again.');
       }
@@ -264,15 +267,9 @@ const OnlineBatches = () => {
 
                 {/* Action */}
                 <div className="ob-td col-action">
-                  {batch.actionLink ? (
-                    <button onClick={() => handleZoomClick(batch)} className="ob-zoom-btn" style={{cursor: 'pointer'}}>
-                      <FiVideo /> Zoom
-                    </button>
-                  ) : (
-                    <button className="ob-zoom-btn" disabled style={{opacity: 0.5, cursor: 'not-allowed'}}>
-                      <FiVideo /> Zoom
-                    </button>
-                  )}
+                  <button onClick={() => handleZoomClick(batch)} className="ob-zoom-btn" style={{cursor: 'pointer'}}>
+                    <FiLink /> Get Link
+                  </button>
                 </div>
               </div>
             );
@@ -295,53 +292,61 @@ const OnlineBatches = () => {
               <FiX />
             </button>
             <div className="ob-zoom-modal-header">
-              <h2>Join Zoom Session</h2>
-              <p>Please enter your details to access the meeting link for <strong>{selectedBatchForZoom?.courseName}</strong>.</p>
+              <h2>Get Course Link</h2>
+              <p>Please enter your details to receive the link for <strong>{selectedBatchForZoom?.courseName}</strong>.</p>
             </div>
-            <form className="ob-zoom-form" onSubmit={handleZoomFormSubmit}>
-              <div className="ob-form-group">
-                <label>Course Name</label>
-                <input 
-                  type="text" 
-                  readOnly 
-                  value={selectedBatchForZoom?.courseName || ''} 
-                  style={{ backgroundColor: '#f8fafc', color: '#64748b', cursor: 'not-allowed' }}
-                />
+            {zoomSuccess ? (
+              <div style={{ textAlign: 'center', padding: '2rem 0', color: '#059669' }}>
+                <h3>Success!</h3>
+                <p>Your request has been received.</p>
+                <p style={{ marginTop: '0.5rem', color: '#475569' }}>Our team will contact you shortly.</p>
               </div>
-              <div className="ob-form-group">
-                <label>Name <span className="ob-required">*</span></label>
-                <input 
-                  type="text" 
-                  required 
-                  value={zoomFormData.name} 
-                  onChange={(e) => setZoomFormData({...zoomFormData, name: e.target.value})} 
-                  placeholder="Enter your full name" 
-                />
-              </div>
-              <div className="ob-form-group">
-                <label>Mobile Number <span className="ob-required">*</span></label>
-                <input 
-                  type="tel" 
-                  required 
-                  value={zoomFormData.mobile} 
-                  onChange={(e) => setZoomFormData({...zoomFormData, mobile: e.target.value})} 
-                  placeholder="Enter your mobile number" 
-                />
-              </div>
-              <div className="ob-form-group">
-                <label>Email Address <span className="ob-required">*</span></label>
-                <input 
-                  type="email" 
-                  required 
-                  value={zoomFormData.email} 
-                  onChange={(e) => setZoomFormData({...zoomFormData, email: e.target.value})} 
-                  placeholder="Enter your email address" 
-                />
-              </div>
-              <button type="submit" className="ob-zoom-submit-btn" disabled={isZoomSubmitting}>
-                {isZoomSubmitting ? 'Joining...' : 'Join Meeting'}
-              </button>
-            </form>
+            ) : (
+              <form className="ob-zoom-form" onSubmit={handleZoomFormSubmit}>
+                <div className="ob-form-group">
+                  <label>Course Name</label>
+                  <input 
+                    type="text" 
+                    readOnly 
+                    value={selectedBatchForZoom?.courseName || ''} 
+                    style={{ backgroundColor: '#f8fafc', color: '#64748b', cursor: 'not-allowed' }}
+                  />
+                </div>
+                <div className="ob-form-group">
+                  <label>Name <span className="ob-required">*</span></label>
+                  <input 
+                    type="text" 
+                    required 
+                    value={zoomFormData.name} 
+                    onChange={(e) => setZoomFormData({...zoomFormData, name: e.target.value})} 
+                    placeholder="Enter your full name" 
+                  />
+                </div>
+                <div className="ob-form-group">
+                  <label>Mobile Number <span className="ob-required">*</span></label>
+                  <input 
+                    type="tel" 
+                    required 
+                    value={zoomFormData.mobile} 
+                    onChange={(e) => setZoomFormData({...zoomFormData, mobile: e.target.value})} 
+                    placeholder="Enter your mobile number" 
+                  />
+                </div>
+                <div className="ob-form-group">
+                  <label>Email Address <span className="ob-required">*</span></label>
+                  <input 
+                    type="email" 
+                    required 
+                    value={zoomFormData.email} 
+                    onChange={(e) => setZoomFormData({...zoomFormData, email: e.target.value})} 
+                    placeholder="Enter your email address" 
+                  />
+                </div>
+                <button type="submit" className="ob-zoom-submit-btn" disabled={isZoomSubmitting}>
+                  {isZoomSubmitting ? 'Submitting...' : 'Submit Request'}
+                </button>
+              </form>
+            )}
           </div>
         </div>
       )}

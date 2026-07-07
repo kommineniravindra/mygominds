@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import api from '../api';
 import '../css/courseLeadModal.css'; // Reusing the same CSS
 
-const DemoModal = ({ isOpen, onClose, batchName, courseName, batchType, actionLink }) => {
+const DemoModal = ({ isOpen, onClose, batchName, courseName, batchType }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
@@ -51,16 +51,11 @@ const DemoModal = ({ isOpen, onClose, batchName, courseName, batchType, actionLi
       setEmail('');
       setMobile('');
 
-      if (actionLink) {
-        window.open(actionLink, '_blank');
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
         onClose();
-      } else {
-        setSuccess(true);
-        setTimeout(() => {
-          setSuccess(false);
-          onClose();
-        }, 3000);
-      }
+      }, 3000);
 
     } catch (err) {
       console.error('API Error:', err);
@@ -88,16 +83,7 @@ const DemoModal = ({ isOpen, onClose, batchName, courseName, batchType, actionLi
           <div style={{ textAlign: 'center', padding: '2rem 0', color: '#059669' }}>
             <h3>Success!</h3>
             <p>Your demo request has been received.</p>
-            {actionLink ? (
-              <div style={{ marginTop: '2rem' }}>
-                <p style={{ color: '#475569', marginBottom: '1rem', fontSize: '1.1rem' }}>Click the link below to join the session now:</p>
-                <a href={actionLink} target="_blank" rel="noreferrer" className="lead-submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }} onClick={handleCloseSuccess}>
-                  Join Demo Now
-                </a>
-              </div>
-            ) : (
-              <p style={{ marginTop: '0.5rem' }}>Our team will contact you shortly.</p>
-            )}
+            <p style={{ marginTop: '0.5rem' }}>Our team will contact you shortly.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="lead-modal-form">
