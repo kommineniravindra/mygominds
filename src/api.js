@@ -12,6 +12,12 @@ const api = axios.create({
 
 export const getImageUrl = (path) => {
   if (!path) return '';
+  
+  // Strip hardcoded localhost URLs if they accidentally got saved to DB
+  if (import.meta.env.MODE === 'production' && path.includes('localhost')) {
+    path = path.replace(/http:\/\/localhost:\d+/g, '');
+  }
+  
   if (path.startsWith('http')) return path;
   
   // Use the full base URL instead of relative proxy, to avoid any proxy/deployment issues
