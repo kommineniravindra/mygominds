@@ -36,7 +36,7 @@ const ProcessFlow = () => {
             >
               <div className="pf-card-number">{card.id}</div>
               <div className="pf-card-content">
-                <h4>{card.title}</h4>
+                <h3>{card.title}</h3>
                 <p>{card.desc}</p>
               </div>
               <div className="pf-card-icon">{card.icon}</div>
@@ -85,7 +85,7 @@ const ProcessFlow = () => {
             >
               <div className="pf-card-number">{card.id}</div>
               <div className="pf-card-content">
-                <h4>{card.title}</h4>
+                <h3>{card.title}</h3>
                 <p>{card.desc}</p>
               </div>
               <div className="pf-card-icon">{card.icon}</div>

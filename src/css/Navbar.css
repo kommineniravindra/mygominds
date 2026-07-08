@@ -56,11 +56,11 @@
 }
 
 .navbar-links li a:hover {
-  color: #f47e38;
+  color: #c2410c;
 }
 
 .navbar-links li a.active {
-  color: #f47e38;
+  color: #c2410c;
   font-weight: 700;
 }
 
@@ -95,13 +95,13 @@
 .navbar-links li a:hover .nav-icon,
 .navbar-links li a.active .nav-icon,
 .dropbtn:hover .nav-icon {
-  color: #f47e38;
+  color: #c2410c;
 }
 
 .dropdown-arrow-icon {
   font-size: 16px;
   margin-left: 6px;
-  color: #f47e38;
+  color: #c2410c;
   transition: transform 0.3s ease;
 }
 

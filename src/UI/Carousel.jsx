@@ -105,10 +105,10 @@ const Carousel = () => {
   return (
     <div className="mg-hero-section" style={{ backgroundColor: slide.bgColor || '#fcfdfe', transition: 'background-color 0.5s ease' }}>
       {/* Navigation Arrows */}
-      <button className="carousel-nav-btn prev-btn" onClick={prevSlide}>
+      <button className="carousel-nav-btn prev-btn" onClick={prevSlide} aria-label="Previous slide">
         <FiChevronLeft />
       </button>
-      <button className="carousel-nav-btn next-btn" onClick={nextSlide}>
+      <button className="carousel-nav-btn next-btn" onClick={nextSlide} aria-label="Next slide">
         <FiChevronRight />
       </button>
 

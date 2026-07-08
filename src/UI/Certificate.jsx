@@ -51,7 +51,7 @@ const Certificate = () => {
               <div className="cert-bg-dots bottom-left"></div>
               <div className="cert-bg-glow"></div>
               <img 
-                src="https://res.cloudinary.com/dslbwf2g9/image/upload/v1775209171/ChatGPT_Image_Apr_3_2026_03_09_11_PM_ebwdbp.png" 
+                src="https://res.cloudinary.com/dslbwf2g9/image/upload/f_auto,q_auto/v1775209171/ChatGPT_Image_Apr_3_2026_03_09_11_PM_ebwdbp.png" 
                 alt="MyGo Minds Certificate" 
                 className="cert-main-img" 
               />

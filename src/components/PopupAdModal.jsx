@@ -121,7 +121,7 @@ const PopupAdModal = () => {
   return (
     <div className="popup-modal-overlay">
       <div className="popup-modal-content">
-        <button className="popup-close-btn" onClick={handleClose}>
+        <button className="popup-close-btn" onClick={handleClose} aria-label="Close">
           <FiX />
         </button>
         <div 
@@ -130,7 +130,7 @@ const PopupAdModal = () => {
           onMouseLeave={() => setIsAutoScrolling(true)}
         >
           {adConfigs.length > 1 && (
-            <button className="carousel-nav-btn prev-btn" onClick={scrollLeft}>
+            <button className="carousel-nav-btn prev-btn" onClick={scrollLeft} aria-label="Previous slide">
               <FiChevronLeft />
             </button>
           )}
@@ -185,7 +185,7 @@ const PopupAdModal = () => {
           </div>
 
           {adConfigs.length > 1 && (
-            <button className="carousel-nav-btn next-btn" onClick={scrollRight}>
+            <button className="carousel-nav-btn next-btn" onClick={scrollRight} aria-label="Next slide">
               <FiChevronRight />
             </button>
           )}

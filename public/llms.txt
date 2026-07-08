@@ -1,0 +1,11 @@
+# MyGoMinds
+
+Welcome to MyGoMinds! We are a Startup India certified software training & placement institute in Hyderabad, offering industry-focused training and custom software development services.
+
+## Important Links
+- [Home](https://www.mygominds.com/)
+- [Courses](https://www.mygominds.com/courses)
+- [Services](https://www.mygominds.com/services)
+- [About Us](https://www.mygominds.com/about)
+
+We empower individuals and businesses to grow, innovate, and succeed in the digital era.
