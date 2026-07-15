@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Courses from './components/Courses'
@@ -28,6 +28,20 @@ import SummerBootcamps from './ServicePages/SummerBootcamps'
 import WorkshopsOrganised from './ServicePages/WorkshopsOrganised'
 import MobileAppsWebDevelopment from './ServicePages/MobileAppsWebDevelopment'
 
+const AnalyticsTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('config', 'G-SLBGF3GP0X', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+
+  return null;
+};
+
 const MainLayout = () => (
   <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
     <Navbar />
@@ -40,6 +54,7 @@ const MainLayout = () => (
 function App() {
   return (
     <BrowserRouter>
+      <AnalyticsTracker />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
