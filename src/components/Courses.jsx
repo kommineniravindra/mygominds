@@ -146,12 +146,34 @@ const Courses = () => {
     );
   };
 
+  const coursesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": courses.map((course, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Course",
+        "url": `https://www.mygominds.com/course/${course.slug}`,
+        "name": course.title,
+        "description": `Comprehensive ${course.title} training at MyGoMinds.`,
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "MyGoMinds Pvt Ltd",
+          "sameAs": "https://www.mygominds.com"
+        }
+      }
+    }))
+  };
+
   return (
     <div className="courses-page">
       <SEO 
         title="All Courses | MyGoMinds - Software Training Hyderabad"
         description="Browse 30+ industry-leading tech courses. Java Full Stack, .NET, Python, MERN, Data Science, Cloud, Testing & more. Online & offline batches available."
+        keywords="software training hyderabad, java full stack course, python training, .net courses, data science classes, mern stack training, best IT institute"
         path="/courses"
+        schemaData={coursesSchema}
       />
       
       {/* Hero Section */}

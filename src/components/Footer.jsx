@@ -45,7 +45,7 @@ const Footer = () => {
               <div className="contact-icon-wrapper color-green"><FiPhone /></div>
               <div className="contact-text">
                 <span className="contact-label">CALL US</span>
-                <span className="contact-value">+91 88853 84111</span>
+                <span className="contact-value">+91 88853 02122</span>
               </div>
             </li>
             <li>

@@ -54,6 +54,7 @@ const CourseDetails = () => {
       <SEO 
         title={`${course.title} Course | MyGoMinds Hyderabad`}
         description={courseDescription}
+        keywords={`${course.title.toLowerCase()} course, ${course.title.toLowerCase()} training hyderabad, learn ${course.title.toLowerCase()}, mygominds ${course.title.toLowerCase()}`}
         path={`/course/${course.slug}`}
         schemaData={courseSchema}
       />

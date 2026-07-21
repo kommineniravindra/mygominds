@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <SEO 
-        title="MyGoMinds - Best Software Training Institute in Hyderabad | KPHB"
+        title="Best Software Training Institute in Hyderabad | KPHB | MYGOMINDS"
         description="Startup India recognized IT training institute near JNTU, KPHB Hyderabad. 30+ courses in Java, .NET, Python, React, MERN. 98% placement assistance. 1000+ students trained."
         path="/"
       />

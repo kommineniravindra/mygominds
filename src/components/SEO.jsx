@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 const SEO = ({ 
   title, 
   description, 
+  keywords,
   path = '', 
   type = 'website',
   schemaData = null
@@ -17,6 +18,7 @@ const SEO = ({
       {/* Basic HTML Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullUrl} />
 
       {/* Open Graph / Facebook */}
