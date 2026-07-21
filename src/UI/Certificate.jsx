@@ -73,7 +73,7 @@ const Certificate = () => {
                 <div className="cert-feature-icon">
                   <FiAward />
                 </div>
-                <h4>Industry Recognized</h4>
+                <h3>Industry Recognized</h3>
                 <p>Trusted by top companies worldwide</p>
               </div>
 
@@ -81,7 +81,7 @@ const Certificate = () => {
                 <div className="cert-feature-icon">
                   <FiShield />
                 </div>
-                <h4>Boost Your Career</h4>
+                <h3>Boost Your Career</h3>
                 <p>Enhance your profile and unlock better opportunities</p>
               </div>
 
@@ -89,7 +89,7 @@ const Certificate = () => {
                 <div className="cert-feature-icon">
                   <FiStar />
                 </div>
-                <h4>Showcase Your Skills</h4>
+                <h3>Showcase Your Skills</h3>
                 <p>Highlight your expertise with confidence</p>
               </div>
             </div>

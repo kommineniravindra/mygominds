@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
 
 .learning-paths-section {
   padding: 10px 20px;
@@ -21,11 +20,11 @@
 }
 
 .learning-paths-header h2 span {
-  color: #c2410c;
+  color: #9a3412; /* Darker orange for accessibility */
 }
 
 .learning-paths-header p {
-  color: #64748b;
+  color: #475569; /* Darker slate for accessibility */
   font-size: 16px;
   font-weight: 500;
 }
@@ -172,8 +171,8 @@
 .lp-light-card .lp-title { color: #0f172a; }
 
 .purple-text { color: #a855f7; }
-.orange-text { color: #c2410c; }
-.blue-text { color: #2563eb; }
+.orange-text { color: #9a3412; }
+.blue-text { color: #1d4ed8; }
 
 /* Description */
 .lp-desc {
@@ -212,8 +211,8 @@
 }
 
 .purple-list .check-icon { color: #a855f7; }
-.orange-list .check-icon { color: #ea580c; }
-.blue-list .check-icon { color: #2563eb; }
+.orange-list .check-icon { color: #9a3412; }
+.blue-list .check-icon { color: #1d4ed8; }
 
 /* Buttons */
 .lp-btn-primary {

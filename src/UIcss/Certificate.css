@@ -128,7 +128,7 @@
   border: 1px solid rgba(234, 88, 12, 0.2);
 }
 
-.cert-feature h4 {
+.cert-feature h3 {
   font-size: 0.95rem;
   font-weight: 800;
   color: #1e293b;
@@ -340,7 +340,7 @@
     margin-bottom: 0;
   }
 
-  .cert-feature h4 {
+  .cert-feature h3 {
     margin-bottom: 0;
   }
   
