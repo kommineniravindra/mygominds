@@ -20,11 +20,11 @@
 }
 
 .learning-paths-header h2 span {
-  color: #9a3412; /* Darker orange for accessibility */
+  color: #7c2d12; /* Darker orange for accessibility */
 }
 
 .learning-paths-header p {
-  color: #475569; /* Darker slate for accessibility */
+  color: #334155; /* Darker slate for accessibility */
   font-size: 16px;
   font-weight: 500;
 }
@@ -69,7 +69,7 @@
 
 /* Light Theme Card */
 .lp-light-card {
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   border:2px solid wheat;
   color: #0f172a;
 }
@@ -171,7 +171,7 @@
 .lp-light-card .lp-title { color: #0f172a; }
 
 .purple-text { color: #a855f7; }
-.orange-text { color: #9a3412; }
+.orange-text { color: #7c2d12; }
 .blue-text { color: #1d4ed8; }
 
 /* Description */
@@ -211,7 +211,7 @@
 }
 
 .purple-list .check-icon { color: #a855f7; }
-.orange-list .check-icon { color: #9a3412; }
+.orange-list .check-icon { color: #7c2d12; }
 .blue-list .check-icon { color: #1d4ed8; }
 
 /* Buttons */

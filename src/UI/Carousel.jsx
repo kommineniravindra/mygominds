@@ -168,7 +168,7 @@ const Carousel = () => {
           
           {/* Right Image */}
           <div className="mg-hero-image-wrapper">
-            <img src={slide.image} alt="Hero banner" className="mg-hero-main-img" style={slide.imageStyle || {}} fetchPriority="high" />
+            <img src={slide.image} alt="Hero banner" className="mg-hero-main-img" style={slide.imageStyle || {}} fetchPriority="high" width="800" height="600" />
           </div>
         </motion.div>
       </AnimatePresence>

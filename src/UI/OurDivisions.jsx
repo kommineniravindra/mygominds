@@ -48,7 +48,7 @@ const OurDivisions = () => {
             </div>
             
             <div className="lp-image-col">
-              <img src="/banners/img2.png" alt="IT Training" className="lp-illustration" />
+              <img src="/banners/img2.png" alt="IT Training" className="lp-illustration" width="400" height="400" />
             </div>
           </div>
 
@@ -109,7 +109,7 @@ const OurDivisions = () => {
             </div>
             
             <div className="lp-image-col">
-              <img src="/banners/img1.png" alt="Software Development" className="lp-illustration" />
+              <img src="/banners/img1.png" alt="Software Development" className="lp-illustration" width="400" height="400" />
             </div>
           </div>
 
