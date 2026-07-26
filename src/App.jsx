@@ -16,6 +16,7 @@ import Alumni from './components/Alumni'
 import PdfViewer from './components/PdfViewer'
 import ServicesPage from './Services/ServicesPage'
 import TechnicalSkillDevelopment from './ServicePages/TechnicalSkillDevelopment'
+import ECertificate from './components/ECertificate'
 import WomenEmpowermentWorkshops from './ServicePages/WomenEmpowermentWorkshops'
 import EntrepreneurshipBusinessDev from './ServicePages/EntrepreneurshipBusinessDev'
 import PersonalizedCareerMentoring from './ServicePages/PersonalizedCareerMentoring'
@@ -61,6 +62,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/course/:slug" element={<CourseDetails />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/e-certificate" element={<ECertificate />} />
           <Route path="/online-batches" element={<OnlineBatches />} />
           <Route path="/offline-batches" element={<OfflineBatches />} />
           <Route path="/gallery" element={<Gallery />} />
