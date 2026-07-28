@@ -2,11 +2,16 @@ import React, { useState, useEffect, useRef } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import '../css/ECertificate.css';
+import api from '../api';
 
 const ECertificate = () => {
   const [name, setName] = useState('');
+  const [collegeName, setCollegeName] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
   const [generated, setGenerated] = useState(false);
   const [certificateData, setCertificateData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
   const certificateRef = useRef(null);
 
   // Load existing data from localStorage on component mount
@@ -18,26 +23,48 @@ const ECertificate = () => {
     }
   }, []);
 
-  const handleGenerate = (e) => {
+  const handleGenerate = async (e) => {
     e.preventDefault();
-    if (!name.trim()) return;
+    if (!name.trim() || !collegeName.trim() || !mobileNumber.trim()) {
+      setErrorMsg('Please fill in all fields');
+      return;
+    }
+
+    setLoading(true);
+    setErrorMsg('');
 
     const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     const liveDate = new Date().toLocaleDateString(undefined, dateOptions);
 
     const data = {
       name: name,
+      collegeName: collegeName,
+      mobileNumber: mobileNumber,
       date: liveDate,
     };
 
-    setCertificateData(data);
-    setGenerated(true);
-    localStorage.setItem('eCertificateData', JSON.stringify(data));
+    try {
+      await api.post('/api/e-certificate', {
+        name,
+        collegeName,
+        mobileNumber
+      });
+      setCertificateData(data);
+      setGenerated(true);
+      localStorage.setItem('eCertificateData', JSON.stringify(data));
+    } catch (error) {
+      console.error('Error saving data:', error);
+      setErrorMsg('Failed to generate certificate. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleReset = () => {
     setGenerated(false);
     setName('');
+    setCollegeName('');
+    setMobileNumber('');
     setCertificateData(null);
     localStorage.removeItem('eCertificateData');
   };
@@ -73,6 +100,7 @@ const ECertificate = () => {
         
         {!generated ? (
           <form className="e-certificate-form" onSubmit={handleGenerate}>
+            {errorMsg && <div className="error-message">{errorMsg}</div>}
             <div className="form-group">
               <label htmlFor="nameInput">Enter Full Name:</label>
               <input
@@ -84,7 +112,31 @@ const ECertificate = () => {
                 required
               />
             </div>
-            <button type="submit" className="generate-btn">Generate Certificate</button>
+            <div className="form-group">
+              <label htmlFor="collegeInput">Enter College Name:</label>
+              <input
+                id="collegeInput"
+                type="text"
+                value={collegeName}
+                onChange={(e) => setCollegeName(e.target.value)}
+                placeholder="e.g. Example Institute of Technology"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="mobileInput">Enter Mobile Number:</label>
+              <input
+                id="mobileInput"
+                type="tel"
+                value={mobileNumber}
+                onChange={(e) => setMobileNumber(e.target.value)}
+                placeholder="e.g. 9876543210"
+                required
+              />
+            </div>
+            <button type="submit" className="generate-btn" disabled={loading}>
+              {loading ? 'Generating...' : 'Generate Certificate'}
+            </button>
           </form>
         ) : (
           <div className="certificate-display-section">
