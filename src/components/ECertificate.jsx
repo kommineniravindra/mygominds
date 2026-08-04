@@ -21,6 +21,7 @@ const ECertificate = () => {
   const [certificateData, setCertificateData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [dateErrorMsg, setDateErrorMsg] = useState('');
   const certificateRef = useRef(null);
 
   // Restore previous submission from localStorage to prevent multiple registrations
@@ -70,6 +71,19 @@ const ECertificate = () => {
     return null;
   };
 
+  const checkDateRange = () => {
+    if (!completionDate || !endDate) {
+      setDateErrorMsg('');
+      return;
+    }
+    const error = validateDateRange(completionDate, endDate);
+    if (error) {
+      setDateErrorMsg(error);
+    } else {
+      setDateErrorMsg('');
+    }
+  };
+
   const handleGenerate = async (e) => {
     e.preventDefault();
     if (!name.trim() || !collegeName.trim() || !mobileNumber.trim() || !email.trim() || !course.trim() || !completionDate || !endDate) {
@@ -79,10 +93,12 @@ const ECertificate = () => {
 
     const dateError = validateDateRange(completionDate, endDate);
     if (dateError) {
+      setDateErrorMsg(dateError);
       setErrorMsg(dateError);
       return;
     }
 
+    setDateErrorMsg('');
     setLoading(true);
     setErrorMsg('');
 
@@ -157,6 +173,7 @@ const ECertificate = () => {
     setEndDate('');
     setFeeCompleted(false);
     setCertificateData(null);
+    setDateErrorMsg('');
   };
 
   const downloadPDF = () => {
@@ -388,7 +405,7 @@ const ECertificate = () => {
               />
             </div>
 
-            <div className="form-row">
+            <div className="form-row" style={{ marginBottom: dateErrorMsg ? '4px' : '20px' }}>
               <div className="form-group">
                 <label htmlFor="completionDateInput">Course Start Date <span className="required-star">*</span></label>
                 <input
@@ -396,6 +413,7 @@ const ECertificate = () => {
                   type="date"
                   value={completionDate}
                   onChange={(e) => setCompletionDate(e.target.value)}
+                  onBlur={checkDateRange}
                   required
                 />
               </div>
@@ -406,10 +424,16 @@ const ECertificate = () => {
                   type="date"
                   value={endDate}
                   onChange={(e) => setEndDate(e.target.value)}
+                  onBlur={checkDateRange}
                   required
                 />
               </div>
             </div>
+            {dateErrorMsg && (
+              <div className="date-validation-error" style={{ color: '#dc2626', fontSize: '0.82rem', marginTop: '-12px', marginBottom: '18px', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <span>⚠</span> {dateErrorMsg}
+              </div>
+            )}
 
             <div className="form-group fee-checkbox-group">
               <label className="checkbox-label" htmlFor="feeCompletedInput">
