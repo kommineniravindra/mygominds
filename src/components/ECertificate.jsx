@@ -303,7 +303,7 @@ const ECertificate = () => {
               />
             </div>
 
-            <div className="form-group">
+             <div className="form-group">
               <label htmlFor="collegeInput">Institution Name <span className="required-star">*</span></label>
               <input
                 id="collegeInput"
@@ -312,6 +312,7 @@ const ECertificate = () => {
                 onChange={(e) => setCollegeName(e.target.value)}
                 placeholder="e.g. Example Institute of Technology"
                 required
+                disabled
               />
             </div>
 
