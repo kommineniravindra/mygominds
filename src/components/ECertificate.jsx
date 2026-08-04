@@ -32,6 +32,15 @@ const ECertificate = () => {
     }
   }, []);
 
+  // Pre-fill Institution Name for MyGoMinds
+  useEffect(() => {
+    if (activeView === 'mygominds-form') {
+      setCollegeName('MYGOMINDS');
+    } else {
+      setCollegeName('');
+    }
+  }, [activeView]);
+
 
   const handleGenerate = async (e) => {
     e.preventDefault();
@@ -106,7 +115,7 @@ const ECertificate = () => {
   const handleReset = () => {
     setGenerated(false);
     setName('');
-    setCollegeName('');
+    setCollegeName(activeView === 'mygominds-form' ? 'MYGOMINDS' : '');
     setMobileNumber('');
     setEmail('');
     setCourse('');
