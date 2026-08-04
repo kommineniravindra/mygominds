@@ -42,10 +42,44 @@ const ECertificate = () => {
   }, [activeView]);
 
 
+  const validateDateRange = (startDate, endDate) => {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    
+    if (isNaN(start.getTime()) || isNaN(end.getTime())) {
+      return 'Invalid dates selected.';
+    }
+    
+    if (end <= start) {
+      return 'End Date must be after Start Date.';
+    }
+    
+    const yearDiff = end.getFullYear() - start.getFullYear();
+    const monthDiff = end.getMonth() - start.getMonth();
+    const dayDiff = end.getDate() - start.getDate();
+    
+    let months = yearDiff * 12 + monthDiff;
+    if (dayDiff > 0) {
+      months += 0.1;
+    }
+    
+    if (months > 6) {
+      return 'The course duration cannot exceed 6 months.';
+    }
+    
+    return null;
+  };
+
   const handleGenerate = async (e) => {
     e.preventDefault();
     if (!name.trim() || !collegeName.trim() || !mobileNumber.trim() || !email.trim() || !course.trim() || !completionDate || !endDate) {
       setErrorMsg('Please fill in all required fields');
+      return;
+    }
+
+    const dateError = validateDateRange(completionDate, endDate);
+    if (dateError) {
+      setErrorMsg(dateError);
       return;
     }
 
