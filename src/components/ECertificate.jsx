@@ -226,7 +226,7 @@ const ECertificate = () => {
             </div>
 
             {/* NI-MSME Card */}
-            <div
+            {/* <div
               className="cert-provider-card nimsme-card"
               onClick={() => setActiveView('nimsme')}
               role="button"
@@ -239,7 +239,7 @@ const ECertificate = () => {
                 Access and download your NI-MSME certified programme certificate.
               </p>
               <span className="cert-card-btn">Get Certificate →</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
