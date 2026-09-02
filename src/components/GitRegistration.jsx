@@ -13,8 +13,10 @@ import {
   FiArrowRight, 
   FiAward, 
   FiBriefcase, 
-  FiMonitor 
+  FiMonitor,
+  FiFolder
 } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import api from '../api';
 import SEO from './SEO';
 import '../css/GitRegistration.css';
@@ -30,19 +32,27 @@ const GitRegistration = () => {
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
-  const [copied, setCopied] = useState(false);
+  const [copiedDrive, setCopiedDrive] = useState(false);
+  const [copiedWhatsapp, setCopiedWhatsapp] = useState(false);
 
-  const GIT_REPO_URL = 'https://github.com/mygomindsrepo2026';
+  const DRIVE_URL = 'https://drive.google.com/drive/folders/1r6krrvncVf_5XtyvfayNss7RNAVcnDCL?usp=drive_link';
+  const WHATSAPP_URL = 'https://chat.whatsapp.com/DYLkIQ8Gf0gGGsVNR4WSuL?s=sh&p=a&mlu=4&ilr=4';
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     if (errorMsg) setErrorMsg('');
   };
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(GIT_REPO_URL);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
+  const handleCopyDrive = () => {
+    navigator.clipboard.writeText(DRIVE_URL);
+    setCopiedDrive(true);
+    setTimeout(() => setCopiedDrive(false), 3000);
+  };
+
+  const handleCopyWhatsapp = () => {
+    navigator.clipboard.writeText(WHATSAPP_URL);
+    setCopiedWhatsapp(true);
+    setTimeout(() => setCopiedWhatsapp(false), 3000);
   };
 
   const handleSubmit = async (e) => {
@@ -191,27 +201,52 @@ const GitRegistration = () => {
                 <FiCheckCircle />
               </div>
               <h2>Registration Completed!</h2>
-              <p>Your details have been successfully recorded. Access the GitHub Repository below:</p>
+              <p>Your details have been successfully recorded. Access your course materials and join our WhatsApp group below:</p>
 
-              <div className="repo-box">
-                <div className="repo-box-header">
-                  <FiGitBranch /> GitHub Repository URL
+              {/* Google Drive Link Box */}
+              <div className="repo-box drive-box">
+                <div className="repo-box-header drive-header">
+                  <FiFolder /> Google Drive Folder URL
                 </div>
                 <div className="repo-input-group">
                   <a 
-                    href={GIT_REPO_URL} 
+                    href={DRIVE_URL} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="repo-url-link"
-                    title="Click to open repository in new tab"
+                    className="repo-url-link drive-link"
+                    title="Click to open Google Drive folder"
                   >
-                    <FiExternalLink /> {GIT_REPO_URL}
+                    <FiExternalLink /> Access Drive Folder
                   </a>
                   <button 
-                    onClick={handleCopy} 
-                    className={`git-copy-btn ${copied ? 'copied' : ''}`}
+                    onClick={handleCopyDrive} 
+                    className={`git-copy-btn drive-copy-btn ${copiedDrive ? 'copied' : ''}`}
                   >
-                    <FiCopy /> {copied ? 'Copied!' : 'Copy Link'}
+                    <FiCopy /> {copiedDrive ? 'Copied!' : 'Copy Drive Link'}
+                  </button>
+                </div>
+              </div>
+
+              {/* WhatsApp Link Box */}
+              <div className="repo-box whatsapp-box">
+                <div className="repo-box-header whatsapp-header">
+                  <FaWhatsapp /> WhatsApp Group URL
+                </div>
+                <div className="repo-input-group">
+                  <a 
+                    href={WHATSAPP_URL} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="repo-url-link whatsapp-link"
+                    title="Click to join WhatsApp group"
+                  >
+                    <FiExternalLink /> Join WhatsApp Group
+                  </a>
+                  <button 
+                    onClick={handleCopyWhatsapp} 
+                    className={`git-copy-btn whatsapp-copy-btn ${copiedWhatsapp ? 'copied' : ''}`}
+                  >
+                    <FiCopy /> {copiedWhatsapp ? 'Copied!' : 'Copy Group Link'}
                   </button>
                 </div>
               </div>

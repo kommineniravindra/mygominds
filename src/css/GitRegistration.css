@@ -192,9 +192,19 @@
   background: #f8fafc;
   border: 2px dashed #ea580c;
   border-radius: 16px;
-  padding: 1.75rem;
-  margin-bottom: 2rem;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
   text-align: left;
+}
+
+.repo-box.drive-box {
+  border-color: #2563eb;
+  background: #f0f6ff;
+}
+
+.repo-box.whatsapp-box {
+  border-color: #25d366;
+  background: #f0fdf4;
 }
 
 .repo-box-header {
@@ -207,6 +217,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.repo-box-header.drive-header {
+  color: #1d4ed8;
+}
+
+.repo-box-header.whatsapp-header {
+  color: #15803d;
 }
 
 .repo-input-group {
@@ -237,6 +255,14 @@
   text-decoration: underline;
 }
 
+.repo-url-link.whatsapp-link {
+  color: #15803d;
+}
+
+.repo-url-link.whatsapp-link:hover {
+  color: #166534;
+}
+
 .git-copy-btn {
   background: #ea580c;
   color: #ffffff;
@@ -253,12 +279,28 @@
   white-space: nowrap;
 }
 
+.git-copy-btn.drive-copy-btn {
+  background: #2563eb;
+}
+
+.git-copy-btn.drive-copy-btn:hover {
+  background: #1d4ed8;
+}
+
+.git-copy-btn.whatsapp-copy-btn {
+  background: #25d366;
+}
+
+.git-copy-btn.whatsapp-copy-btn:hover {
+  background: #16a34a;
+}
+
 .git-copy-btn:hover {
   background: #c2410c;
 }
 
 .git-copy-btn.copied {
-  background: #16a34a;
+  background: #16a34a !important;
 }
 
 .register-again-btn {
