@@ -1,0 +1,469 @@
+.git-page-wrapper {
+  padding: 3rem 1.5rem 5rem;
+  background: linear-gradient(135deg, #fff7ed 0%, #fdf4ff 50%, #eff6ff 100%);
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.git-container {
+  max-width: 680px;
+  width: 100%;
+}
+
+.git-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(234, 88, 12, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 3rem 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.git-card:hover {
+  box-shadow: 0 25px 50px rgba(234, 88, 12, 0.12);
+}
+
+.git-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.git-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, #ea580c, #c026d3);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.git-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.git-header h1 span {
+  color: #ea580c;
+}
+
+.git-header p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.git-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #334155;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group label svg {
+  color: #ea580c;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #0f172a;
+  background: #ffffff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-wrapper input:focus {
+  border-color: #ea580c;
+  box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.15);
+}
+
+.git-submit-btn {
+  background: linear-gradient(135deg, #ea580c 0%, #c026d3 100%);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+}
+
+.git-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 88, 12, 0.4);
+}
+
+.git-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.git-alert {
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.git-alert-error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* Success Card & Repository Link Box */
+.git-success-card {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.success-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background: #dcfce7;
+  color: #16a34a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2.2rem;
+  box-shadow: 0 10px 20px rgba(22, 163, 74, 0.2);
+}
+
+.git-success-card h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.git-success-card p {
+  color: #475569;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.repo-box {
+  background: #f8fafc;
+  border: 2px dashed #ea580c;
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.repo-box-header {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ea580c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.repo-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.repo-url-link {
+  flex: 1;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.repo-url-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.git-copy-btn {
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.git-copy-btn:hover {
+  background: #c2410c;
+}
+
+.git-copy-btn.copied {
+  background: #16a34a;
+}
+
+.register-again-btn {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.register-again-btn:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* MyGoMinds Advertisement Section */
+.mygominds-ad-section {
+  max-width: 680px;
+  width: 100%;
+}
+
+.ad-card {
+  background: linear-gradient(135deg, #1e1b4b 0%, #311b92 50%, #4a148c 100%);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 40px rgba(49, 27, 146, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-card::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 180px;
+  height: 180px;
+  background: rgba(234, 88, 12, 0.3);
+  filter: blur(50px);
+  border-radius: 50%;
+}
+
+.ad-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ad-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: #fb923c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(251, 146, 60, 0.3);
+}
+
+.ad-header h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #ffffff, #fed7aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ad-header p {
+  color: #cbd5e1;
+  font-size: 0.98rem;
+}
+
+.ad-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ad-feature-item {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.ad-feature-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.ad-feature-icon {
+  font-size: 1.75rem;
+  color: #fb923c;
+  margin-bottom: 0.6rem;
+}
+
+.ad-feature-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.ad-feature-desc {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.ad-cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ad-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ad-btn-primary {
+  background: linear-gradient(90deg, #ea580c, #f97316);
+  color: #ffffff;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 20px rgba(234, 88, 12, 0.3);
+  transition: all 0.25s ease;
+}
+
+.ad-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(234, 88, 12, 0.4);
+}
+
+.ad-btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+.ad-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ad-contact-strip {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .git-card {
+    padding: 2rem 1.5rem;
+  }
+  .git-header h1 {
+    font-size: 1.75rem;
+  }
+  .repo-input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .git-copy-btn {
+    justify-content: center;
+  }
+  .ad-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .ad-btn-primary, .ad-btn-secondary {
+    justify-content: center;
+  }
+}
