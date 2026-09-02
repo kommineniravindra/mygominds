@@ -14,7 +14,8 @@ import {
   FiAward, 
   FiBriefcase, 
   FiMonitor,
-  FiFolder
+  FiFolder,
+  FiCpu
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import api from '../api';
@@ -96,9 +97,9 @@ const GitRegistration = () => {
   return (
     <div className="git-page-wrapper">
       <SEO 
-        title="Git Registration | MyGoMinds"
-        description="Register for Git & Version Control Sessions with MyGoMinds."
-        path="/git"
+        title="AI Workshop Registration | MyGoMinds"
+        description="Register for AI & Artificial Intelligence Workshops with MyGoMinds."
+        path="/link"
       />
       
       <div className="git-container">
@@ -107,10 +108,10 @@ const GitRegistration = () => {
             <>
               <div className="git-header">
                 <div className="git-badge">
-                  <FiGitBranch /> Git Session Registration
+                  <FiCpu /> AI Session Registration
                 </div>
-                <h1>Git <span>Workshop</span> Form</h1>
-                <p>Please enter your details below to register for the Git program.</p>
+                <h1>AI <span>Workshop</span> Form</h1>
+                <p>Please enter your details below to register for the AI program.</p>
               </div>
 
               {errorMsg && (

@@ -69,7 +69,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/git" element={<GitRegistration />} />
+          <Route path="/link" element={<GitRegistration />} />
           <Route path="/exam" element={<Exam />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/service/technical-skill-development" element={<TechnicalSkillDevelopment />} />
