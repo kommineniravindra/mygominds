@@ -29,6 +29,7 @@ import SummerBootcamps from './ServicePages/SummerBootcamps'
 import WorkshopsOrganised from './ServicePages/WorkshopsOrganised'
 import MobileAppsWebDevelopment from './ServicePages/MobileAppsWebDevelopment'
 import GitRegistration from './components/GitRegistration'
+import CareerExcellenceRegistration from './components/CareerExcellenceRegistration'
 
 const AnalyticsTracker = () => {
   const location = useLocation();
@@ -70,6 +71,8 @@ function App() {
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/link" element={<GitRegistration />} />
+          <Route path="/career-excellence" element={<CareerExcellenceRegistration />} />
+          <Route path="/career-excellence-program" element={<CareerExcellenceRegistration />} />
           <Route path="/exam" element={<Exam />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/service/technical-skill-development" element={<TechnicalSkillDevelopment />} />
