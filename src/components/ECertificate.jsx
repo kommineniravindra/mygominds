@@ -64,8 +64,8 @@ const ECertificate = () => {
       months += 0.1;
     }
     
-    if (months > 6) {
-      return 'The course duration cannot exceed 6 months.';
+    if (months > 12) {
+      return 'The course duration cannot exceed 12 months.';
     }
     
     return null;
